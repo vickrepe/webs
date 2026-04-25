@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>MODA CREATIVE | The Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f2f4f7",
+                        "error-container": "#fe8b70",
+                        "inverse-on-surface": "#9c9d9f",
+                        "tertiary-dim": "#62512d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d3dbe2",
+                        "on-secondary-fixed": "#453e39",
+                        "secondary": "#655e58",
+                        "surface": "#f9f9fb",
+                        "on-tertiary-fixed": "#4d3d1b",
+                        "tertiary-fixed-dim": "#ead1a3",
+                        "inverse-primary": "#ffffff",
+                        "primary-fixed-dim": "#dad3cf",
+                        "on-surface": "#2d3338",
+                        "error-dim": "#5c1202",
+                        "tertiary": "#6f5d37",
+                        "surface-container-highest": "#dde3e9",
+                        "primary-container": "#e9e1dd",
+                        "outline": "#757c81",
+                        "surface-variant": "#dde3e9",
+                        "on-surface-variant": "#596065",
+                        "on-primary-fixed": "#433e3c",
+                        "tertiary-container": "#f9e0b0",
+                        "outline-variant": "#acb3b8",
+                        "on-secondary": "#fff7f4",
+                        "surface-container-high": "#e4e9ee",
+                        "surface-bright": "#f9f9fb",
+                        "on-background": "#2d3338",
+                        "background": "#f9f9fb",
+                        "primary-dim": "#56514f",
+                        "on-tertiary": "#fff8f1",
+                        "secondary-fixed-dim": "#ddd2cc",
+                        "secondary-container": "#ece0da",
+                        "primary-fixed": "#e9e1dd",
+                        "on-primary-container": "#55514e",
+                        "inverse-surface": "#0c0e10",
+                        "on-tertiary-fixed-variant": "#6b5934",
+                        "on-primary-fixed-variant": "#5f5b58",
+                        "tertiary-fixed": "#f9e0b0",
+                        "surface-container": "#ebeef2",
+                        "on-secondary-fixed-variant": "#625a55",
+                        "on-error-container": "#742410",
+                        "on-tertiary-container": "#614f2b",
+                        "on-error": "#fff7f6",
+                        "secondary-dim": "#59524d",
+                        "primary": "#625d5b",
+                        "error": "#9e422c",
+                        "secondary-fixed": "#ece0da",
+                        "on-primary": "#fef6f2",
+                        "surface-tint": "#625d5b",
+                        "on-secondary-container": "#58504b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        ::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl no-border tonal-shift flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-serif font-bold tracking-tighter text-stone-900 dark:text-stone-100">MODA</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-stone-900 dark:text-stone-100">shopping_bag</button>
+<button class="material-symbols-outlined text-stone-900 dark:text-stone-100">menu</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[795px] flex flex-col justify-end px-6 pb-20 bg-surface">
+<div class="absolute inset-0 z-0">
+<img alt="hero portrait" class="w-full h-full object-cover" data-alt="cinematic portrait of a stylish woman in a beige minimalist trench coat standing against a soft architectural background with warm afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUksoA1mBTEDsxqxDTlh4YicI5vuyvnNTlQ4k8pW_HanjzwIyylJYODaj6EtOrUnr2G78JpUpBeNomVsKurqGUtJFWkNPFXpkT2G0bPbPxnA_DP5pPTCyjY97GpajKkKDYVwy0rkiyK4M6ZZ5zIZhmUxdj5CX1bAqLagxbT2QiECY5ymuXAa1xMaHoKpiGfAEatIv-b7jOMRwLN--a-hyd8ew2o1iRuaKlzaYKwH9APmxv_nM3WNMByqjP8568yhQ3QnBkPxssgBI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="relative z-10 text-center space-y-6">
+<h1 class="text-5xl font-serif tracking-tight text-on-surface leading-tight">Curation of <br/><span class="italic">Atmosphere</span></h1>
+<p class="font-body text-sm tracking-widest uppercase text-on-surface-variant">Influencer &amp; Creative Director</p>
+<a class="inline-block bg-primary text-on-primary px-8 py-4 text-sm tracking-[0.2em] uppercase rounded-lg hover:opacity-70 transition-opacity duration-300" href="#booking">Work Together</a>
+</div>
+</section>
+<!-- Links (NEW) -->
+<section class="bg-surface py-12 px-6">
+<div class="max-w-[500px] mx-auto space-y-4">
+<div class="text-center mb-8">
+<span class="font-label text-[10px] tracking-[0.3em] text-on-surface-variant uppercase">Connections</span>
+</div>
+<a class="flex items-center justify-between border border-stone-900 p-4 rounded-lg hover:bg-stone-900 hover:text-white transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">photo_camera</span>
+<span class="font-label text-xs tracking-widest uppercase">Instagram</span>
+</div>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between border border-stone-900 p-4 rounded-lg hover:bg-stone-900 hover:text-white transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">videocam</span>
+<span class="font-label text-xs tracking-widest uppercase">TikTok</span>
+</div>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between border border-stone-900 p-4 rounded-lg hover:bg-stone-900 hover:text-white transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">play_circle</span>
+<span class="font-label text-xs tracking-widest uppercase">YouTube</span>
+</div>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+<a class="flex items-center justify-between border border-stone-900 p-4 rounded-lg hover:bg-stone-900 hover:text-white transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label text-xs tracking-widest uppercase">Pinterest</span>
+</div>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+</div>
+</section>
+<!-- About Me -->
+<section class="bg-surface-container-low py-20 px-6">
+<div class="space-y-8">
+<div class="overflow-hidden rounded-lg">
+<img alt="about photo" class="w-full h-[400px] object-cover" data-alt="vogue style candid portrait of a woman looking thoughtfully away, soft focus, grain texture, warm neutral lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwatEHFbYF9Q6pX5vJqcnARrevNNWkWDIBh7DAGrQTIVZT_ERISxPgFX_Qo80X8CQp_oXFamgrKSh52HlUmQN9aubEj_RFSDpGpx-5wHoe4F8rq3FWJsvRUTTW0t5OO9Duu6Cvbx85E5R8oMwwGAqlh9ubpagQbeEed6ZIGEVCWas2YF4vInRGLUO0GxsvlQGtp4n-ZT6k8omJFdqW98dDmEP_XAoCH6dLXIl9lTfnUvLA2gBUgmD-a5_WVlmiAcrjyTZIYhBnELg"/>
+</div>
+<div class="space-y-4">
+<h2 class="text-3xl font-serif leading-tight">The Vision <br/>Behind MODA</h2>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    Based in Paris, I curate lifestyle narratives that blend classic elegance with modern digital artistry. My work explores the intersection of minimalism, high-fashion, and the intentional quiet of slow living.
+                </p>
+<div class="pt-4 border-t border-outline-variant/20">
+<span class="font-serif italic text-xl">"Less is more, but with soul."</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Content / Portfolio -->
+<section class="bg-surface py-20">
+<div class="px-6 mb-10 flex justify-between items-end">
+<h2 class="text-3xl font-serif">Portfolio</h2>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Vol. 01 — 24</span>
+</div>
+<div class="space-y-12">
+<!-- Project Card 1 -->
+<div class="px-6 space-y-4">
+<img alt="portfolio item" class="w-full aspect-[4/5] object-cover rounded-lg" data-alt="editorial shot of minimalist boutique interior with sculptural clothing rack and soft shadows from tall windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFezr9ttaIvxkYPAsfuP05jElqMRSzD6CGLSd_1FhBfvSDJOS4eGxOK5X-TEAWCWIMO9v5QDMuyb4qgZKAP8zsw4fwcX997tHXpkKkftbjpZfp4eJzq0IMSheZ5m-Ailbtov9jlLa-sOCiztD_5wSTU54CmacjhGjco91FG85Z8HzkxPCMFIAH3986kZI4Bql9cToWaksmd6LNSBkU_YS0XFpCtU2XhLfeps3LlPz012Afz9itEaQ-J067RVIXh2-S8T89aj0EISg"/>
+<div>
+<h3 class="text-xl font-serif">The Neutral Edit</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Editorial Direction</p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="px-6 space-y-4">
+<img alt="portfolio item" class="w-full aspect-[4/5] object-cover rounded-lg" data-alt="close up of premium beauty products on a limestone shelf with delicate botanical elements and natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMxkOqmOjalF5KZVCfARK-VJcudXI6vRdwOwnmhtA7lJtMxYqqHM4EblejZzcffZHPdWgkeVAl3xJjURXqHbJ3RIlXXzb0wmxXzsdCadZwfixKORaQ4ZSUQUD8AszPrv0m_vVeShQtMxx5-ruEfeK04X3pN2Uz1bLtSIyFHPv-hylKIWOc0ZknB6AtW-eO4K_jJPP-A8Cv_DeO7jr2p3hI3R1OZnUa9tgFaEBmKx3P6MjoSfeSzxgva0qwqo2e6TmSDSPHkVu2C14"/>
+<div>
+<h3 class="text-xl font-serif">Ethereal Beauty</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Campaign Design</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery (2-column uniform grid) -->
+<section class="bg-surface-container-low py-20 px-4">
+<h2 class="text-center text-2xl font-serif mb-12">Visual Journal</h2>
+<div class="grid grid-cols-2 gap-4">
+<img class="w-full aspect-square object-cover rounded-lg" data-alt="close up of a vintage watch and linen sleeve in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9EfQ432-3BRLKdX2xpW1PrgdO44QtVIQxmSOrJ1Wowcq8MWpTZI2IPIRFsjEju6cx3OSopkb812Acvu5MKnrccUF5poIDj43QTguTdnFi3EXeHwgpimD4EhXCmob68xohPvSX1rlwQsPEwJrRVQwGoryQvyl5RcGihPqxIvPqPrPlV_mbdqULMCqAKfzsbz9T7devyxct0BqYT-OTNhyVOBtLsllL_9eWrUP7S_MIMP89aQYDBfGy5Okur7dGx3ZsQ8XIv1jLR7k"/>
+<img class="w-full aspect-square object-cover rounded-lg" data-alt="minimalist architectural detail of a white spiral staircase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWcKmBC-wdHUgdUz92y0F9RSrKxc8E97JA8TYpaoDxmFUkuGZK1H7I93BWI_W9BEd1V5hAC1xN-iaRj0XzwII71tdnwKzryBXW4uZAVyES5huzqOiZ_7faXDC6B2DME6y5HXFIQHB9ODnaLerE0QMIyJARoug0f6iUr8rUcitbcTnIfyDUtXYrjgllFI_HIKVXIzbUZJh4raUoFAk3rddS4DO8OJvoD-XevJrL0dCN-YSannwG__55iYW2h5kLL4bX649cyQgtE4"/>
+<img class="w-full aspect-square object-cover rounded-lg" data-alt="top view of black coffee in a ceramic cup on a weathered wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlMQbvFD7rm3LuzmOKqLXy0KbT4vxpczG7Vvd9qRvhEZks21WwK2iRa4hdGfYOpq7OBKZDDAeneLACpnXB5ys8fLoe4OlctBtMtjpx2-8u4XIAbbUvgTgPB5w_TsykrhQvJT5Qx0iO0VOBEW81PGdKzfjgieuNJnXko5uwQmWKfh31hz1DQDOeJGX0si0sVRPdV5KanuPg0OSEDoOniCRzpPc8RHo8d2zS5xtCIfKZ2DnOz0AuEE8TKmlfnCK9oeVBXSpc-DzlACE"/>
+<img class="w-full aspect-square object-cover rounded-lg" data-alt="detail shot of silk fabric folds in deep charcoal color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcpjHzTiFVvUOnaUrFdHVN4fhp9Y8nVrNfYGiG8ilbgApTKBink3foTvhncNZRGCMolcP-0SuxB7HP-rfJWZb1tqel5aomh7Q8gX19E3kCFJAuLSiNORq37iUjELGoKSrGSZkEpKxYWfkXFdaESnyKpIZ9XfgUVbWSA2W8YKgzu5vfOyinIOZpC9RXYoxyLFWNm8gPPkJKcVwjP8VFEXjt6stpSFIxuw1GIyXmAoyj78_qhHXhHHrkRDrtFyGGMcqp8u333nBGEkQ"/>
+</div>
+</section>
+<!-- Reviews Carousel -->
+<section class="bg-surface py-20 overflow-hidden">
+<div class="px-6 mb-10">
+<h2 class="text-3xl font-serif">Kind Words</h2>
+</div>
+<div class="flex gap-6 overflow-x-auto px-6 pb-8 snap-x snap-mandatory">
+<div class="min-w-[85%] bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10 snap-center shadow-sm">
+<div class="flex gap-1 mb-4 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body text-sm italic mb-6 leading-relaxed">"MODA transformed our brand identity with a level of sophistication we hadn't seen before. Simply exceptional."</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container"></div>
+<span class="font-label text-[10px] tracking-widest uppercase">Luna Maison</span>
+</div>
+</div>
+<div class="min-w-[85%] bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10 snap-center shadow-sm">
+<div class="flex gap-1 mb-4 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body text-sm italic mb-6 leading-relaxed">"The creative direction is pure poetry. Every frame tells a story that resonates deeply with our audience."</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container"></div>
+<span class="font-label text-[10px] tracking-widest uppercase">Oliver Vance</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="bg-inverse-surface text-inverse-on-surface py-20 px-6">
+<h2 class="text-3xl font-serif text-white mb-8">Inquiry</h2>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase">Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant/40 py-2 focus:border-white transition-colors outline-none text-white" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase">Email</label>
+<input class="w-full bg-transparent border-b border-outline-variant/40 py-2 focus:border-white transition-colors outline-none text-white" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase">Message</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant/40 py-2 focus:border-white transition-colors outline-none text-white resize-none" rows="4"></textarea>
+</div>
+<button class="w-full bg-white text-stone-950 font-label text-xs tracking-widest uppercase py-4 rounded-lg mt-4">Send Message</button>
+</form>
+</section>
+<!-- Booking / Calendar -->
+<section class="bg-surface py-20 px-6" id="booking">
+<div class="text-center space-y-4 mb-12">
+<h2 class="text-3xl font-serif">Reserve a Session</h2>
+<p class="font-body text-sm text-on-surface-variant">Limited slots available for creative consulting.</p>
+</div>
+<div class="bg-white rounded-lg p-6 border border-outline-variant/20">
+<div class="flex justify-between items-center mb-6">
+<span class="font-serif font-bold">November 2024</span>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-[10px] font-label text-on-surface-variant mb-4 uppercase">
+<span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-xs font-body">
+<div class="py-2 text-outline-variant">28</div>
+<div class="py-2 text-outline-variant">29</div>
+<div class="py-2 text-outline-variant">30</div>
+<div class="py-2 text-outline-variant">31</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">1</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">2</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">3</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">4</div>
+<div class="py-2 bg-stone-900 text-white rounded-lg cursor-pointer">5</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">6</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">7</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">8</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">9</div>
+<div class="py-2 hover:bg-primary-container rounded-lg cursor-pointer">10</div>
+<!-- Simplified for brevity -->
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label text-[10px] tracking-widest uppercase py-4 rounded-lg mt-8">Confirm Date</button>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="bg-surface-container-low py-20 px-6">
+<h2 class="text-3xl font-serif mb-10">From the Atelier</h2>
+<div class="space-y-8">
+<article class="flex gap-4 items-start border-b border-outline-variant/20 pb-8">
+<img class="w-24 h-24 object-cover rounded-lg" data-alt="minimalist outfit grid with neutral tones and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADIgESVIt1WJBrjin2Abs8XLznDIWgU1-iExwGl9hQ7dYBAVGASWTTzkTmMtvoNvizEUNpY13Tz4W2aBF1GxbTR6KLNEiS13WqMGJq_MjHFzcLI3PDrnNI7VXT1eYYSFnnVVaet2KdVdM2WsgfC5JGWgoHqIvb0KU6vp_Ikk9Af7ZRSMviZjjcMIWJjciW8TqW2O4eYoo5r6ayG5VDP2EWNYpxdK740nj8NGxyZzCcWw7H_Cm5AweiMmZA7QoYkxLNAh89LyDEMaQ"/>
+<div class="space-y-1">
+<span class="font-label text-[9px] tracking-widest uppercase text-tertiary">Lifestyle</span>
+<h3 class="font-serif text-lg leading-tight">Finding Stillness in the City</h3>
+<p class="font-body text-xs text-on-surface-variant">Nov 12, 2024</p>
+</div>
+</article>
+<article class="flex gap-4 items-start border-b border-outline-variant/20 pb-8">
+<img class="w-24 h-24 object-cover rounded-lg" data-alt="black and white photo of a Parisian cafe chair and newspaper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIp3N5Iwlp9U_Rt0ySgKSq4E6K1Ux8ta6m8YNf9QQee7qJ2giuinSkCyK2zSc45PbvmSYLbwnZJ4ZZXGy-c4tI_qHTdrqM661U67G6b5YEcU9DiZOxkXS7BvBNxmS71Mt5Ysi2Ax6Grz_uFElt4_h4l9Zmx8upaWjomDGc2EUcSNnPuxrMYb-BLrDzVoLatJoWZAfOzO2Nelx16WAvVF4XuHsHh0mCGUNuWcTQY--NCgMLaNLREVyO5yTvaUNmq_K6K1frlGfn5ps"/>
+<div class="space-y-1">
+<span class="font-label text-[9px] tracking-widest uppercase text-tertiary">Curation</span>
+<h3 class="font-serif text-lg leading-tight">The Art of the Minimalist Wardrobe</h3>
+<p class="font-body text-xs text-on-surface-variant">Oct 28, 2024</p>
+</div>
+</article>
+</div>
+</section>
+<!-- WhatsApp Floating FAB -->
+<div class="fixed bottom-8 right-8 z-50">
+<a class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(22,163,74,0.4)] animate-pulse hover:scale-110 transition-transform" href="https://wa.me/#">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</a>
+</div>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full py-12 px-6 mt-20 tonal-shift-no-border">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="text-center md:text-left space-y-4">
+<div class="text-lg font-serif italic text-stone-900 dark:text-stone-100">MODA CREATIVE</div>
+<p class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 max-w-[200px]">Curating the refined, celebrating the intentional.</p>
+</div>
+<nav class="flex flex-col items-center gap-4">
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline-offset-4 underline" href="#">About</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline-offset-4 underline" href="#">Portfolio</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline-offset-4 underline" href="#">Blog</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline-offset-4 underline" href="#">Contact</a>
+</nav>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-stone-500">public</span>
+<span class="material-symbols-outlined text-stone-500">mail</span>
+<span class="material-symbols-outlined text-stone-500">share</span>
+</div>
+<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 text-center mt-8">
+                © 2024 MODA CREATIVE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,297 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-secondary-fixed-variant": "#6b4b00",
+                  "surface-container": "#e7e8e8",
+                  "on-primary-fixed-variant": "#563400",
+                  "tertiary-fixed": "#faec55",
+                  "on-tertiary-fixed-variant": "#686100",
+                  "inverse-surface": "#0c0f0f",
+                  "primary-fixed": "#f8a010",
+                  "on-primary-container": "#4a2c00",
+                  "secondary-container": "#ffc969",
+                  "secondary-fixed-dim": "#fcb725",
+                  "on-tertiary": "#fff5a1",
+                  "primary-dim": "#714600",
+                  "background": "#f6f6f6",
+                  "on-secondary-container": "#5f4200",
+                  "secondary-fixed": "#ffc969",
+                  "on-primary": "#fff0e3",
+                  "surface-tint": "#815100",
+                  "error": "#b02500",
+                  "primary": "#815100",
+                  "secondary-dim": "#6a4a00",
+                  "on-error": "#ffefec",
+                  "on-error-container": "#520c00",
+                  "on-tertiary-container": "#5d5600",
+                  "inverse-primary": "#f8a010",
+                  "tertiary-fixed-dim": "#ebdd48",
+                  "secondary": "#795500",
+                  "surface": "#f6f6f6",
+                  "on-tertiary-fixed": "#4a4400",
+                  "on-secondary-fixed": "#473000",
+                  "surface-dim": "#d3d5d5",
+                  "tertiary-dim": "#575100",
+                  "surface-container-lowest": "#ffffff",
+                  "inverse-on-surface": "#9c9d9d",
+                  "error-container": "#f95630",
+                  "surface-container-low": "#f0f1f1",
+                  "surface-bright": "#f6f6f6",
+                  "on-background": "#2d2f2f",
+                  "surface-container-high": "#e1e3e3",
+                  "on-secondary": "#fff1df",
+                  "on-surface-variant": "#5a5c5c",
+                  "outline-variant": "#acadad",
+                  "tertiary-container": "#faec55",
+                  "on-primary-fixed": "#2a1700",
+                  "outline": "#767777",
+                  "surface-variant": "#dbdddd",
+                  "primary-container": "#f8a010",
+                  "surface-container-highest": "#dbdddd",
+                  "error-dim": "#b92902",
+                  "tertiary": "#645d00",
+                  "primary-fixed-dim": "#e79400",
+                  "on-surface": "#2d2f2f"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.125rem",
+                  "lg": "0.25rem",
+                  "xl": "0.5rem",
+                  "full": "0.75rem"
+          },
+          "fontFamily": {
+                  "headline": ["Plus Jakarta Sans"],
+                  "body": ["Be Vietnam Pro"],
+                  "label": ["Be Vietnam Pro"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm h-20 px-6 flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface cursor-pointer">menu</span>
+<span class="text-xl font-black italic text-zinc-900 tracking-tight font-headline">Vibe Urban</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface hover:opacity-80 transition-opacity">shopping_bag</span>
+<span class="material-symbols-outlined text-on-surface hover:opacity-80 transition-opacity">person</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section (Mobile Optimized Stack) -->
+<header class="pt-24 pb-12 px-6">
+<div class="flex flex-col gap-6">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low min-h-[400px] flex items-end p-8">
+<img alt="Hero Streetwear Image" class="absolute inset-0 w-full h-full object-cover" data-alt="Young man in oversized streetwear standing in a vibrant urban alleyway with warm sunlight hitting the bricks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnD2-JZjBGU2BfZG6_4-SwtL6lIhd9NHlR9UIhpZA48kj-ZLLkKgOxuAl7M66jQIqlSp8CU9tlncwddGfwhLbVr84LRLzl2y-fg4nhLoHTpfr_q6qshR9Z7zLtEaYfu4dEseMbaVORnj56xP7EfKPy2PHXk-Ej05O8gckTQgrf0o-ZR6gg09ex9FYxjg9FSxgblu8rBmBjiyZzz5SZ_f9T4-f8ylWYLxPme9vnKUd15Pv2ITk2jKkWXeYvkh1caIqqQoiVg4V5HZk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<p class="text-primary-fixed font-headline font-bold text-sm tracking-widest uppercase mb-2">Summer '24 Drop</p>
+<h1 class="text-surface-container-lowest font-headline font-extrabold text-4xl leading-tight mb-4 -ml-1">Urban Kineticism.</h1>
+<button class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded-md font-bold text-sm tracking-tight shadow-lg transition-transform active:scale-95">
+            Shop All
+          </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Editorial Carousel (Lookbook) -->
+<section class="mb-16">
+<div class="px-6 mb-6 flex justify-between items-end">
+<div>
+<span class="label-md uppercase text-primary font-bold tracking-tighter text-xs">Editorial</span>
+<h2 class="text-2xl font-headline font-extrabold text-on-surface">The Lookbook</h2>
+</div>
+<div class="flex gap-2">
+<div class="w-8 h-1 bg-primary-fixed"></div>
+<div class="w-4 h-1 bg-surface-container-highest"></div>
+</div>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-4 px-6 snap-x snap-mandatory">
+<div class="flex-none w-64 snap-center">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container-low">
+<img alt="Lookbook Item" class="w-full h-full object-cover" data-alt="Editorial fashion shot of woman wearing technical neon jacket in a concrete urban setting with blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx1ZNttqkIiGH9fH2bBkJ5gh-H2x0u8ksoUrbOZFm00Djm8lGEKDXvLtrJpdlKYfq4Ye9kj8U3lHv2FC6VujHRYuhtkCm_datUicFJcLwf2VOd8YFZ6F4OX5PtovZx6EoFycxqaq_fDdED36UqrIBm2F9nBV99zgFRNFNNDaQya0gRnCNQtQ-mCz74eZ6l41gB3NOmWiPFktIsptsaSFc15emCcje60QmQtYxCgz1VwZACdXTyr_otoCBD2k_gpkNPJwPKnMKZgyk"/>
+</div>
+<p class="font-headline font-bold text-on-surface">Concrete Jungle</p>
+<p class="text-xs text-on-surface-variant">Vol. 12 — Nightshift</p>
+</div>
+<div class="flex-none w-64 snap-center">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container-low">
+<img alt="Lookbook Item" class="w-full h-full object-cover" data-alt="Close up of high-end sneakers on a wet asphalt road at dawn with city reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyG4WA02561KE-IjFdoZ3vjrr8w29svpmuC8tG4dCvK2cA6SFheActGa11JA_M3AuXQPqA1VDiOLOhuptyD1awmOcv8iuF2IZRLXRX0pWI5ATIvIJzS7uS44QLggR0MrD_4cVqvZCmxfASsYXltGtWgDvTgwi2Zr65tqaji9ngJq6XEy7BrHRzAEvDL0itEfatp6Pd_a-DgLgWJjl6VR4i_ai0HvdrRIypXSkLpr7SOEEMeSs5Zc4GC68VmnWJUZEI0niLWctYTss"/>
+</div>
+<p class="font-headline font-bold text-on-surface">Street Velocity</p>
+<p class="text-xs text-on-surface-variant">Vol. 13 — Flow</p>
+</div>
+<div class="flex-none w-64 snap-center">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 bg-surface-container-low">
+<img alt="Lookbook Item" class="w-full h-full object-cover" data-alt="Candid street photography of two friends in vintage streetwear walking past a graffiti wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUv_k0oqBcmlwmYXM5qlq8GsjueUS5r6zpwuG-4aAEa0qW6HhUxuFPH8ZMKn1w-1-5wuH1924pBbMYFvlxWlezyfTlhsOhKqD7XBSYB2n-BbtwmvLWTPZUyAPGLBl326Y1EMeTEvLO_jA47riq50ltP5OMLmLFpnw79q149UdJoCp8h1zQ2tLW6tI8_pcP-LSb3ViuyfofTT3g28chTA-1eOOKLA-0cHAneztc3UNOANYu78HM7V_w3fkUQuxgl2qjre3O9TTfWP0"/>
+</div>
+<p class="font-headline font-bold text-on-surface">Retro Bloom</p>
+<p class="text-xs text-on-surface-variant">Vol. 14 — Archive</p>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<main class="px-6 mb-20">
+<div class="mb-8">
+<h2 class="text-2xl font-headline font-extrabold text-on-surface mb-1">New Arrivals</h2>
+<div class="w-12 h-1 bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-2 gap-x-4 gap-y-8">
+<!-- Product Card 1 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-3 bg-surface-container-low relative">
+<img alt="Product Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Oversized gray hoodie laid flat on a neutral background with premium fabric texture detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDekThIpUUypfnSmOcNuKRL3qnM_WLgquJQYu3ZmQu5LLps9AR6GRgK5T3M7UfTFHNU8RG4n3CQ3lxkGufCAF5pwYB0eLcxqFbLvgi454jIz9-zX5Ri1b7IbvprUFTSlBE8tgYb0ECY0MS2zQ104Zilrxr9lY_KVpZzF03W06GeFBYkgO-_-J0sSjTRC_3jyMkhm6CB6WlCVIETOEjwqML0bgavn9zdigfrFvOL1oI8UCRqeJyRrpKzzytbDchPAhpwZ6GVfeiyo3A"/>
+<button class="absolute bottom-2 right-2 p-2 bg-surface-container-lowest rounded-full shadow-md text-primary">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<h3 class="text-sm font-bold text-on-surface leading-tight">Archival Hoodie</h3>
+<p class="text-sm text-primary font-bold mt-1">$120.00</p>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-3 bg-surface-container-low relative">
+<img alt="Product Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Graphic black t-shirt with modern typography print on a model in an urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgOkyr8Id_F-izzgQQ941A_UJ-cy3SLyMkcogzKbidN9EyIY5QKMRD-G9b24cxryKMpX21UkNhhzgB_Hh7GtUQPyAwFKb93oorQdeHfVqhFwxslu1KldDhaIkSwcWCk0JpFv0iySyjNsMtZFUA8R4PAY2C520wQewnPVOAMOrazJV9q4Gx2vye8SgsYc7FNpIggAutm980IMtZEVVqyWlQ4xdGwF6Os5UWZfPhfvlCebfqMewGrCCjDvTFnWBA16k9DZofMBIkrew"/>
+<button class="absolute bottom-2 right-2 p-2 bg-surface-container-lowest rounded-full shadow-md text-primary">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<h3 class="text-sm font-bold text-on-surface leading-tight">Vibe Graphic Tee</h3>
+<p class="text-sm text-primary font-bold mt-1">$45.00</p>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-3 bg-surface-container-low relative">
+<img alt="Product Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Pair of loose fitting denim jeans in a light wash hanging in a minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWwFppd4uqlvrE_S7hIMKI4VAFflVCSacNnhvsS68A2CggsTVWJ-2mFs9ILjG3soEx7gf9ZoEWgIF0_7PZH0JbkfLhiF1hPJaGShYeBsDcoiLqnn3zeuMaqQ98mtjv3zyxMy6nsDLLfluHPttx83zOvmfXewETCmXdNZgRN2OThKPqXZX_wu91xMgwRVXgH6LuG5YeoCCTr7WOsbkM_ThgseCnoh6oeRHbf3Ntit_mrnCrY-nvQQSseM6N6O2ERw_S_wTiHBmzTMo"/>
+<button class="absolute bottom-2 right-2 p-2 bg-surface-container-lowest rounded-full shadow-md text-primary">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<h3 class="text-sm font-bold text-on-surface leading-tight">Street Cargo Denim</h3>
+<p class="text-sm text-primary font-bold mt-1">$160.00</p>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-3 bg-surface-container-low relative">
+<img alt="Product Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Structured utility jacket in olive green with multiple pockets and matte silver hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtymApLeQyzyS51XjIYL-Cs4rJaQ-TQTwfhg2gAc8mZkBw1kg9eBY4_690HjF0nlxXe1F9VVnCmK7FkostgqubTfHRk60zsC9osg87Pa_IJ-s3PN2y7ny1nXP32TLi8Mgs7rc7MMGVZEvyuRea68rbQToST9dy__4em1IND4iQL9sw7NH1fRjm8mdBgr3bCKXA3U5PQgNxyqQ5LR39HoJEbRoZRDU_NjxMR9uyrXoD0bage35frsA5IH1IYTNYgs4c-B1jLtNRBZM"/>
+<button class="absolute bottom-2 right-2 p-2 bg-surface-container-lowest rounded-full shadow-md text-primary">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<h3 class="text-sm font-bold text-on-surface leading-tight">Utility Shell Jacket</h3>
+<p class="text-sm text-primary font-bold mt-1">$210.00</p>
+</div>
+</div>
+</main>
+<!-- About Section -->
+<section class="bg-surface-container-low py-16 px-6">
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<h2 class="text-3xl font-headline font-extrabold text-on-surface">Curated for the street.</h2>
+<p class="text-on-surface-variant leading-relaxed">
+          Vibe Urban isn't just a label. It's a collective of designers, skaters, and artists obsessed with the tactile reality of the city. We build garments that breathe in the subway and shine under neon.
+        </p>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-zinc-300"></div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-zinc-400"></div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-zinc-500"></div>
+</div>
+<span class="text-xs font-bold text-on-surface">+12k Urban Crew</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl h-64 shadow-xl">
+<img alt="About Us Image" class="w-full h-full object-cover" data-alt="Interior of a modern industrial retail space with exposed pipes and minimal garment racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD16KwpaI_fpqCJDqtDyabBRaZcL5O_0Cf7qbjEp7xFz3NgA1gv_4PzGa5hOEjHyIufwVbkJTMvze5Jt-FTKz8VsTNe2rAVI4uhusMLcfKZxkBFWWXDwD8xgCAZ1IWue0LRRu7OIYmQ3lViUbC4rLMYTXccinN4_OFqBWJDNfEHaJCZR-jGySfJL63pUt-8t6lB7Fi0PSZkrIEn_ARG7Y1zbre81UjWJdV7XGP-4vQG-zW3D5q-KN5zkHJRWrUdWsBxEqez3XAaG2U"/>
+</div>
+</div>
+</section>
+<!-- Contact / Footer Section -->
+<section class="py-16 px-6 bg-surface-container-lowest">
+<div class="flex flex-col gap-10">
+<div>
+<h2 class="text-2xl font-headline font-extrabold text-on-surface mb-2">Join the Collective</h2>
+<p class="text-on-surface-variant text-sm mb-6">Drop your email for early drop access and limited archive releases.</p>
+<div class="flex flex-col gap-3">
+<input class="bg-surface-container-low border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary-fixed text-sm w-full" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary py-4 rounded-md font-bold tracking-tight shadow-md">Subscribe</button>
+</div>
+</div>
+<footer class="flex flex-col gap-8 pt-10 border-t border-surface-container-highest">
+<div class="flex justify-between items-start">
+<div class="space-y-4">
+<span class="font-headline font-bold text-on-surface">Vibe Urban</span>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="hover:text-primary transition-colors">Instagram</li>
+<li class="hover:text-primary transition-colors">TikTok</li>
+<li class="hover:text-primary transition-colors">Pinterest</li>
+</ul>
+</div>
+<div class="space-y-4 text-right">
+<span class="font-headline font-bold text-on-surface">Support</span>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="hover:text-primary transition-colors">Shipping</li>
+<li class="hover:text-primary transition-colors">Returns</li>
+<li class="hover:text-primary transition-colors">Terms</li>
+</ul>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant/60 text-center">© 2024 Vibe Urban. Curated for the street.</p>
+</footer>
+</div>
+</section>
+<!-- Side Navigation / Floating CTA (Urban Concierge) -->
+<div class="fixed bottom-8 right-8 z-50 flex flex-col items-center justify-center">
+<div class="bg-amber-500 rounded-full p-4 animate-pulse shadow-[0_20px_40px_rgba(245,158,11,0.3)] hover:scale-110 transition-transform cursor-pointer active:scale-95 group relative">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">chat</span>
+<div class="absolute right-full mr-4 bg-white px-3 py-2 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+<p class="text-xs font-bold text-on-surface">Pulse to Chat</p>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation (Mobile Shell Alternative - Hidden based on UX goal, but available for app-like feel) -->
+<div class="md:hidden fixed bottom-0 w-full bg-white/90 backdrop-blur-lg flex justify-around items-center h-16 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50">
+<button class="flex flex-col items-center gap-1 text-primary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-bold">Explore</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[10px] font-bold">Wishlist</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-[10px] font-bold">Cart</span>
+</button>
+</div>
+</body></html>

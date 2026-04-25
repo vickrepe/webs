@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#e9e1dd",
+                    "on-secondary": "#fff8f2",
+                    "on-primary-fixed": "#433e3c",
+                    "tertiary": "#6f5d37",
+                    "outline": "#837972",
+                    "tertiary-container": "#f9e0b0",
+                    "on-tertiary-fixed-variant": "#6b5934",
+                    "on-primary-fixed-variant": "#5f5b58",
+                    "surface": "#fff8f5",
+                    "surface-variant": "#ede0d8",
+                    "on-secondary-fixed-variant": "#5f5b56",
+                    "inverse-on-surface": "#a29c98",
+                    "surface-container": "#f6ece6",
+                    "on-surface-variant": "#665d57",
+                    "secondary-fixed": "#e9e1db",
+                    "primary-fixed-dim": "#dad3cf",
+                    "surface-bright": "#fff8f5",
+                    "on-secondary-fixed": "#433f3b",
+                    "surface-dim": "#e5d7cf",
+                    "secondary-container": "#e9e1db",
+                    "surface-container-highest": "#ede0d8",
+                    "error-container": "#fe8b70",
+                    "surface-container-low": "#fbf2ed",
+                    "tertiary-dim": "#62512d",
+                    "inverse-surface": "#100e0c",
+                    "surface-tint": "#625d5b",
+                    "on-tertiary-container": "#614f2b",
+                    "secondary-dim": "#57524e",
+                    "secondary": "#635e5a",
+                    "inverse-primary": "#ffffff",
+                    "on-secondary-container": "#55514d",
+                    "on-tertiary-fixed": "#4d3d1b",
+                    "on-surface": "#38312c",
+                    "error": "#9e422c",
+                    "surface-container-high": "#f2e6df",
+                    "primary-dim": "#56514f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#fff8f1",
+                    "on-background": "#38312c",
+                    "tertiary-fixed-dim": "#ead1a3",
+                    "on-error": "#fff7f6",
+                    "tertiary-fixed": "#f9e0b0",
+                    "primary-container": "#e9e1dd",
+                    "background": "#fff8f5",
+                    "outline-variant": "#bbb0a9",
+                    "on-primary-container": "#55514e",
+                    "secondary-fixed-dim": "#dad3cd",
+                    "primary": "#625d5b",
+                    "on-error-container": "#742410",
+                    "error-dim": "#5c1202",
+                    "on-primary": "#fef6f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f5;
+            color: #38312c;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#fff8f5]/80 dark:bg-[#1C1917]/80 backdrop-blur-xl border-none shadow-[0_12px_48px_rgba(28,25,23,0.04)] flex justify-between items-center px-12 h-20 transition-all duration-300">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-bold tracking-tighter text-[#1C1917] dark:text-[#ede0d8]" href="#">ATELIER</a>
+<div class="hidden md:flex gap-8">
+<a class="font-['Noto_Serif'] uppercase tracking-[0.05em] text-sm text-[#1C1917] dark:text-[#ede0d8] border-b border-[#1C1917] dark:border-[#ede0d8] pb-1 hover:text-[#1C1917] dark:hover:text-[#fff8f5] transition-colors duration-300" href="#">COLLECTIONS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-[0.05em] text-sm text-[#625d5b] dark:text-[#a8a29e] hover:text-[#1C1917] dark:hover:text-[#fff8f5] transition-colors duration-300" href="#">BESPOKE</a>
+<a class="font-['Noto_Serif'] uppercase tracking-[0.05em] text-sm text-[#625d5b] dark:text-[#a8a29e] hover:text-[#1C1917] dark:hover:text-[#fff8f5] transition-colors duration-300" href="#">ESSENTIALS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-[0.05em] text-sm text-[#625d5b] dark:text-[#a8a29e] hover:text-[#1C1917] dark:hover:text-[#fff8f5] transition-colors duration-300" href="#">EDITORIAL</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface hover:opacity-70 transition-opacity">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface hover:opacity-70 transition-opacity">person</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden bg-surface-container">
+<div class="absolute inset-0 flex">
+<div class="w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Close-up of a perfectly tailored navy pinstripe suit on a mannequin in a moody high-end boutique setting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOP-I7ITNZ6x3EKlO3R0gPT07pw_LMb7EPRYf0AIsv4EzgxV-Oy4206HyXbcKCWZYuqAzxN0s0mwBRGxYr3V-LMC1bfG3vjba9_G-FEZE-wg_wKlrayAOlmknC1iT7UKnX-8aQCyxC_TM4Wl_NY4eloY-Qd-VtujcyK97wVXx4UA1rGNrVITZJkquT6H2QInkiseK4s5MmtHsdJe1J4duTY6iZou-55aEy3gjeZDUS9AA9dbZNpUJmwte_rEdagv6XnRTzGwFo6hU"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#1C1917]/40 to-transparent"></div>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center px-12 md:px-24">
+<div class="max-w-2xl text-white">
+<p class="font-label uppercase tracking-widest text-sm mb-4 opacity-90">Autumn / Winter 2024</p>
+<h1 class="text-7xl md:text-9xl font-headline font-bold leading-none tracking-tight mb-8">The Arch<br/>Monolith</h1>
+<div class="flex gap-4">
+<button class="bg-surface text-on-surface px-12 py-4 font-label text-xs tracking-widest uppercase hover:bg-surface-variant transition-colors">Discover the Collection</button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us: Editorial 50/50 -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative aspect-[4/5] bg-surface-container-low p-12">
+<img class="w-full h-full object-cover shadow-[0_24px_48px_rgba(0,0,0,0.1)]" data-alt="An artisan's hands meticulously measuring premium charcoal wool fabric on a dark wood cutting table in a bright atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV4aF3leaV10VKP3Rgx54xGzx1oy67WeclPBy6qShVKYTMfgXJX0xigJ9joviDmTB_HmfseeZOWAxwzbnSa1OKv5hRaXiZR6YojScpxOZPkMf7G3Sj8VSKW0O8IWD-beIS8WT08Jf3o8jAcBmJsYi4t2v6C5RffJnyfy87MwDeyZCtw1W6omc1M_P3vLsv0UCo9hTOCwUtVJmDD9bfnKVTzrbx5dxyqk9KJq-g3C-2TSt5qqCTWt8-gR6bGyGqiSfkasK6MN3tGwY"/>
+</div>
+<div class="space-y-8">
+<span class="font-label uppercase tracking-widest text-[10px] text-primary">Est. 1984 — London</span>
+<h2 class="text-5xl font-headline leading-tight">Architecture for the Body</h2>
+<p class="text-lg leading-relaxed opacity-80">Our philosophy is rooted in the rigorous discipline of Savile Row, fused with a contemporary architectural sensibility. We believe a garment is a structure, designed to empower through precision, silence, and permanence.</p>
+<div class="pt-8">
+<a class="font-label text-xs tracking-widest uppercase border-b border-on-surface pb-2 hover:opacity-60 transition-opacity" href="#">Read our Manifest</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Grid -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-low">
+<div class="flex justify-between items-end mb-20">
+<div>
+<span class="font-label uppercase tracking-widest text-[10px] text-primary">Sartorial Selection</span>
+<h2 class="text-4xl font-headline mt-2">Essential Silhouettes</h2>
+</div>
+<a class="font-label text-xs tracking-widest uppercase border-b border-on-surface pb-2" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-24">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Full body shot of a man wearing a charcoal grey double-breasted coat standing against a minimalist concrete wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo8L12nYYI6jX_YUtSrclOsp7BV_zaJ7RL5QEQ4VTvjlleuMBB8zPIqicV_JRvi1-nfpCOCYyhYcHaYAXar39tLP6nu6nfwjbCqzmh53u37ZHIVxuJEtmF2n5f8oxmvErusxb4gkb5C6okAHrce9m9leviaJbPJtX-QvO-V_AKczCBxtsqhLYcxChSNbxP30hrtEQEfvxjWx6P1mLix3qV8XZ5Ui8iV-scOeOPcdv2TTiDrpQEFdkyTv2CXlSQbRTOWJe37RHa3Y4"/>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[10px] uppercase tracking-widest opacity-60">Overcoats</p>
+<h3 class="text-lg font-headline">The Wool Cashmere Topcoat</h3>
+<p class="font-label text-sm tracking-tight text-[#1C1917] font-semibold">$1,250</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer translate-y-12">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of a classic white cotton dress shirt with mother-of-pearl buttons on a clean neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYyefY-RcBp0sRYW680F8Y9qdC3ybpHSoztqAkWNQioXfTyzAQQmh7z4PF6xyJsf6JbFL4pEeOLL_BgZUDxPU_bhCr9l6jYLWdbDk-Bw4PG5zeH23elFTqlH8Rm7METyYomTHIRv7IDrnqSJmDr12Is_Z0ZSuwxfGVV-xO1BcDE7PT1NTIZV5lawIhaOjLcNwPWsiGua1ZCUOclUZD4CVsj893IM55_f_Nu6MRm11ikMEd_8J8STeoGJErQKkaJEtXv0PhqTqVRII"/>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[10px] uppercase tracking-widest opacity-60">Essentials</p>
+<h3 class="text-lg font-headline">Egyptian Cotton Oxford</h3>
+<p class="font-label text-sm tracking-tight text-[#1C1917] font-semibold">$245</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A pair of dark navy slim fit wool trousers hanging elegantly against a white wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbq4ncx1PfTyiURoO2eUne4o5fg6lKrH4RHgBUGA_Hw1LE35DrlC0VfE5gKsbGjWaFJibC1yuFgFXHXrkBltqlcK4DKoaKBJH55Mq_5Xd0qsyTNI2zZ4Hoowirf51actGGu1qPElu_g8NsrYARc5iTiZN3V1gNFNIr9WQf5mSZOeLLxivYzmnXVe8ClLkaKaKP4zH9sT1MyIBQxmNcmv9l65eD08_f3JtwCmbx9XwsRt96GZ8FCwtLqFk6eepbyhPAvSXAuRFq5Ic"/>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[10px] uppercase tracking-widest opacity-60">Trousers</p>
+<h3 class="text-lg font-headline">Slim-Fit Cavalry Twill</h3>
+<p class="font-label text-sm tracking-tight text-[#1C1917] font-semibold">$480</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer translate-y-12">
+<div class="aspect-[3/4] mb-6 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxurious tan leather Chelsea boots with a polished finish and sharp silhouette on a marble floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw1DmOyrmlH3bc-KWLi8xJGrc-7Z_ES1f_InVw0TesYEWkpFphcJKxgIZ0DsOyjf3wHAGqg58YgH5q7qil1YHWImDLix6aLmykp-qWbGpWAtL1GFGBxZF9xlfKd-Pf82hIZi46ikFQuDcN91VAXIfaPFhjo6jbsoQbhTTjBjy0l2SC-MmLMaIggQ2CByAMgaHbgU9KDEpneo0Y8yNBlpt9iWyg8rZ3iVQ29kh_BRem9dYvt6R9IKd__Mll3L0FAFzCuxGKOxzWkyI"/>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[10px] uppercase tracking-widest opacity-60">Footwear</p>
+<h3 class="text-lg font-headline">The Hand-Burnished Chelsea</h3>
+<p class="font-label text-sm tracking-tight text-[#1C1917] font-semibold">$695</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lookbook Section (Asymmetric Gallery) -->
+<section class="py-32 bg-[#1C1917] text-white">
+<div class="px-12 md:px-24 mb-20 text-center">
+<span class="font-label uppercase tracking-widest text-[10px] opacity-60">The Lookbook — Vol 04</span>
+<h2 class="text-5xl font-headline mt-4">Shadow &amp; Light</h2>
+</div>
+<div class="grid grid-cols-12 gap-8 px-12 md:px-24 items-start">
+<div class="col-span-12 md:col-span-5 aspect-[4/5]">
+<img class="w-full h-full object-cover grayscale" data-alt="Elegant cinematic shot of a man in a black trench coat walking through a foggy morning cityscape with high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_BQvpWysFwKxbGpYpcXWJpclyH6tiE_jJFiltqs3m4JNnLGL4oQiqzhjb1BBDlZx8XZNfDrnOg89LpKYYACKeUPsqte8WS6EAvZOPk-ckBC90GrV9l5i_9-hlLFXr_G3tWHPMif8yyN9v50fDAHfsWcHm7tDFgWov0US5Obh7zcUP1ihGhm2zbuT94U9aRhrQ5HB9ailydKBlGxN9s5KuwuQCbninTMWho7bCUTYL0-QXkQMUHBd9aoqIoTFxBYMmIwg40_AtKoc"/>
+</div>
+<div class="col-span-12 md:col-span-7 flex flex-col gap-8">
+<div class="grid grid-cols-2 gap-8">
+<div class="aspect-square bg-surface-variant/10">
+<img class="w-full h-full object-cover" data-alt="Macro detail of a silver tie pin on a silk navy necktie with refined weave pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUGxHi06TB4mr7tsY5rvUtI8AH6HDKDt_YRM_G3ONvhvypyLljxeRtvj5cOBoo1l42CFazsngMhlg3Tm1raU-Mv64Sx7pSXLFPJXpVvmU7ilzFgQFRWB9pzSwCdAi3LKjJgSepx-y4gABm6FI-USXC3Q6aoYW_YnQ6l7TyAjUPge0o-vOxSrwnpPOdFhk74ujKWqOuAnw-3qIlOC-LEUI9Y0_g_9V9EDjQvUGp8ZXfiZJFaTt8nMc0EKhTPhlpEpr5HiPsWXfkR18"/>
+</div>
+<div class="aspect-square bg-surface-variant/10 mt-12">
+<img class="w-full h-full object-cover" data-alt="Artistic composition of bespoke accessories including a leather watch and cufflinks on a dark grey textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8o2gtL-wH73_pJ8zY2f3SNG62tRykmKxQUhTG04SHcKyWJOg3moK0rXnm-bn5-FPamEuWtDbZPwfn0D3XXnFBP8VJR0D2LLzlm81oJnHBx5daQWX5jlb8jzrSngI4V2WTDMTDN6b-_2EHyirj7FPFUOPXc573ssFkB1BQ9ZbvmUlJHp1nJQ-_OmzK7iuhPSlJ7Sm6j6aTu0zF6mDDZNVZraNVsrOz16jUuuVBl1_jJIn41KPiS03t_fZhr1-1AILV-k1XwbWika4"/>
+</div>
+</div>
+<div class="h-96 w-3/4 mx-auto mt-8">
+<img class="w-full h-full object-cover" data-alt="Model posing in a structured grey suit sitting in a mid-century modern chair, moody lighting from the side" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZXLzCDTXqEDVcHT9vY6U57HAkmDM7--JfTJ0kFCKHwv1mNJaVhRK_ABR5Xe6tbsRBxML5rqKZ5FiSNNEvXBk1p-b-yno2bgRhmsG_PJHjB_BThKoOJPg0Ej0SzuhSLxCVBITB5RYaLSFkN4HyDAr9ZT2PrUwCYPrN4iXZegMTSZsYPBCTPK5gCV5ckhS8x-_cLGcp6dAgDaGoiClVg7FhFeRAINE0xWEu4tV2wp1FORlaDQit7HlbCaaHtrRQQrrStMFbf4slgOI"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews (Clean Typography) -->
+<section class="py-32 px-12 md:px-24 bg-surface text-center">
+<div class="max-w-3xl mx-auto space-y-12">
+<div class="flex justify-center gap-1 text-[#1C1917]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="text-3xl md:text-4xl font-headline italic leading-relaxed">
+                    "The silhouette of the bespoke charcoal blazer is unparalleled. It's rare to find a contemporary brand that understands the architectural weight of classic tailoring so perfectly."
+                </blockquote>
+<div>
+<cite class="font-label not-italic uppercase tracking-widest text-xs font-bold">— Julian V. Thorne, Architect</cite>
+</div>
+</div>
+</section>
+<!-- Blog Highlights -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-high">
+<div class="mb-16">
+<span class="font-label uppercase tracking-widest text-[10px] text-primary">Journal</span>
+<h2 class="text-4xl font-headline mt-2">The Monolith Journal</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="group cursor-pointer">
+<div class="aspect-video mb-6 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Top down view of premium wool swatches in neutral earth tones arranged neatly on a designer's desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFm_SfX8zkRcJwjFGRLrw_g37vynaSJxwy1lzOIP4evxTyv8OdQ085x920LE7R2HPaLIVAsjL7iYNVleL32p47V8z6bzTbv3fGDU8xRML4abjEdVarRvXSKcPFjiundeX0yDh8tVKo_BAZIu5z18uFOk6xi0haajmT6wrjVbGA_Y8-b36Tjq_h9UP4QE8Fizee995OSRjPpjbWojYAb4G6_yaR30ObDWu50Gc3eE3DRgLaqWawl_GQQswinVXv0C6Ix0n2yXDKhxs"/>
+</div>
+<time class="font-label text-[10px] uppercase tracking-widest opacity-60">October 12, 2024</time>
+<h3 class="text-xl font-headline mt-2 group-hover:underline underline-offset-4 decoration-1 transition-all">The Longevity of Loro Piana Wool</h3>
+</article>
+<article class="group cursor-pointer">
+<div class="aspect-video mb-6 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A clean minimalist rack of white and light beige cotton shirts in a well lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6o02PsZ7NE0RgJ82OlfWwk18moNxjcct8d8Rzj-JYHiRfWPXRJxmc-7ikD26Hi6yaQp66d8OmCF6L7d_5S6dNj6grggRPTJRwJ45ocKONFxXAEi3515UcYFrFk_1jk-z6sGyRqgt9sEje8El2UoyWwcvGOV7ptzk95DWSG_SywhLUNAAPRezV74PYhAgwVN6HcQ7Dx5DO78hfY2eZmBny6FXKHqFHFDhGe5zPXMaQwd1jeEqRmqSAqczeWmhYxwNZwIV7VHZqzxc"/>
+</div>
+<time class="font-label text-[10px] uppercase tracking-widest opacity-60">September 28, 2024</time>
+<h3 class="text-xl font-headline mt-2 group-hover:underline underline-offset-4 decoration-1 transition-all">Curating a 10-Piece Permanent Wardrobe</h3>
+</article>
+<article class="group cursor-pointer">
+<div class="aspect-video mb-6 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close up of a classic watch face and a pair of spectacles on a morning newspaper and coffee table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi5KhihMyylrVZ76Sn4qlM2WmknTBg7qdSob5HnDt0w-orlKFogSPgs6O6ICZNBScG4Lr8GTwQmsCUyJ7DDFee1b5Qno6zCFxUZtjFI61smowBkkCX2TTZaDca4qraNwE2kF8aZjGA6AbDTTEt6-NGcjZpxm7sZWMEy7jHue-YrMo0nFwCBSYxOUXNd0UH2AVNjGThWE9236JwpI35kzlRrUQqTF620qdCsWlhic1P7e38SjVMAz_GYLtQaVp7rzZW6r883TgtqQM"/>
+</div>
+<time class="font-label text-[10px] uppercase tracking-widest opacity-60">September 15, 2024</time>
+<h3 class="text-xl font-headline mt-2 group-hover:underline underline-offset-4 decoration-1 transition-all">The Architecture of Timepieces</h3>
+</article>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-12 md:px-24 bg-surface grid grid-cols-1 md:grid-cols-2 gap-24">
+<div class="space-y-12">
+<div>
+<h2 class="text-4xl font-headline mb-4">Contact The Atelier</h2>
+<p class="opacity-60 font-label text-sm tracking-wide">For bespoke consultations or private viewings.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-label uppercase tracking-widest text-[10px] mb-4 font-bold">Inquiries</h4>
+<p class="text-sm">concierge@atelier-monolith.com</p>
+<p class="text-sm">+44 20 7946 0123</p>
+</div>
+<div>
+<h4 class="font-label uppercase tracking-widest text-[10px] mb-4 font-bold">Boutique</h4>
+<p class="text-sm">12 Savile Row</p>
+<p class="text-sm">London, UK W1S 3PQ</p>
+</div>
+<div>
+<h4 class="font-label uppercase tracking-widest text-[10px] mb-4 font-bold">Hours</h4>
+<p class="text-sm">Mon-Sat: 10:00 — 19:00</p>
+<p class="text-sm">Sun: By Appointment</p>
+</div>
+<div>
+<h4 class="font-label uppercase tracking-widest text-[10px] mb-4 font-bold">Logistics</h4>
+<p class="text-sm">Complimentary Global Shipping</p>
+<p class="text-sm">28-Day Returns</p>
+</div>
+</div>
+</div>
+<form class="space-y-8 p-12 bg-surface-container-low">
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest opacity-60">First Name</label>
+<input class="bg-transparent border-b border-outline-variant outline-none focus:border-on-surface py-2 px-0 transition-colors" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest opacity-60">Last Name</label>
+<input class="bg-transparent border-b border-outline-variant outline-none focus:border-on-surface py-2 px-0 transition-colors" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest opacity-60">Email Address</label>
+<input class="bg-transparent border-b border-outline-variant outline-none focus:border-on-surface py-2 px-0 transition-colors" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest opacity-60">Message</label>
+<textarea class="bg-transparent border-b border-outline-variant outline-none focus:border-on-surface py-2 px-0 transition-colors" rows="3"></textarea>
+</div>
+<button class="w-full bg-[#1C1917] text-white py-4 font-label text-xs tracking-widest uppercase hover:opacity-90 transition-opacity" type="submit">Request Consultation</button>
+</form>
+</section>
+</main>
+<!-- SideNavBar (Floating CTA) -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 bg-[#1C1917] dark:bg-[#ede0d8] text-[#fff8f5] dark:text-[#1C1917] shadow-[0_12px_48px_rgba(28,25,23,0.1)] hover:scale-105 transition-transform duration-500 ease-out cursor-pointer active:scale-95 group">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<!-- Tooltip on hover -->
+<div class="absolute right-20 bg-[#1C1917] text-white py-2 px-4 whitespace-nowrap text-[10px] font-['Inter'] tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity">WHATSAPP</div>
+</div>
+<!-- Footer -->
+<footer class="w-full rounded-none pt-24 pb-12 bg-[#fbf2ed] dark:bg-[#1C1917] text-[#1C1917] dark:text-[#ede0d8]">
+<div class="max-w-[1440px] mx-auto px-12 grid grid-cols-1 md:grid-cols-3 gap-20">
+<div class="md:col-span-1">
+<span class="font-['Noto_Serif'] text-4xl mb-8 block font-bold tracking-tighter">ATELIER</span>
+<p class="font-['Inter'] text-[11px] tracking-[0.1em] leading-loose opacity-60 max-w-xs">
+                    Curating the world's finest garments with structural integrity and sartorial heritage.
+                </p>
+</div>
+<div>
+<h5 class="font-['Inter'] uppercase tracking-widest text-[10px] mb-8 font-bold">Client Services</h5>
+<ul class="space-y-4 font-['Inter'] text-[11px] tracking-[0.1em] leading-loose">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity duration-300" href="#">SHIPPING &amp; RETURNS</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity duration-300" href="#">BESPOKE SERVICES</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity duration-300" href="#">STOCKISTS</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity duration-300" href="#">CARE GUIDE</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Inter'] uppercase tracking-widest text-[10px] mb-8 font-bold">Legal</h5>
+<ul class="space-y-4 font-['Inter'] text-[11px] tracking-[0.1em] leading-loose">
+<li><a class="opacity-60 hover:opacity-100 transition-opacity duration-300" href="#">PRIVACY POLICY</a></li>
+<li><a class="opacity-60 hover:opacity-100 transition-opacity duration-300" href="#">TERMS OF SERVICE</a></li>
+</ul>
+<div class="mt-12">
+<p class="font-['Inter'] text-[11px] tracking-[0.1em] leading-loose opacity-60">© 2024 THE EDITORIAL MONOLITH. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

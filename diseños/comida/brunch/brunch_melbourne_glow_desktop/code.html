@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Melbourne Glow | Luminous Brunch Spot</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#006c4a",
+                      "primary-container": "#00855d",
+                      "inverse-primary": "#68dba9",
+                      "inverse-on-surface": "#e7f4eb",
+                      "tertiary-fixed-dim": "#c3c0ff",
+                      "error": "#ba1a1a",
+                      "on-background": "#131e19",
+                      "on-primary-fixed": "#002114",
+                      "on-surface": "#131e19",
+                      "tertiary": "#5451a9",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#002114",
+                      "surface-container-low": "#eaf7ee",
+                      "secondary-fixed-dim": "#a4d0b8",
+                      "secondary-container": "#c0edd3",
+                      "on-tertiary-fixed-variant": "#3e3b92",
+                      "tertiary-fixed": "#e2dfff",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#d9e6dd",
+                      "on-primary-container": "#f5fff7",
+                      "surface-container-high": "#deebe3",
+                      "primary-fixed-dim": "#68dba9",
+                      "on-secondary-container": "#446d58",
+                      "outline-variant": "#bccac0",
+                      "on-surface-variant": "#3d4a42",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d9e6dd",
+                      "background": "#f0fdf4",
+                      "surface-dim": "#d0ddd5",
+                      "on-tertiary-fixed": "#0f0168",
+                      "tertiary-container": "#6c6ac4",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "surface": "#f0fdf4",
+                      "inverse-surface": "#27332d",
+                      "primary-fixed": "#85f8c4",
+                      "secondary-fixed": "#c0edd3",
+                      "surface-bright": "#f0fdf4",
+                      "outline": "#6d7a72",
+                      "on-primary": "#ffffff",
+                      "primary": "#006948",
+                      "surface-container": "#e4f1e8",
+                      "on-secondary-fixed-variant": "#264e3c",
+                      "on-tertiary-container": "#fffbff",
+                      "on-primary-fixed-variant": "#005137",
+                      "secondary": "#3e6753"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Be Vietnam Pro"]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #006948 0%, #00855d 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl shadow-[0_10px_40px_rgba(19,30,25,0.06)] glass-nav">
+<div class="text-2xl font-extrabold text-emerald-900 dark:text-emerald-100 italic font-headline tracking-tight">Melbourne Morning</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline font-bold tracking-tight text-emerald-900 dark:text-emerald-50 border-b-2 border-emerald-600 pb-1 transition-colors duration-300" href="#">Menu</a>
+<a class="font-headline font-bold tracking-tight text-emerald-700/70 dark:text-emerald-300/60 hover:text-emerald-600 dark:hover:text-emerald-200 transition-colors duration-300" href="#">Journal</a>
+<a class="font-headline font-bold tracking-tight text-emerald-700/70 dark:text-emerald-300/60 hover:text-emerald-600 dark:hover:text-emerald-200 transition-colors duration-300" href="#">Locations</a>
+<a class="font-headline font-bold tracking-tight text-emerald-700/70 dark:text-emerald-300/60 hover:text-emerald-600 dark:hover:text-emerald-200 transition-colors duration-300" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-high px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 font-label" placeholder="Search..." type="text"/>
+</div>
+<button class="signature-gradient text-on-primary px-8 py-3 rounded-full font-headline font-bold tracking-tight active:scale-95 duration-200 shadow-lg">Order Now</button>
+</div>
+</nav>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 lg:px-24 mb-24">
+<div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+<div class="z-10">
+<span class="label-md font-label uppercase tracking-[0.2em] text-primary mb-6 block">The Luminous Laneway</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface leading-[0.9] mb-8">
+                        Melbourne <br/> <span class="text-primary italic">Glow.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        Elevated breakfast culture distilled into a sun-drenched digital experience. Fresh ingredients, architectural plating, and the vitality of a new morning.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="signature-gradient text-on-primary px-10 py-5 rounded-full font-headline font-bold text-lg active:scale-95 transition-all">Book Your Table</button>
+<button class="bg-surface-container-highest text-on-secondary-container px-10 py-5 rounded-full font-headline font-bold text-lg active:scale-95 transition-all">View Journal</button>
+</div>
+</div>
+<div class="relative">
+<div class="w-full aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl transform rotate-2">
+<img alt="Melbourne Glow Signature Toast" class="w-full h-full object-cover" data-alt="Top-down high-end photography of sourdough avocado toast with edible flowers, radish slices, and seeds on a ceramic plate with soft morning sunlight shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6UzCFZzRjBaVlchzrqF2MxWCYSdmy4XZP7y6FUxoAWSuVgmTBJQQkH-OhCtwx7BJiNpwwMzWJfONrDtvvR3Ji9fOYpugQ8x6dEfy6qmgOLC6hEi0bhNPvOQihZ8acjnS941_BUEzPer6qbzxhAqUkdh8ZmyzsRtN9-Z7afBbYHqn2fmKw7jdYTWGXW_-ij8WUD77WAcp-NdKPhaYjbkz1BlEnYkxnBZGxcm9UFgsXRJa4M39fx3UxtaEQAf2qfK81p-GdnYhitUA"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 rounded-full overflow-hidden border-[12px] border-surface hidden md:block shadow-xl">
+<img alt="Artisan Coffee" class="w-full h-full object-cover" data-alt="Close up of a latte with perfect latte art in a green ceramic cup on a marble table with bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXrHgCrdf1aZHAAUipRHidrj1GCaWue6RZ4dFxZaIU1DiOIaQx7-h7i3YmH4Pk9MFJoVuPJ_aYaRkHtNo_vWRPg52S5WRqNLqS0HH681xYlRUzlJZ7WiQHxWX7ICYX-C1D1DbHfKBI6sq0JVN4a-unDvPeRHGGjpKLU43iIN1QC0vhRKVSxp9d4jMp-uWXt5vmj7cfM_LtzzelwS7_hLv5xZb6drq1EuK_Txe-4-BWL9rpquM_9qS9WN79RxrQJOfTMcgnYweZsYw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story (Organic Brutalism) -->
+<section class="bg-surface-container-low py-32 px-8 lg:px-24">
+<div class="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="bg-surface-container-lowest p-4 rounded-[2rem] shadow-sm transform -rotate-1">
+<img alt="Our Space" class="w-full rounded-[1.5rem]" data-alt="Minimalist cafe interior with tall windows, white walls, light wood furniture, and lush green plants in architectural pots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGXzEEFK7tAPQZ6cbkyGu6qm2XHRJPCJB8yr_LYYLtS07neR6grDRQ-0AKYXw9gsUc2M40BFKPYmeTjpA9UlFlZPGhNHZxw8SqJzCvMk_24dRyMGEv6D18XZI1PrJkY331TznjXA4JnZFkP2VaBVw_yQia6vdYbw_2-ozc35vSr-ihaNPM3MTAnruBUMn_wjTYgqiHEEVhD_UVcFb4DkJ2u_FTsU6MKGFh0KYinE6doiFk6Y7kHKxiD-pRBZlYA8NU0iR8XEgSURs"/>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<span class="font-label text-sm uppercase tracking-widest text-primary mb-4 block">Our Culture</span>
+<h2 class="text-5xl font-headline font-bold tracking-tight text-on-surface mb-8 leading-tight">
+                        Rooted in the Laneways, <br/> Inspired by the <span class="italic font-normal">Light.</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-on-surface-variant font-body leading-relaxed">
+<p>Melbourne Glow isn't just a cafe; it's a sensory manifestation of the city's vital morning pulse. We bridge urban architecture with organic vitality through every dish.</p>
+<p>We source exclusively from Victorian farmers, ensuring that every grain and green on your plate carries the crispness of the local dawn.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu (Bento Grid Style) -->
+<section class="py-32 px-8 lg:px-24">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-sm uppercase tracking-widest text-primary mb-4 block">Seasonal Selection</span>
+<h2 class="text-5xl font-headline font-bold tracking-tight text-on-surface">The Fresh Grid</h2>
+</div>
+<div class="flex gap-2">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label text-xs font-bold uppercase tracking-wider">All</button>
+<button class="px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label text-xs font-bold uppercase tracking-wider">Vegan</button>
+<button class="px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label text-xs font-bold uppercase tracking-wider">Acai</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 min-h-[800px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-[2rem] overflow-hidden group shadow-sm">
+<div class="h-2/3 overflow-hidden">
+<img alt="Seasonal Fruit Bowl" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Overhead view of a vibrant fruit bowl with dragon fruit, mango, and granola in a white bowl on a light green surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfnX5wE2RuiNRRdHE1iiLWY9FVLwDvHGTKAhlgCEy6oB5vzyXCRI3POQXDP2YXLhD-AkaJOs--KMjN2DL66b0_zHSIFZSz5uDuec4eSROpFJn9xBZ9V4uu_PjNUYJaLgdZbmsC9uN2XTyNtr4CQq0bUsfIGSoimyGkhq1gQydoNVFRj17mL0vebKrnT_FvbE09gFZaio-USUmgETc8SXVk0BFWbNv-Z-QeKQTqw4G6qA3yejoWE2o_hm0Sfel1RC3V-Y81KkI8jMs"/>
+</div>
+<div class="p-10 flex flex-col justify-between h-1/3">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-3xl font-headline font-bold">The Luminous Bowl</h3>
+<span class="text-2xl font-headline text-primary">$24</span>
+</div>
+<p class="text-on-surface-variant font-body">Dragon fruit base, Victorian honey granola, mango ribbons, and edible marigolds.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-lowest rounded-[2rem] overflow-hidden flex shadow-sm group">
+<div class="w-1/2 p-8 flex flex-col justify-center">
+<span class="label-md font-label uppercase tracking-tighter text-primary mb-2">Chef's Choice</span>
+<h3 class="text-2xl font-headline font-bold mb-2">Truffle Benedict</h3>
+<p class="text-sm text-on-surface-variant font-body">Poached eggs, shaved local truffle, and house-made citrus hollandaise.</p>
+<span class="text-xl font-headline text-primary mt-4">$28</span>
+</div>
+<div class="w-1/2 overflow-hidden">
+<img alt="Truffle Benedict" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant eggs benedict on a dark plate with rich golden hollandaise and micro-greens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERAedxmY0JzGF_NuSJfSuw_E6bply1PX0gG3ghEnxkpX0oHTmex4Dvdc64ekCehyGbprlXgVE8kwNNcooqEUmcmj_Ng7w6DF009gJyJgae4plzLin2oAuLA_rPc8gxEpsD1zEHWYioQJ65xAoGHnhFL3G-83vBqElKjbESujPq5RTkgxQZnYw34INq7E_x9Fd822xePBGtiS_5ucY7plRftsKfAYQUd2946ZlWD1oACZQ5J8jidPbiY38wsDAClI4dYXtd6pFSb4"/>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-sm group">
+<div class="h-48 overflow-hidden">
+<img alt="Melbourne Latte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Hot cappuccino in a matte black cup with delicate foam art on a light oak wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX6VsJCruEoR6mZHmuYn-XBQ5-08fPBQkaQ0K8LsFzPMvRUHmV2N8uWrOSEv1HtQjeTBDFwVLi7xciQqaN8nX-3r0nhBHgKLMs5K9k4tzXQkSQnWYWTLGeRybSr2Uq3XaDZ4lz9ukYfF-H_HksDlk3bShHD3eXFSIASQE6QwGzEdBHTVbCrEt0phWeseDIM6D1itPrT_nPSXAINkeCB7aq6zTIoSZb2-dwEHyXvHhULMYsltJAmOPSTvdQJzIV4uRKuLbdAiIcXfk"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-headline font-bold">Laneway Latte</h3>
+<span class="text-primary font-headline">$6</span>
+</div>
+</div>
+<div class="bg-primary rounded-[2rem] p-8 flex flex-col justify-between text-on-primary">
+<h3 class="text-2xl font-headline font-bold leading-tight">Join the Morning <br/> Ritual.</h3>
+<button class="flex items-center text-sm font-label uppercase tracking-widest group">
+                        Full Menu <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-high rounded-[4rem] mx-8 lg:mx-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<div class="w-full h-full border-[100px] border-primary rounded-full translate-x-1/2 -translate-y-1/2"></div>
+</div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="font-label text-sm uppercase tracking-widest text-primary mb-6 block">Reserved for you</span>
+<h2 class="text-5xl font-headline font-bold tracking-tight text-on-surface mb-12">Secure a sun-drenched spot.</h2>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+<div class="space-y-2">
+<label class="label-sm font-label uppercase tracking-wider text-on-surface-variant block ml-2">Date</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/20 transition-all font-body" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="label-sm font-label uppercase tracking-wider text-on-surface-variant block ml-2">Guests</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/20 transition-all font-body">
+<option>2 People</option>
+<option>4 People</option>
+<option>6+ People</option>
+</select>
+</div>
+<div class="flex items-end">
+<button class="w-full signature-gradient text-on-primary py-4 rounded-xl font-headline font-bold shadow-lg active:scale-95 transition-all">Check Availability</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Blog/Journal Section -->
+<section class="py-32 px-8 lg:px-24">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-sm uppercase tracking-widest text-primary mb-4 block">The Journal</span>
+<h2 class="text-5xl font-headline font-bold tracking-tight text-on-surface">Laneway Stories</h2>
+</div>
+<button class="text-primary font-headline font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1">Read All</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="space-y-6 group">
+<div class="aspect-video rounded-[2rem] overflow-hidden shadow-sm">
+<img alt="Roasting Process" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Atmospheric shot of coffee beans being roasted with golden sun rays coming through a warehouse window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYr_3tEHc67SLyzocwnDqabH7WTIFLBRtBmb68QvBmJsKj-ybJksv9IdBfbHU8esYpt8l5HBG8naVNdnWHDxZWU8eH6CoAX0eFbfU1sDL2ApYl5hiC6nJOUnHAYfSaWGgtX8xKbT8AprJJxyzyqcjliNEWdOPR9zBzg81waE-84D7_mxiXcDdiBZNGlmG8Rnqri4xNVsaz32nDw-FxUTMlD9nbPVZUZbdF4HtGll7se5PJQcRkq7FkqdZ6XKmFKnfiRl1ayQ54yMc"/>
+</div>
+<div>
+<span class="font-label text-xs font-bold text-primary uppercase tracking-widest">Culture</span>
+<h3 class="text-2xl font-headline font-bold mt-2 group-hover:text-primary transition-colors">The Alchemy of the Perfect Roast</h3>
+<p class="text-on-surface-variant mt-4 line-clamp-2">Exploring the science behind our light-roast profiles that capture the essence of high-altitude origins.</p>
+</div>
+</article>
+<article class="space-y-6 group">
+<div class="aspect-video rounded-[2rem] overflow-hidden shadow-sm">
+<img alt="Fresh Produce" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Lush green salad bowl with radiant colors of beet, kale, and orange slices with overhead natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL_s9xI7Gcb7bt8vVyz6P5WXNKszPsn2vhBzhLJoAnpmua3P-iY0wJW5JgGxvEc1ntO8xZSUXmYO1xVxsyqi1USDGOugrZ8zNeWwa0dUbHKasoQ1oqanQCKBSGr92jQuUi2b3iTa_U3WiPMkvHopPfH4AnPWt01dYBEQy6zOP0ZOX03oKbYHR7Thh3sqVcGPm92-uIKmCrT81LvSr-bUvFWS5dpQbnK9JhR4riNJSwXd-jnWoyu4ZXQjlXmmilvF2gbauUn8Cvtok"/>
+</div>
+<div>
+<span class="font-label text-xs font-bold text-primary uppercase tracking-widest">Sustainability</span>
+<h3 class="text-2xl font-headline font-bold mt-2 group-hover:text-primary transition-colors">Zero-Waste Breakfast</h3>
+<p class="text-on-surface-variant mt-4 line-clamp-2">How we’re working with local urban gardens to turn kitchen scraps into vibrant city blooms.</p>
+</div>
+</article>
+<article class="space-y-6 group">
+<div class="aspect-video rounded-[2rem] overflow-hidden shadow-sm">
+<img alt="Morning Rituals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Bright modern cafe table with a journal, a glass of orange juice, and a succulent in a stone pot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuzMRi1uONeSaiMOXVSFBqh4OvqvsjkqWwgRCvqQoGKHfislHACb4ACVen9cOiJqnvLUVv_7OYebSYeKpIE0x3FbYRxpPvxU9sA-9eakfPTqR-rhVrkkrb9uUeBS5-a6r2A1etPiYrrXQAO5avYM40J_87CJmoT4tkSxbYZL_68ygHryiBHt_HojnG_lhFc_cTW4H8kyYv9PmvNbV9DNouRqpiIbhaDRTE4Poz-d2NN72-SMEIGJhpfK6SyYwNjmLDyKb8qZ2jChI"/>
+</div>
+<div>
+<span class="font-label text-xs font-bold text-primary uppercase tracking-widest">Lifestyle</span>
+<h3 class="text-2xl font-headline font-bold mt-2 group-hover:text-primary transition-colors">Rituals of the Early Bird</h3>
+<p class="text-on-surface-variant mt-4 line-clamp-2">Finding calm in the chaos. Our guide to a mindful Melbourne morning before the city wakes.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Reviews & Gallery -->
+<section class="py-32 bg-white">
+<div class="px-8 lg:px-24 mb-16">
+<span class="font-label text-sm uppercase tracking-widest text-primary mb-4 block">The Vibe</span>
+<h2 class="text-5xl font-headline font-bold tracking-tight text-on-surface mb-16">Shared Moments</h2>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="md:w-1/3 bg-surface-container-low p-10 rounded-[2.5rem]">
+<div class="flex gap-1 mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl font-headline font-medium italic text-on-surface mb-8">"The light in here at 8 AM is therapeutic. Best avocado toast in the southern hemisphere, hands down."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed"></div>
+<div>
+<span class="font-headline font-bold block text-sm">Elena Voss</span>
+<span class="label-sm font-label text-xs text-on-surface-variant">Food Critic, The Urbanist</span>
+</div>
+</div>
+</div>
+<div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-md">
+<img alt="Barista Art" class="w-full h-full object-cover" data-alt="Close up of a barista pouring milk into coffee for latte art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcqp4DoI-Xp9r9QvrhpFmNeH6KS5CXDEsqlVZluImLEvvP9SlwqUzYS2OQzP9HEPdVSuVBFvbbotAmzImnOxcf_RIvohyuF-9rdN1bzz360I_vtWNeojpbFJmyonlyaVfd95ae1pQYqDlb1swdhThLLuLBa-3OJ_rAD-7-aAYRuTsRrjAsW_zexv6NpURVhIfXQpoF2XqKnUUM_6_nNrWyc7_pNXLaSE4dJJVTFMfkR2YFgpyiHHjv3Y71Zg9vODMOzllbPwP9GIs"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-md">
+<img alt="City Vibe" class="w-full h-full object-cover" data-alt="Architectural photo of a modern green building in Melbourne with glass reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvBh8idhAyRW08hpYEs0A3wFlM3OQnkQ4XqBE5j8yj8xUiDBd8MpsCVdEYn6685MNdBN_E3kjK7WxItzfFUnrXfMAFS2B3yoejf4obQpEdOonrhDDyYpqd-KgfYTGNn1jzsqBybpHCTZti6wYOXl3NGNzxwP_HRnJTvgMsKD_PlLyC19LZ2sqwAQFfFVmXLKST5iaWdt18Fi2jbfak3TSXfjLYQ38YF8qmayuyh4h4rUnppbKTg1eXNguzzo_i_nNC2B5RJlUHLE4"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-md">
+<img alt="Freshness" class="w-full h-full object-cover" data-alt="Plate of fresh citrus slices, grapefruit, and orange on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsPb8oOGTInhdsZKMTKMQzZcxXj-NsvKHuWhymXWOi2syHICuK6WRxTXLpubDLI4qmNP1wPVK_RqRBTussT10O8G2tMSnUqYWhjKbWU6Kz9Aia8YgABRizLKjpHtVwv1dfFSRQ9Sg9IOmAJyUp4nB0GwMPUtRsW8Gxpcig9w9sD_ucuzTXXREcRAEH1OGgVr-xEuxuNjGVtLRll-GGh-LnEBOOU9DYWFvMOXjKDIuKYZFy2WF89IB3DCDvZ2hu1ka65TdNTrGZ6sU"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-md hidden md:block">
+<img alt="Detail" class="w-full h-full object-cover" data-alt="A small plant on a cafe table catching soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOisNmLWFtcpl_efle4N9uDBlKUSbi0B_vWgRx8oPXcJXZizZ0uwflZA5fWOwM_YoPLusrADdpkJAHymIRt9dPhKuzsZcbOfi8Zm6-64MUm6MI66a5hO09GcWU-UfbtfCwMu6fZvbu1Iz3RYiGeoNrQJIrnXo05xBRYAeaJxY_kVT87l6T8POsHog-4JsTvORQDwzrw24SEbQhuSiM5VmtLOma1tGyjMNKL5HltvlqGdDOoV7vCnN4F1LYfCSZ0G_OAKItNTv3Ihk"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-md hidden md:block">
+<img alt="Acai Bowl" class="w-full h-full object-cover" data-alt="Vibrant pink acai bowl topped with blueberries and almonds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ6zKQP3ErbbhpIMm_D60hjmds1PWHeOFnNs2BkgNtvu6KOBvxjug0Uvj-2p_vK2UEZTS-nJysqwJoyFgboLwzbhZqbxVD3YS36nTqm1GhuFlMoglt3_7FJNsFD6XbLl2hKUMn3IrVXoHPSSzpnGB78DvPd7iVpPvq2rYXnm-qvmWj7nLVxTAJut_9PiPchgN39n5d9bOjxismjdeUcyDwmL0w4avli0Jhfl7nk6ceBNGL1pkaZkUdi9RfSnKDKj1o6p0azno3vzw"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-md hidden md:block">
+<img alt="Coffee Duo" class="w-full h-full object-cover" data-alt="Two green coffee cups on a wooden table with soft focus bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHCj7K7ahFaXr8qZq6UfypaqMVq7UXTjA6dG_BPcIvjsnuYdoxPnnsnrmiX6AL1_B4X4ObKtlw1ciB7CZxSk2xJizGkt_nb5A4lcQCzbqS1YID__mFpNyCyCThNULpSNlfzuy5_ETl0TzJXYqczqwin5HbEFB2kMioi7Q3mgVNMjQq6XlqgQl0mLlME7ZTFBqtiyFsFc8nmrT9Li9Ifp4CNAA9_3GiAxgqHDKBaoMIwd4g9BEqm72orFRQy9xkU0wN5E7cW_mg8GY"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-8 lg:px-24">
+<div class="grid md:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-5xl font-headline font-bold tracking-tight text-on-surface mb-8">Visit the Glow.</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">Melbourne CBD</h4>
+<p class="text-on-surface-variant font-body">122 Hosier Lane, <br/> Melbourne VIC 3000</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">Morning Hours</h4>
+<p class="text-on-surface-variant font-body">Mon - Fri: 6:30am - 3:00pm <br/> Sat - Sun: 7:30am - 4:00pm</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">Say Hello</h4>
+<p class="text-on-surface-variant font-body">hello@melbourneglow.com.au <br/> +61 3 9999 8888</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[500px] rounded-[3rem] overflow-hidden shadow-xl">
+<img alt="Melbourne Map" class="w-full h-full object-cover grayscale brightness-110 contrast-75" data-alt="Stylized grayscale aerial map view of Melbourne city grid with golden light accents" data-location="Melbourne, Australia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS3ymM5mYcwbgWf4pF_pcAu4_NsAsxT67OSk7mqStjs1vUxCRRT_r5v4ErNdXC0Sc7q1bcervSMx8OWe-T6AzE4LzVIODo2zjRQdag_FkNsR7UXdp8Kth4STkBYKQOy1cwnkQ8rHS5Z-bGYpwZnETB7hyIR1mv3cIn3fC2vsYaeWy8ciM0qHVovuNTm0ZYbLXyCxNS3e4hNw8a9wgfGP9U3SiNXmHsS6hWl8aj6et6XhJRo16gogZ-nDUAwXYPoZloR-TFBg4yZXM"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[32px] bg-emerald-100 dark:bg-emerald-900/30 flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full mt-24">
+<div class="mb-12 md:mb-0 text-center md:text-left">
+<div class="text-xl font-bold text-emerald-800 dark:text-emerald-200 font-headline mb-4">Melbourne Morning</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm tracking-wide text-emerald-900 dark:text-emerald-100 opacity-70 max-w-xs">
+                © 2024 Melbourne Morning. Built for the Luminous Laneway.
+            </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+<div class="flex gap-8">
+<a class="font-['Be_Vietnam_Pro'] text-sm tracking-wide text-emerald-800/60 dark:text-emerald-200/50 hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300 ease-in-out" href="#">Sustainability</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm tracking-wide text-emerald-800/60 dark:text-emerald-200/50 hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300 ease-in-out" href="#">Careers</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm tracking-wide text-emerald-800/60 dark:text-emerald-200/50 hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300 ease-in-out" href="#">Privacy</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm tracking-wide text-emerald-800/60 dark:text-emerald-200/50 hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300 ease-in-out" href="#">Terms</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-emerald-800/10 flex items-center justify-center text-emerald-800 hover:bg-emerald-800 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-lg">brand_awareness</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-emerald-800/10 flex items-center justify-center text-emerald-800 hover:bg-emerald-800 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-lg">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

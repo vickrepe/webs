@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ELECTRICISTA | Technical Services</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#00174b",
+                    "inverse-surface": "#2e3039",
+                    "on-background": "#191b23",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e1e2ed",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "tertiary-container": "#bc4800",
+                    "inverse-on-surface": "#f0f0fb",
+                    "on-primary-fixed": "#00174b",
+                    "on-secondary-container": "#394c84",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e1e2ed",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e7e7f3",
+                    "surface-tint": "#0053db",
+                    "secondary-container": "#acbfff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "surface": "#faf8ff",
+                    "primary-fixed": "#dbe1ff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#943700",
+                    "outline-variant": "#c3c6d7",
+                    "surface-container": "#ededf9",
+                    "primary-container": "#2563eb",
+                    "error": "#ba1a1a",
+                    "on-surface": "#191b23",
+                    "on-surface-variant": "#434655",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "surface-dim": "#d9d9e5",
+                    "secondary-fixed": "#dbe1ff",
+                    "on-tertiary-container": "#ffede6",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "background": "#faf8ff",
+                    "primary": "#004ac6",
+                    "inverse-primary": "#b4c5ff",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#eeefff",
+                    "outline": "#737686",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#faf8ff",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary": "#495c95",
+                    "surface-container-low": "#f3f3fe",
+                    "tertiary-fixed": "#ffdbcd",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-secondary-fixed-variant": "#31447b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.375rem",
+                    "xl": "0.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Work Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-depth-via-blur {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand { font-family: 'Work Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- 1. Navbar -->
+<nav class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl sticky top-0 z-50 w-full shadow-sm dark:shadow-none h-20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<div class="text-xl font-black tracking-tighter text-blue-800 dark:text-blue-400 uppercase">
+                ELECTRICISTA
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#services">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#projects">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#certifications">Certifications</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#contact">Contact</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-bold hover:opacity-80 duration-150 transition-all">
+                    Request Quote
+                </button>
+</div>
+</div>
+</nav>
+<!-- 2. Hero Section (Slideshow Simulation) -->
+<section class="relative h-[819px] overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="Close-up of a professional electrician wiring a modern complex electrical panel with precision tools and safety gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAK2CBLosz0qzjWNSdBslaj7-CvmDYKHfjHLLaSVy49OyJ_5Lq9fCQYOZaM5N2vk6I1pz9OYFpZW_3qgBP1m5oTmAskb1nIeJtwEb9lCkZvyiKTTDBkigPSRYK780wwSwmIFxhab6JLv5ShvaeXgBpjoYstpnYtGkZO-wdeqrRSGgR6Z-j4YeWNvWrV8zyuLhWs58Cu_pKrtwVd70kuYEMFqUZM9pfoYGC23iz8MaeJEYxppj7IbQU6Wgzx6UJwcBnranliMsUTdQ"/>
+</div>
+<div class="relative z-10 h-full flex items-center justify-center text-center px-6">
+<div class="max-w-4xl">
+<span class="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-widest text-on-primary-fixed bg-primary-fixed rounded">LICENSED &amp; CERTIFIED</span>
+<h1 class="text-6xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tighter">TECHNICAL PRECISION FOR YOUR GRID.</h1>
+<p class="text-xl text-slate-200 mb-10 font-medium max-w-2xl mx-auto">Providing high-voltage expertise and domestic wiring mastery with industrial-grade standards.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary transition-colors">Book Maintenance</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-colors">View Portfolio</button>
+</div>
+</div>
+</div>
+<!-- Hero indicators -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3">
+<div class="w-12 h-1 bg-primary-container rounded-full"></div>
+<div class="w-12 h-1 bg-white/30 rounded-full"></div>
+<div class="w-12 h-1 bg-white/30 rounded-full"></div>
+</div>
+</section>
+<!-- 3. About Us -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<img class="rounded-xl shadow-2xl relative z-10" data-alt="Wide shot of an industrial facility with clean cable trays and organized electrical infrastructure under bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFuvFfRKlqpMnyJ81cGKR54s3eTB54qRrdXAjZ4wDOT0sl4FDchdQg3av9LdTHvcVsFTsFZ7gFMXQy6JxV4yKTjeRvhG_cvxbILqlJUuJhRyJHYkcHDgO5Kma7L5SDnzrhgNcUZy7pyIfa-Ucx3u7NdnwLGKWGlnbl_alOA21PUo2tZW8tI69aBjbD6qyQrkE1MDs-q0uU8AU42Xg_kaHVpPJkMdqRrZzScYQnOOnQ-F_XvT6o8OsUjFeaxNbfxcHzRqKTMIgFJ1Y"/>
+<div class="absolute -bottom-6 -right-6 w-48 h-48 bg-primary-fixed-dim rounded-xl -z-0"></div>
+</div>
+<div>
+<h2 class="text-4xl font-black text-on-surface mb-6 tracking-tight">CRAFTING ELECTRICAL EXCELLENCE SINCE 1998.</h2>
+<div class="w-20 h-1.5 bg-primary mb-8"></div>
+<p class="text-on-surface-variant text-lg mb-6 leading-relaxed">
+                    At ELECTRICISTA, we treat every circuit like a masterwork of engineering. Our approach integrates traditional electrical wisdom with modern smart-grid technologies.
+                </p>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+                    We specialize in high-stakes environments where downtime is not an option. From residential automation to industrial power systems, our team ensures your energy flow is safe, efficient, and future-proof.
+                </p>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<span class="block text-3xl font-black text-primary mb-1">500+</span>
+<span class="text-sm font-bold text-outline uppercase tracking-widest">Projects Done</span>
+</div>
+<div>
+<span class="block text-3xl font-black text-primary mb-1">100%</span>
+<span class="text-sm font-bold text-outline uppercase tracking-widest">Safety Rating</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Grid -->
+<section class="py-24 px-6 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<span class="text-primary font-black tracking-widest text-xs uppercase">Core Capabilities</span>
+<h2 class="text-4xl font-black text-on-surface mt-2 tracking-tight uppercase">Technical Solutions</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl group hover:-translate-y-2 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">bolt</span>
+<h3 class="text-2xl font-bold mb-4">Electric Installations</h3>
+<p class="text-on-surface-variant mb-8">Complete wiring for new constructions, panel upgrades, and smart home integration with architectural precision.</p>
+<div class="text-primary-container font-black text-xl mb-4">From $85.00/hr</div>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                        LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl group hover:-translate-y-2 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">build</span>
+<h3 class="text-2xl font-bold mb-4">Repairs &amp; Diagnosis</h3>
+<p class="text-on-surface-variant mb-8">Swift fault detection, circuit repair, and emergency interventions using high-accuracy thermal imaging.</p>
+<div class="text-primary-container font-black text-xl mb-4">From $120.00/fix</div>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                        LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl group hover:-translate-y-2 transition-transform duration-300 border-b-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">settings_suggest</span>
+<h3 class="text-2xl font-bold mb-4">Maintenance</h3>
+<p class="text-on-surface-variant mb-8">Preventative load testing, safety audits, and recurring inspections for commercial and industrial facilities.</p>
+<div class="text-primary-container font-black text-xl mb-4">From $250.00/mo</div>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                        LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Gallery (Bento-style) -->
+<section class="py-24 px-6 bg-surface" id="projects">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-black mb-12 tracking-tight">PROJECT ARCHIVE</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden group rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Corporate office lobby with designer recessed ceiling lights and minimalist architectural illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKBkbJt66wsbR2lgeQBV9_rmPYFyYSD70ogmTrd8XtB15bwMYahdoiyvJX9OMET1kgabbeAW2lSPaKgGVFljuhkMf7gImlyIh8gZsGh8RDND-uxVJBroG-F5yzKPJQp2cjX7RwTz8xK7uWr_FQrqkiOx6g6MrOeafozIpcym6BKQ7h_HYe2i7Slaghi_3DftThJkt11wYxsW_WBB9xh1SCI_hKVRAjTd6cQ3dImpL8pMgIien4VkwtBNrRVZlzw1OaDkKidiD-x4E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Corporate</span>
+<h4 class="text-white text-2xl font-black">Modern Office Grid</h4>
+</div>
+</div>
+<div class="relative overflow-hidden group rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract view of clean copper wiring and silver electrical components on a technical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQeN1p-u0BoJCf61WjSFUdHf_rnjxzV0u891WOaXAeae6L2EtvyISIPraQocbG1SigjW5_BiVGg0Jsv5xlBqk2gzJVgnti2_8XQJnXZdBjveuagR3vvTWUkleGRNRK3dyQscE8m2qMNTJv5mNA5UQINsebr7LQHYB8F9whzyqFyig5P_0zzjczFjzsLcy5e7O4ID52hG_mCb-gdDyy7Ia5Q5fJUV2zNS5yehOnLxWTJTh_yh0DURBUY5SDWVrFrnkeqv7Dyr9nTBw"/>
+</div>
+<div class="relative overflow-hidden group rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern solar panel array on a rooftop during midday with reflective glass surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5JMC6f6cvYU5fVfCTWS1J8iC2v6nrJNRZQXT6p074Vz293ux00xkK6ohXoiS9_LDsrFjGsrvQVCkLPOomHg2qKiV6kzmCFme2CTjtCu4wBjM_KbDBlxAq6UvaghHUsp6BFGE3Be1W4medtGUnrzGMJDPT99zX5Y0EPJBVD5IIiRJLmOTHLniHzkGzxOlCE1cmQQs6AuR8DP-7Sq5lAFlSSMVP9Kx3rYaqDMw8n80qBqd8C-Lvyj5tCSUdziWFfMOlly3ugQi0CyU"/>
+</div>
+<div class="md:col-span-2 relative overflow-hidden group rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Industrial construction site with heavy machinery and exposed structural steel beams at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkyv-0pI2_sZtlJCpW6kv14kCHrU0DpOcnhWaNmmrZ2gKfUaTmbIznhMgFvHFWQ6YQ6GZ6aT9SjF9A71CjyX4ScQE6_DzbO6Z6pnspz-VLPvKQQuPm8ZKh5iERKsXNUET7dfEEOJAxZeTDi0hwEZuE1LBJcliGBTda9vp66kMl2h2--D6s0haa09srbsdj4Wxlx-5K_mdevsrXBgqZJ5SsybZTW5nbvBgnG9gR7twcK1D5mDPquLYgafrDKFKSX2qI_rEG8bkpz58"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Reviews -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-black text-center mb-16 uppercase tracking-widest">Client Testimonials</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-lg relative">
+<span class="material-symbols-outlined text-primary-fixed-dim text-6xl absolute top-6 right-6 opacity-30">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl font-medium mb-8 leading-relaxed italic">"The precision of their work is unmatched. They handled our warehouse re-wiring with zero operational downtime. Highly recommended."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<span class="block font-bold">Marcus Thorne</span>
+<span class="text-sm text-outline">Industrial Ops Manager</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-lg relative">
+<span class="material-symbols-outlined text-primary-fixed-dim text-6xl absolute top-6 right-6 opacity-30">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl font-medium mb-8 leading-relaxed italic">"Transparent pricing and incredible technical knowledge. They didn't just fix the wire; they explained why it happened."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<span class="block font-bold">Elena Rodriguez</span>
+<span class="text-sm text-outline">Residential Client</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Contact & Map -->
+<section class="py-24 px-6 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+<div>
+<h2 class="text-4xl font-black mb-8">CONNECT TO OUR TEAM.</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-fixed flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<span class="block font-bold text-lg">Central Operations</span>
+<p class="text-on-surface-variant">442 Circuit Way, Tech District<br/>Madrid, Spain</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-fixed flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary">phone_in_talk</span>
+</div>
+<div>
+<span class="block font-bold text-lg">24/7 Hotline</span>
+<p class="text-on-surface-variant">+34 912 345 678</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-fixed flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<span class="block font-bold text-lg">Technical Support</span>
+<p class="text-on-surface-variant">tech@electricista.pro</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[400px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Stylized map showing urban city grid with blue technical overlays and route pins" data-location="Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiL7RZjFs89XDG15esdM6NqWc5l98EwN7r3A6LwHvRWUYZIo3eLkHnp8LRE5FL0soQn0k6cfYuX50JLu5sgaMatKAcKNirY-bCFlFILM_JDF6Mf-0AUQwNiF5pP41aj76UOR6QwKCvtrBsJZahRYLesmxIJ-2hv44N6eJTous3yajp9es2JVCLndYcVXde6GQUDRCVCQv8aXtgWiOrzyCfl2b9VBL6yKPMzxW51OSONlDINSvVHP3CL8ffxvgjU_KKXz832YR8qjI"/>
+</div>
+</div>
+</section>
+<!-- 8. Booking Widget -->
+<section class="py-24 px-6 bg-primary">
+<div class="max-w-7xl mx-auto bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+<div class="md:w-1/3 bg-slate-900 p-12 text-white">
+<h3 class="text-3xl font-black mb-6">SCHEDULE SERVICE</h3>
+<p class="text-slate-400 mb-10">Select your preferred window and service type. Our team will confirm within 15 minutes.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span>Instant Confirmation</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span>Certified Technicians</span>
+</div>
+</div>
+</div>
+<div class="md:w-2/3 p-12">
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<label class="block text-sm font-bold text-outline uppercase tracking-wider mb-2">Select Date</label>
+<input class="w-full border-none bg-surface-container-low p-4 rounded-lg focus:ring-2 focus:ring-primary" type="date"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-outline uppercase tracking-wider mb-2">Time Slot</label>
+<select class="w-full border-none bg-surface-container-low p-4 rounded-lg focus:ring-2 focus:ring-primary">
+<option>Morning (08:00 - 12:00)</option>
+<option>Afternoon (12:00 - 17:00)</option>
+<option>Emergency (Immediate)</option>
+</select>
+</div>
+</div>
+<div class="mb-8">
+<label class="block text-sm font-bold text-outline uppercase tracking-wider mb-2">Service Type</label>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 bg-primary text-white rounded-md text-sm font-bold">Installation</button>
+<button class="px-6 py-2 bg-surface-container-high rounded-md text-sm font-bold">Repair</button>
+<button class="px-6 py-2 bg-surface-container-high rounded-md text-sm font-bold">Audit</button>
+<button class="px-6 py-2 bg-surface-container-high rounded-md text-sm font-bold">Maintenance</button>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-5 rounded-lg font-black text-lg hover:bg-primary transition-all">RESERVE TIME SLOT</button>
+</div>
+</div>
+</section>
+<!-- 9. Footer -->
+<footer class="bg-slate-950 dark:bg-black pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8">
+<div>
+<div class="text-lg font-black text-white tracking-widest uppercase mb-6">ELECTRICISTA</div>
+<p class="text-slate-400 font-['Inter'] text-sm leading-relaxed max-w-xs">
+                    Leading the industry in technical electrical services with a focus on safety, innovation, and long-term reliability.
+                </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Resources</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-400 hover:text-blue-400 transition-all font-['Inter'] text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-blue-400 transition-all font-['Inter'] text-sm" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-blue-400 transition-all font-['Inter'] text-sm" href="#">Safety Standards</a>
+<a class="text-slate-400 hover:text-blue-400 transition-all font-['Inter'] text-sm" href="#">Emergency Support</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-slate-900 border-none text-white text-sm p-3 rounded w-full" placeholder="Email Address" type="text"/>
+<button class="bg-primary px-4 rounded text-white flex items-center justify-center">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+<p class="text-xs text-slate-500 mt-4">Subscribe for safety tips and tech updates.</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-900 text-center">
+<p class="text-slate-500 font-['Inter'] text-sm tracking-wide">© 2024 ELECTRICISTA TECHNICAL SERVICES. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- 10. WhatsApp Floating Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center group active:scale-95 transition-all" href="#">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.892-11.891 11.892-1.999 0-3.956-.503-5.69-1.448l-6.303 1.664zm6.293-4.043c1.552.921 3.189 1.41 4.937 1.41 5.276 0 9.57-4.293 9.57-9.569 0-2.555-1.001-4.954-2.817-6.77s-4.215-2.817-6.753-2.817c-5.276 0-9.57 4.293-9.57 9.569 0 1.838.526 3.61 1.529 5.124l-.991 3.626 3.731-.984zm11.034-7.393c-.15-.075-.885-.438-1.023-.488-.138-.05-.238-.075-.338.075-.1.15-.389.488-.476.588-.088.1-.175.113-.326.038-.15-.075-.632-.233-1.204-.744-.445-.397-.745-.888-.833-1.038-.088-.15-.01-.231.065-.305.068-.067.15-.175.225-.263.075-.088.1-.15.15-.25.05-.1.025-.188-.013-.263-.038-.075-.338-.813-.463-1.113-.122-.294-.245-.254-.338-.258l-.288-.005c-.1 0-.263.038-.4.188-.138.15-.525.513-.525 1.25s.538 1.45.613 1.55c.075.1 1.058 1.615 2.563 2.264.358.154.638.246.856.315.359.115.686.099.945.06.288-.044.885-.363 1.012-.713.128-.35.128-.65.09-.713-.038-.063-.138-.1-.288-.175z"></path>
+</svg>
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 whitespace-nowrap font-bold">Chat with an Expert</span>
+</a>
+</body></html>

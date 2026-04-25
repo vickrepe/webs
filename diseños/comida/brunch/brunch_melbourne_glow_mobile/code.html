@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Melbourne Glow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#006c4a",
+                    "primary-container": "#00855d",
+                    "inverse-primary": "#68dba9",
+                    "inverse-on-surface": "#e7f4eb",
+                    "tertiary-fixed-dim": "#c3c0ff",
+                    "error": "#ba1a1a",
+                    "on-background": "#131e19",
+                    "on-primary-fixed": "#002114",
+                    "on-surface": "#131e19",
+                    "tertiary": "#5451a9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#002114",
+                    "surface-container-low": "#eaf7ee",
+                    "secondary-fixed-dim": "#a4d0b8",
+                    "secondary-container": "#c0edd3",
+                    "on-tertiary-fixed-variant": "#3e3b92",
+                    "tertiary-fixed": "#e2dfff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#d9e6dd",
+                    "on-primary-container": "#f5fff7",
+                    "surface-container-high": "#deebe3",
+                    "primary-fixed-dim": "#68dba9",
+                    "on-secondary-container": "#446d58",
+                    "outline-variant": "#bccac0",
+                    "on-surface-variant": "#3d4a42",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#d9e6dd",
+                    "background": "#f0fdf4",
+                    "surface-dim": "#d0ddd5",
+                    "on-tertiary-fixed": "#0f0168",
+                    "tertiary-container": "#6c6ac4",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "surface": "#f0fdf4",
+                    "inverse-surface": "#27332d",
+                    "primary-fixed": "#85f8c4",
+                    "secondary-fixed": "#c0edd3",
+                    "surface-bright": "#f0fdf4",
+                    "outline": "#6d7a72",
+                    "on-primary": "#ffffff",
+                    "primary": "#006948",
+                    "surface-container": "#e4f1e8",
+                    "on-secondary-fixed-variant": "#264e3c",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary-fixed-variant": "#005137",
+                    "secondary": "#3e6753"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #006948 0%, #00855d 100%);
+        }
+        .glass-nav {
+            background: rgba(240, 253, 244, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0_10px_40px_rgba(19,30,25,0.06)] px-6 py-4 flex justify-between items-center">
+<div class="text-2xl font-extrabold text-emerald-900 italic tracking-tight font-headline">Melbourne Glow</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary p-2">search</button>
+<button class="material-symbols-outlined text-primary p-2">shopping_bag</button>
+</div>
+</header>
+<main class="pt-24 pb-32 overflow-x-hidden">
+<!-- Hero Section: Luminous & Asymmetric -->
+<section class="px-6 mb-12">
+<div class="flex flex-col gap-2 mb-6">
+<span class="label-md font-label uppercase tracking-[0.2em] text-primary-container">Est. 2024</span>
+<h1 class="text-5xl font-extrabold leading-tight tracking-tighter text-on-surface font-headline">
+                    Morning <span class="text-primary italic">Light</span> in Every Sip.
+                </h1>
+</div>
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mt-8 shadow-xl">
+<img alt="Artisan coffee" class="absolute inset-0 w-full h-full object-cover" data-alt="close-up of a perfectly poured flat white coffee with latte art on a green ceramic coaster in morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqGgC8Wb5gIGPt43VL0QGOj4Cqp5tbhlrSMuZnu78tbh48oAiCU8MG-AgWeg1Gmz2Dlj5tPMXhQFb_FeKkLG-jWR1UqQ0XigKFOqF7vJYl32HMCKk6ZyalplsCU0a9SntPpXoT36aRmJqTdD5FDaetyJrKhE--mkGALroTmEno4FiI3cSzRN5o8nicuEkA7DMyPkwu7iBwlVf5nf0PUt6_2AT1WUPNkjH8JMLAtqEyjK1v6A-gRhLkofTMu3ldZVDHSYJ7NtgHDXo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<p class="text-white text-lg font-medium">Discover the Laneway Series</p>
+</div>
+</div>
+</section>
+<!-- Categories / Chips -->
+<section class="flex gap-3 px-6 overflow-x-auto no-scrollbar mb-12">
+<button class="px-6 py-2 rounded-full signature-gradient text-on-primary text-sm font-semibold whitespace-nowrap">All Menus</button>
+<button class="px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm font-medium whitespace-nowrap">Breakfast</button>
+<button class="px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm font-medium whitespace-nowrap">Specialty Tea</button>
+<button class="px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm font-medium whitespace-nowrap">Pastries</button>
+</section>
+<!-- Bento Inspired Featured Items -->
+<section class="px-6 grid grid-cols-2 gap-4 mb-16">
+<div class="col-span-2 bg-surface-container-lowest rounded-xl p-6 shadow-sm border-none">
+<div class="flex justify-between items-start mb-4">
+<div class="w-2/3">
+<h3 class="text-2xl font-bold font-headline mb-2">Avocado Glow</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Smashed Hass avocado, whipped feta, and toasted pepitas on sourdough.</p>
+</div>
+<span class="text-primary font-bold text-lg">$22</span>
+</div>
+<div class="w-full h-48 rounded-lg overflow-hidden">
+<img alt="Avocado Toast" class="w-full h-full object-cover" data-alt="Gourmet avocado toast with poached egg and microgreens on a white plate against a light wooden table background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH86RlMd4D2HeEC4csvWtLYkZxL6AJ5q9IgWKUSiuBPWaDgQIvQV6OBIa54o3e4O4ojcxlUJWM94T2SxNwVTBlYhdZUIkFY4lnEyQdHufDW-tGqWLazHosAuh9aaU9oygy4M-8TA2SrXgML-F_zEArk-vLWbixE3dNgPIGZ9v44f_ISXUOgXJrGHIKfI0WHEEFfd-XyYkP-uISeB09puJl0pfrQvspUyBBp12Ddr0SLEf2rS8Ux6Sq8opeQNN1qKlTbtGk9X_eEUw"/>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-5 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary-container self-end" style="font-variation-settings: 'FILL' 1;">eco</span>
+<div>
+<h4 class="font-bold font-headline leading-tight">Emerald Matcha</h4>
+<span class="text-sm font-medium text-primary-container">Ceremonial Grade</span>
+</div>
+</div>
+<div class="bg-surface-container-highest rounded-xl p-5 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-secondary self-end" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+<div>
+<h4 class="font-bold font-headline leading-tight">Pain au Glow</h4>
+<span class="text-sm font-medium text-on-secondary-container">Hand-Laminated</span>
+</div>
+</div>
+</section>
+<!-- Secondary Section: Atmospheric Image Break -->
+<section class="mb-16 relative">
+<div class="bg-surface-container-low py-16 px-6">
+<div class="max-w-xs">
+<h2 class="text-3xl font-extrabold font-headline mb-4 leading-tight">Sourced from the <span class="italic text-primary">Dandenongs</span>.</h2>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Our beans and produce travel a short path from local volcanic soil to your cup, ensuring peak vitality.</p>
+<button class="flex items-center gap-2 text-primary font-bold tracking-tight">
+                        Our Sustainability Story
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="absolute -right-12 top-1/2 -translate-y-1/2 w-48 h-48 rounded-full overflow-hidden border-[8px] border-surface shadow-2xl">
+<img alt="Fresh produce" class="w-full h-full object-cover" data-alt="close up of fresh green herbs and vibrant citrus fruits in a rustic wooden bowl with morning dew droplets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAifoFuSY0_tLYZEQpgArwJTrgyViY6j72IppJctUGH74b7ZHUVtg6HxF0sLJMB-kmiRSpp9vYsr2UYvnHwxH6pZBnQ-teK39LxUT07UKzxI-9Vi5gorM0JxJX17cUp2SwzQgC1t19yiYW4b-v5YmMGdk0sZUCgL0kUM-Ob0td1Ev1W7bq5AJBNVRs2RgrZNWYgLfzJGlt0ezyyIAQKnCS9eeUm09zXusmhSwlSXO0Z9KzAVkmjLutsjbG7gRp800pE3sWBmtFW284"/>
+</div>
+</section>
+<!-- Newsletter / Community -->
+<section class="px-6 mb-12">
+<div class="bg-primary text-on-primary rounded-3xl p-8 flex flex-col gap-6 relative overflow-hidden">
+<div class="z-10">
+<h3 class="text-2xl font-bold font-headline mb-2">Morning Journal</h3>
+<p class="text-on-primary/80 text-sm">Join 5,000+ Melburnians for weekly sunrise inspiration and secret menu drops.</p>
+</div>
+<div class="flex flex-col gap-3 z-10">
+<input class="bg-primary-container border-none rounded-xl px-4 py-3 placeholder:text-on-primary/50 text-white focus:ring-2 focus:ring-white/20" placeholder="Your morning email" type="email"/>
+<button class="bg-surface text-primary font-bold py-3 rounded-full shadow-lg">Subscribe</button>
+</div>
+<!-- Abstract Grain Pattern (Decorative) -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+</div>
+</section>
+<!-- Footer (from JSON blueprint) -->
+<footer class="flex flex-col justify-between items-center px-12 py-16 w-full mt-24 bg-emerald-100 rounded-t-[32px] font-['Be_Vietnam_Pro'] text-sm tracking-wide text-emerald-900">
+<div class="text-xl font-bold text-emerald-800 mb-8">Melbourne Glow</div>
+<div class="flex flex-wrap justify-center gap-6 mb-8 text-emerald-800/60">
+<a class="hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Sustainability</a>
+<a class="hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Careers</a>
+<a class="hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Privacy</a>
+<a class="hover:text-emerald-600 underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Terms</a>
+</div>
+<p class="text-center opacity-70">© 2024 Melbourne Morning. Built for the Luminous Laneway.</p>
+</footer>
+</main>
+<!-- Bottom Navigation Shell (JSON Logic) -->
+<nav class="fixed bottom-0 w-full glass-nav px-8 py-4 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1 text-emerald-900 border-b-2 border-emerald-600 pb-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Menu</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-emerald-700/70">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Journal</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-emerald-700/70">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Locations</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-emerald-700/70">
+<span class="material-symbols-outlined">info</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">About</span>
+</div>
+</nav>
+<!-- Contextual FAB (JSON Logic: Order Now) -->
+<button class="fixed bottom-24 right-6 signature-gradient text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-40">
+<span class="material-symbols-outlined text-2xl">coffee</span>
+</button>
+</body></html>

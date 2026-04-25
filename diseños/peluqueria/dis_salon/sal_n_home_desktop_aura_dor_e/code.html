@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIBLY | The Ethereal Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#1c1c19",
+                      "on-primary-container": "#533d0c",
+                      "secondary-fixed-dim": "#ecbbba",
+                      "surface-bright": "#fcf9f4",
+                      "error": "#ba1a1a",
+                      "primary-container": "#c8a96e",
+                      "on-tertiary-fixed-variant": "#394669",
+                      "surface-container-high": "#ebe8e3",
+                      "primary": "#735b28",
+                      "tertiary-fixed-dim": "#b8c5f0",
+                      "primary-fixed": "#ffdea3",
+                      "on-tertiary-fixed": "#0b1a3b",
+                      "tertiary": "#515d82",
+                      "secondary-fixed": "#ffdad9",
+                      "primary-fixed-dim": "#e3c285",
+                      "error-container": "#ffdad6",
+                      "on-error": "#ffffff",
+                      "surface-tint": "#735b28",
+                      "on-primary": "#ffffff",
+                      "inverse-surface": "#31302d",
+                      "on-secondary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#603d3e",
+                      "outline-variant": "#d0c5b5",
+                      "surface-container": "#f0ede9",
+                      "tertiary-fixed": "#dae2ff",
+                      "inverse-on-surface": "#f3f0eb",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#261900",
+                      "surface-container-highest": "#e5e2dd",
+                      "surface-variant": "#e5e2dd",
+                      "on-secondary-fixed": "#2f1314",
+                      "secondary-container": "#fdcbcb",
+                      "surface": "#fcf9f4",
+                      "on-tertiary-container": "#334063",
+                      "on-surface-variant": "#4d463a",
+                      "tertiary-container": "#9facd5",
+                      "secondary": "#7b5455",
+                      "on-secondary-container": "#795354",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed-variant": "#594312",
+                      "surface-container-low": "#f6f3ee",
+                      "outline": "#7f7668",
+                      "surface-dim": "#dcdad5",
+                      "inverse-primary": "#e3c285",
+                      "background": "#fcf9f4",
+                      "on-background": "#1c1c19"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Noto Serif"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(252, 249, 244, 0.8); backdrop-filter: blur(12px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<span class="text-2xl font-serif tracking-[0.2em] text-stone-900 dark:text-stone-50">VIBLY</span>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300 font-serif tracking-tight" href="#services">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300 font-serif tracking-tight" href="#gallery">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300 font-serif tracking-tight" href="#booking">Team</a>
+<a class="text-yellow-700 dark:text-yellow-500 border-b-2 border-yellow-700 dark:border-yellow-500 pb-1 font-serif tracking-tight" href="#booking">Booking</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-2 rounded-xl font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="ultra-modern minimalist salon interior with floor-to-ceiling windows, soft golden afternoon light, cream velvet chairs, and marble floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI_hLth6V80dtfsqz6roitbMk0EwKlkyGuLJXnoAxk4SALcQ2gj2w-8t3FnXvOwod9QNqOWcd4xuDeWUBjmjMJVRGqdQMkXmSW3oImSRNsR5IQojyJPY4mNGZe5q3eCwdV3GxsLtEZZMe92Zg7IV-3QZzPucxb4vmYmQXd0esclxlDTD3zamgHFrAx-GjDtqxdvcO_fTsKgzNDqRGnzL5KKTEiJSeAbN0Jh4T1z0GgsPYAIvp_dzKOo4iJ2cYV8etlEbUXzrnE5u0"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+<h1 class="font-headline text-5xl md:text-8xl text-white mb-6 tracking-tight max-w-4xl leading-tight">
+                Crafting Your <span class="italic">Signature</span> Radiance
+            </h1>
+<p class="font-body text-lg md:text-xl text-white/90 max-w-2xl mb-12 leading-relaxed">
+                Experience the intersection of high-fashion artistry and soulful well-being in our exclusive urban sanctuary.
+            </p>
+<div class="flex gap-6">
+<a class="bg-primary text-on-primary px-10 py-4 rounded-xl font-semibold shadow-lg transition-transform hover:scale-105" href="#booking">Reserve Session</a>
+<a class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all" href="#services">Our Services</a>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4">
+<div class="w-12 h-1 bg-white rounded-full"></div>
+<div class="w-12 h-1 bg-white/30 rounded-full"></div>
+<div class="w-12 h-1 bg-white/30 rounded-full"></div>
+</div>
+</header>
+<!-- About Us Section -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-8 -left-8 w-48 h-48 bg-primary-fixed opacity-20 rounded-full blur-3xl"></div>
+<img class="rounded-lg shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" data-alt="a master stylist carefully detailing a customer's hair in a brightly lit boutique salon with warm wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx0XvcPzhBR35ipFSq5OGem8CdoAFgdxUvmUzz-1p8MkVjRZulad2h3tmLsumbkjrBa2NFtVFBUh8Ed3QGxdG0YipsQpZREqCB4fZc6dquxbapX0wye_P6qwiqpvn_TEZW4-MZi7-xBgOzEbXwRsz9ndlaGHh5oKryg-G4XOQ3OvOLZL4RZs-z0lMFo2I6lTDpwDh4iYu-eH8EUu-IXd4rfH2dwoykMyqZDK9bFWh04du8nSVaPk4kYpVI2LUI7pGPe9axHDfdUuc"/>
+<div class="absolute -bottom-10 -right-10 bg-surface p-8 shadow-xl hidden md:block z-20">
+<span class="block font-headline text-4xl text-primary mb-1">15+</span>
+<span class="block font-label uppercase tracking-tighter text-xs text-on-surface-variant">Years of Artistry</span>
+</div>
+</div>
+<div class="lg:w-1/2">
+<span class="font-label text-primary uppercase tracking-[0.3em] text-sm mb-6 block">Our Philosophy</span>
+<h2 class="font-headline text-4xl md:text-6xl text-on-surface mb-8 leading-tight">Where tradition meets the <span class="italic">avant-garde</span></h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-8">
+                    VIBLY was born from a vision to redefine the salon experience. We believe that hair is not just a canvas, but an extension of your identity. Our atelier serves as a laboratory for style, where our master artisans blend classic European techniques with contemporary trends.
+                </p>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                    Every consultation begins with your story. We don't just cut; we compose. We don't just color; we illuminate.
+                </p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-8 lg:px-24 bg-surface" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-5xl text-on-surface mb-4">Curated Rituals</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service 1 -->
+<div class="group">
+<div class="overflow-hidden mb-8 rounded-lg">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="macro shot of professional hair coloring process using golden and ash blonde tones with high precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOxvF6N5PIo2D0vVvAo8OIVwA-l2NgIO7LG6-wS3KFBAIInBOdLptXZNjW8d-bpde_ApBmLzjMaivUGDdsyiIRvY8-0D8t9BmxtC90IP4aj94Fp0j0YztE9-iyr4RxRgkpm93dV4isVydLnZAurgiTH3uzL1qWBoKEwxfgcwZYWu_QSCG1oReQJY7fZ1dz6SnYZTC2Z5ZZL4IvqB5II0-JmkzL-vNkB_kujgpHxX6A_bD6JT0MfJ43xjVrgSmoKSMFXZ1Uq-80uOw"/>
+</div>
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline text-2xl">Luxe Balayage</h3>
+<span class="text-primary font-semibold text-lg">$240+</span>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6">Hand-painted highlights tailored to your bone structure and skin tone for a sun-kissed finish.</p>
+</div>
+<!-- Service 2 -->
+<div class="group">
+<div class="overflow-hidden mb-8 rounded-lg">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="a person receiving a relaxing scalp treatment and head massage with luxury essential oils in a dim spa setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGx94HJ5PQUAOne3vjv2OPyWS3qtolMoGRb4tMsCcVpzBA-f0rU5wBwInVceJPcSpkYCfe0B1HxPWZrtli2L6AL0m31sOT_EIs8PSLUrOyw1FO83CQuLKGo4Aj6VtaGiJTJDt9W0-X78_Fq5i9Y33O6HE0vHhRGfjAjED1cyUCRKHd4bTgDkXc9Ze9wRzw8N05S5J2h8Wr8tJOD-Bu8skX_h2p3iqpewKIcuLOyRM_nI25l053tboOf6pBZMl4Eh42TC0iBai1390"/>
+</div>
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline text-2xl">Silk Infusion</h3>
+<span class="text-primary font-semibold text-lg">$110+</span>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6">Deep molecular reconstruction and scalp therapy using organic botanical elixirs for ultimate health.</p>
+</div>
+<!-- Service 3 -->
+<div class="group">
+<div class="overflow-hidden mb-8 rounded-lg">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="close-up of a sharp contemporary bob haircut with perfectly straight edges and high shine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf0yNtwwhdMToldPqyuFvGpY0rcMftaJ-oZeUm4FRBe2irMh4NC5esO2bN57fCQzmbFBLmi22ThOvU3tbvAR_Oe_Bz0scu0lal_ZhawJ3UzJl4w04SSm4neNdKiTMYtuaJh_s5AVuuxFL_ajNqD54qcYT4uFWo1WWrByDbaecHLv3qBRfN-_VVOSSJdMhfj2XT4yU6f-Md3qfVfx99q5K1sMHwSoyMKYIQWQ-CnlqZU503xuTXkI_vE6_RYdOz9Kv4Rm0ZtBfHXws"/>
+</div>
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline text-2xl">Sculpted Cut</h3>
+<span class="text-primary font-semibold text-lg">$95+</span>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6">Precision architecture for your hair, designed to grow out gracefully and maintain shape between visits.</p>
+</div>
+</div>
+<div class="text-center mt-16">
+<button class="bg-surface-container-highest text-on-surface px-12 py-4 rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest font-label text-sm">View All Services</button>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento inspired Grid) -->
+<section class="py-32 px-4 md:px-8 bg-surface-container-high" id="gallery">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-5xl text-center mb-16">The Atelier Gallery</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="stunning platinum blonde hair style on a model with neutral studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqFD74863qRCuuv6ODQMhaecppGjH5m3Mjk-AblidPszRIqR2zKYqX2TetpGhJkEbW_HIxaQnZotCj0s_TFTqQKTyRWey_FHVx-Gj01934uuXkCtIGpRN9yMPv3wpjjBlMr7iRlPqke35ckF-6vi7_ZhiofjYnex_5foO-77P_2Vt-3jGskq4IbMBiX2J7JAFfNNbuNdnay655V--N313eZOg55nGVtwWtlVipI7b1DjvTDl1cSsdd1IYxuTWS3udE8N21F48TmQM"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="intricate bridal updo with delicate flower hair accessories and soft backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADmYpU-Zt7UqHZ5gup2m4dgchrLMqgWFMt5mvARI-tVwgkdwXDZILvuC9k8NvZYfuqW6ML1NjgpBoxdqCqkI1XUAkZ_z4fAJiOgseRZRQxQJ-eUBkJvtjAmvI9Q6Fsoye9uBD41jUSpBf0662Mr_73LOmRhibgD8N0Jbr9ZmMvl5tb26UhXOPjMDZHGXfhdIptdfdZUKTRRPHj7WYO3uTjStc6-uLjcinANTJ63cBthf7krh3NxMRcHCtUmgm3-GJ_VroNKSbbg68"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up of a professional makeup look with warm copper eye shadows and soft skin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1-RpsI9e16f9d-jAPTufj04tt0xQVg-WzTqvLolrV_MsFfnPl4gkYw67nW_TWxFk9cvGlbFG2yQHXHYw2sDV50LBvfz23b7o66gc5gIzsvp2Ynps-czSLIRGenJAEIQurs1-NQtSVsIav5PYm4dsNTYuzq38h-F6hntNspIVd0a8aM4NTgDMwhQPC9jlv68Z14Tc8kSLID5e99H2kyTX-noJADW2-hyZa6LKZNuC4dC1EyBEPlTkhcbti-7-PEMULHiH5WbWv_90"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="vibrant emerald green dyed hair on a model with artistic styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4LKa6W87RVwvgv1ctHKORFv1q7WLyZtHAUkdIuR0JdWTSI6lveCkE71G3DXb45CrAzsVRyKq4exzCiyikhvyv4sayhM_VMDZhTiNfTWwq7oSafmBlRzp1SyIniuo4_8HnK40a0P-Ck33Xr2p7T9ggtCfosu4RRp0VXH-RSyCZoPuK6XI1AXgpVazlHDdoNNx2VVyuq7v_qGLddx55ZjlFUgfQfx9fLV1GUORJQUoMEQnybvBrkzdeX4wPXoYAdJvpd-DWuHq3eig"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="modern barbershop fade with precise line work on a male model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD1SRmNxrOP0i-BeWfqYYA7JEGoKJW0xZpgcRev9-zb0X7pTT7QbeBYntqBQGfSkful-kzheGlDpX8x59YqdG5aPDOMMDVrRzrwnLlJo86tLz0nt0WabkletPPLh5hlfeVHq7nFYIrycQZ9C1gnFP4c1xaUycK1RU0s7MVkqwAKs3Lbob_6catZZa0yHUaY6qSpkjr78kwoiqxykM_SDdOqVTOgcF6mGCRGKfe4xqLScu1-pQpMvRGcoA8J4OF4zNuAId_3C7uxuo"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="elegant rose gold hair color with loose beach waves on a brunette model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAmFK0Kx3N7wT2agK5_g5PTIHAlh7WOfSpCySABmsLV6uTmX9f3bXt58cGGdBjGWdYD4FP3dZdbZ3Qi22dYduyLKn9cq7SrWC073qhq8HgYMnrHC4Sv3BnNAX4OHBpIM0VN6E9gLpcGuhDYjiS1WY0nuNbnn_eHYy4-XlgvzAdaRVfWQ0hFKAXWb_-bzV2MOHPAIKuRrevJwLwJ_DxgZM1aQ0hTb4JbAFhhIMPrIT4LYVxMsMs6iSpyFjFZ6Zz6ibqVwp1wJzb-Ho"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="stylist hands performing a dry cut technique on dark textured hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUBIdgJM6cF2-tL497kfKjJ7NI9VbxbsobxlEepjkiqd3PrZrmwoV6QBLRihMKFyuLKAQgpT9a9s_Or9BRwXGCFWd4ACfDTzG63-Z30TwirTQbIef1FWionYpnNbUc-mvvQ0No-fQXJ5A_AXftPi9NMvrXHrHDHW0E_Iu5nws0TovGRVwlIt1zniHLwSx2WYUu3PpZaF07ny73tGaJ0XIv5WQHu2Rk-HO1UP2WBK5vSXyy-0zpwWPTK6kkWbEpdw3iWLq_VlsnUDQ"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+<div class="relative group aspect-square overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="overhead view of a high-end salon color bar with various mixing bowls and brushes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACxlScw6Q6i84STYR7yEr1kqy9_0qH5uPAQm0xWA1NKYpxejKfOXw3G4o6LXzHFyxYycb0N6AY4ezRK6VY3oFR325f_hZQJa_vQ3YnNMSvPDex2y8zvC9o80Gk6DVa3QkQH7OJcnwuLL0VJyFkoWptyJm2fbISSHkWeDnQkiCOUecIBkZ2GbQPohq5DnF7PwpB67LR6dDOvrljaAHlcYD5tU8PDASYmreM9EkONkcoq7JN-OCMlLoDxIMvrV8GIiyukO7vqfSs-g0"/>
+<div class="absolute inset-0 bg-stone-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">search</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="space-y-12 overflow-x-auto flex no-scrollbar snap-x snap-mandatory">
+<div class="min-w-full snap-center px-4">
+<div class="flex justify-center gap-1 mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline text-2xl md:text-3xl italic leading-relaxed mb-8">
+                        "The best color experience of my life. The attention to detail and the ambiance make VIBLY more than a salon—it's a sanctuary."
+                    </p>
+<h4 class="font-label uppercase tracking-widest text-sm">— Helena Montgomery</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Widget Section -->
+<section class="py-32 px-8 lg:px-24 bg-surface" id="booking">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+<div class="lg:w-1/3 bg-stone-900 p-12 text-white">
+<h2 class="font-headline text-4xl mb-6">Join the Atelier</h2>
+<p class="text-white/70 mb-10 leading-relaxed">Select your preferred artisan and ritual. Our team will contact you shortly to finalize your bespoke experience.</p>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label text-sm uppercase tracking-wide">Complimentary Consultation</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label text-sm uppercase tracking-wide">Premium Refreshments</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label text-sm uppercase tracking-wide">Bespoke Aftercare Kit</span>
+</li>
+</ul>
+</div>
+<div class="lg:w-2/3 p-12">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Your Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container" placeholder="Evelyn Vane" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container" placeholder="evelyn@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Select Service</label>
+<select class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container">
+<option>Luxe Balayage</option>
+<option>Sculpted Cut</option>
+<option>Silk Infusion</option>
+<option>Color Correction</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Preferred Date</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container" type="date"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container h-32" placeholder="Tell us about your hair journey..."></textarea>
+</div>
+<button class="md:col-span-2 bg-primary text-on-primary py-5 rounded-xl font-semibold shadow-lg hover:opacity-90 transition-all uppercase tracking-[0.2em]">Request Reservation</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+<div class="lg:w-1/2 space-y-12">
+<h2 class="font-headline text-5xl">Connect With Us</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<h4 class="font-label uppercase tracking-widest text-xs mb-1">Our Flagship</h4>
+<p class="text-lg">122 Atelier Square, Design District<br/>Milan, Italy</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">call</span>
+<div>
+<h4 class="font-label uppercase tracking-widest text-xs mb-1">Direct Line</h4>
+<p class="text-lg">+39 02 123 4567</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<div>
+<h4 class="font-label uppercase tracking-widest text-xs mb-1">Artisan Hours</h4>
+<p class="text-lg">Mon - Sat: 09:00 - 20:00<br/>Sunday: By Appointment</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 h-[450px] rounded-[2rem] overflow-hidden shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="clean minimalist city map showing the design district and the salon location with elegant typography" data-location="Milan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrrg60ULODQ2owTP_dS_ZajYCKVlgRhKfmeSmynsy0mABWfT7tVnZFVn7fnanmQT1G_T7-QESnrwxKtW-UFbK-LYdhwqk_bUvrGY89J7U8vUZlvixyiK7EO1sV9YV-NPqwQbDcgzfRWL0wVIL3A6ny_6vSrZoKVbMB02Eh-O7_v8CCmiRWeo35gQpuxgyWrKfqsPjklYD7CrRnEGhgcZ7IcBfwxn-_JD7KCdpedPy4jJm6GF5VHEi1tkT-4qeHnQ2ECzjFKJnzmas"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-900 dark:bg-black w-full py-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 items-center">
+<div class="space-y-6">
+<span class="text-xl font-serif tracking-[0.2em] text-stone-50">VIBLY</span>
+<p class="text-stone-400 font-sans text-sm tracking-wide max-w-sm">
+                    An ethereal sanctuary dedicated to the artistry of beauty and the grace of modern luxury.
+                </p>
+<div class="flex gap-6 text-stone-50">
+<span class="material-symbols-outlined text-2xl cursor-pointer hover:text-yellow-500 transition-colors">public</span>
+<span class="material-symbols-outlined text-2xl cursor-pointer hover:text-yellow-500 transition-colors">photo_camera</span>
+<span class="material-symbols-outlined text-2xl cursor-pointer hover:text-yellow-500 transition-colors">brand_awareness</span>
+</div>
+</div>
+<div class="flex flex-col md:items-end gap-4">
+<div class="flex gap-8">
+<a class="text-stone-400 hover:text-stone-200 font-sans text-sm tracking-wide" href="#">Privacy Policy</a>
+<a class="text-stone-400 hover:text-stone-200 font-sans text-sm tracking-wide" href="#">Terms of Service</a>
+<a class="text-stone-400 hover:text-stone-200 font-sans text-sm tracking-wide" href="#">Contact Us</a>
+</div>
+<p class="text-stone-400 font-sans text-sm tracking-wide">© 2024 VIBLY Salon. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform animate-pulse group" href="#">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">Chat with us</span>
+</a>
+</body></html>

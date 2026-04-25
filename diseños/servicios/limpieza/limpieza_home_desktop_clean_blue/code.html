@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Clinical Editorial | Curating Environments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#003751",
+                    "outline": "#6e7881",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#89ceff",
+                    "primary": "#006591",
+                    "background": "#f6faff",
+                    "on-secondary-fixed-variant": "#234b64",
+                    "on-tertiary-fixed": "#2c1600",
+                    "secondary": "#3c627d",
+                    "surface-container-low": "#f0f4fa",
+                    "tertiary-fixed": "#ffdcbd",
+                    "tertiary-fixed-dim": "#ffb86e",
+                    "surface-bright": "#f6faff",
+                    "on-surface": "#171c20",
+                    "error": "#ba1a1a",
+                    "primary-container": "#0ea5e9",
+                    "on-primary-fixed-variant": "#004c6e",
+                    "on-tertiary-container": "#4d2b00",
+                    "secondary-fixed": "#c9e6ff",
+                    "surface-dim": "#d6dae0",
+                    "secondary-fixed-dim": "#a5cbe9",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#3e4850",
+                    "surface-tint": "#006591",
+                    "surface-container-high": "#e4e8ee",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#3d637d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#dee3e9",
+                    "on-primary-fixed": "#001e2f",
+                    "surface-container": "#eaeef4",
+                    "outline-variant": "#bec8d2",
+                    "tertiary": "#8a5100",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#c9e6ff",
+                    "surface": "#f6faff",
+                    "primary-fixed-dim": "#89ceff",
+                    "secondary-container": "#b8dffe",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#171c20",
+                    "inverse-surface": "#2c3135",
+                    "on-secondary-fixed": "#001e2f",
+                    "inverse-on-surface": "#edf1f7",
+                    "tertiary-container": "#de8712",
+                    "on-tertiary-fixed-variant": "#693c00",
+                    "surface-container-highest": "#dee3e9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "nunito": ["Nunito", "sans-serif"],
+                    "inter": ["Inter", "sans-serif"],
+                    "headline": ["Nunito", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f6faff; color: #171c20; }
+        .font-nunito { font-family: 'Nunito', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); }
+        .hero-gradient { background: linear-gradient(135deg, #006591 0%, #0ea5e9 100%); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .sanity-gauge-track { background: #0ea5e9; height: 4px; border-radius: 2px; }
+        .sanity-gauge-thumb { background: #006591; box-shadow: 0 0 10px rgba(0, 101, 145, 0.4); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full mx-auto" style="box-shadow: 0 20px 40px rgba(0, 101, 145, 0.05)">
+<div class="flex items-center gap-2">
+<span class="text-xl font-bold font-nunito text-sky-700">The Clinical Editorial</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sky-600 font-bold border-b-2 border-sky-500 text-xs font-semibold font-inter uppercase tracking-wider transition-all duration-300 ease-in-out hover:opacity-80" href="#">Dashboard</a>
+<a class="text-slate-500 font-medium hover:text-sky-500 text-xs font-semibold font-inter uppercase tracking-wider transition-all duration-300 ease-in-out hover:opacity-80" href="#">Services</a>
+<a class="text-slate-500 font-medium hover:text-sky-500 text-xs font-semibold font-inter uppercase tracking-wider transition-all duration-300 ease-in-out hover:opacity-80" href="#">Schedule</a>
+<a class="text-slate-500 font-medium hover:text-sky-500 text-xs font-semibold font-inter uppercase tracking-wider transition-all duration-300 ease-in-out hover:opacity-80" href="#">Sanity Gauge</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer transition-all duration-300 hover:opacity-80">notifications</span>
+<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant/20" data-alt="Close-up portrait of a professional woman with a friendly smile, clean lighting, soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGnHqRkHQMKt2uXMQiC0womJ2Crsa7CDDeaqb42f2A5I0F6YvytD7RXVuVmKQM-Z3ZS_qZqjxf3XdG01gWLW0L5q8hWRv3qkwmHvKZm5b-shkHiUL1b_BsA4JmrPXzn9xrOr4eGS_Ipvyje4-KAoBVLuEs5PjArhAMbuBirAtcME0BBmxH7N52r9TcwKSR-ZAHNTLBEzzbw2bT08WUztZgRun0xfoxE3eINNdoyAfzKTPPILFXi3dD9gD6HVza4CVub6WBGA1tSiw"/>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl text-xs font-bold font-inter uppercase tracking-wider hover:opacity-90 active:scale-[0.97] transition-all">
+                Book Clean
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center px-12 overflow-hidden bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+<div class="z-10">
+<span class="text-xs font-semibold font-inter uppercase tracking-widest text-primary mb-4 block">Editorial Hygiene Standards</span>
+<h1 class="text-6xl md:text-8xl font-bold font-nunito tracking-tighter text-on-surface leading-[0.9] mb-8">
+                        The <span class="text-primary-container">Pristine</span> Canvas.
+                    </h1>
+<p class="text-lg text-on-surface-variant font-inter max-w-md mb-10 leading-relaxed">
+                        We don't just clean spaces; we curate environments where your sanity can breathe. High-end hygiene for high-performance lives.
+                    </p>
+<div class="flex gap-4">
+<button class="hero-gradient text-white px-8 py-4 rounded-xl font-bold font-inter text-sm shadow-xl shadow-primary/20 hover:opacity-90 active:scale-[0.97] transition-all">
+                            Reserve Your Session
+                        </button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold font-inter text-sm hover:bg-surface-container-highest transition-all">
+                            View Standards
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-full overflow-hidden aspect-[4/5] shadow-2xl relative z-20 group">
+<img alt="Luxury interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist luxury living room with high ceilings, large windows, white marble floors reflecting soft morning light, and lush green plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3eKL0ZYj4FIz6ouggovFj1vseQEm3jJQxRnuJDi0y0kgFQtGVo0wtIeznf0K1asyAp50NIF9obFCRrPzzBaUTB2PvUl5p73fITZhZiKCw-0t0D0SyHXDxldYNWsjOcJKnYLefg5-UlEHS7frXIbk0-o-WDKGFUiuCRs4wmWGJkTpLKPkmAcHJsMuXftJUwvr6xcZ-cbVe4nU1Iu3TWdNJJ0CTb_EEFS0Plk4EpBp6Aaw3Z-w5DduL8qwarMpJAKnU7dq3Fmisw5g"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-xl shadow-xl z-30 max-w-[200px]">
+<div class="text-3xl font-bold font-nunito text-primary mb-1">99.9%</div>
+<div class="text-xs font-semibold font-inter text-slate-500 uppercase tracking-tighter">Microbial Reduction Rate</div>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+</div>
+</div>
+</section>
+<!-- Booking Widget & Gauge -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-12">
+<div class="bg-surface-container-lowest p-1 rounded-2xl shadow-sm grid grid-cols-1 md:grid-cols-4 items-center">
+<div class="p-6 border-r border-outline-variant/10">
+<label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Service Type</label>
+<select class="w-full border-none bg-transparent font-semibold p-0 focus:ring-0 text-on-surface">
+<option>Deep Editorial Clean</option>
+<option>Office Curation</option>
+<option>Residential Maintenance</option>
+</select>
+</div>
+<div class="p-6 border-r border-outline-variant/10">
+<label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Frequency</label>
+<select class="w-full border-none bg-transparent font-semibold p-0 focus:ring-0 text-on-surface">
+<option>Weekly Refresh</option>
+<option>Bi-Weekly</option>
+<option>One-Time Deep</option>
+</select>
+</div>
+<div class="p-6 border-r border-outline-variant/10">
+<label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Square Footage</label>
+<input class="w-full border-none bg-transparent font-semibold p-0 focus:ring-0 text-on-surface" type="text" value="1,200 sq.ft"/>
+</div>
+<div class="p-6 text-center">
+<button class="w-full bg-primary-container text-white py-3 rounded-xl font-bold text-sm tracking-tight hover:opacity-90 transition-all">
+                            Calculate Estimate
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services: The Bento Layout -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-5xl font-bold font-nunito tracking-tighter text-on-surface mb-4">Our Specialty Disciplines</h2>
+<p class="text-on-surface-variant font-inter max-w-md">Precision-engineered protocols for every environment.</p>
+</div>
+<div class="w-1/3">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold font-inter text-primary uppercase">Sanity Gauge</span>
+<span class="text-xs font-bold font-inter text-primary">85%</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1">
+<div class="bg-primary-container h-full rounded-full w-[85%] relative">
+<div class="absolute right-0 -top-1 w-3 h-3 rounded-full bg-primary shadow-lg shadow-primary/50"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-6">
+<!-- Service 1 -->
+<div class="col-span-12 md:col-span-8 group relative rounded-3xl overflow-hidden h-[400px]">
+<img alt="Home Cleaning" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Immaculate modern kitchen with gleaming stainless steel appliances, marble island, and soft afternoon sun streaming through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASnxdpugCfXqZF1ZSlT5FoxzbKwLhzsxnI2k40cxZxdA_u3L3437DQLAZsttxyahCPqRlxVZUVgLrXrMmsCI6ITrXor-Mx0t0rn9JGHZnvYhDo538WNuvH89WokzT55B-UnmM-hJN2KuX40gw9NVzOnrxmW4GcaS4PPOcjpI0ydt1CXpWcrWmKPk4N5pSzYCs_B4uGaWj1gAHodHbq8_pUpVyiv8jJHZXVI9z0XHS5c_8yEWOrfPbGq5cgUSDI5KjX3MPRKLo2f8c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">Residential</span>
+<h3 class="text-3xl font-bold font-nunito mb-2">Curated Homes</h3>
+<p class="text-white/80 max-w-sm mb-6 text-sm">Beyond dusting. We reorganize your visual landscape to promote mental clarity.</p>
+<a class="text-white font-bold text-sm border-b border-white/30 pb-1 hover:border-white transition-all" href="#">Explore Standard</a>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-lowest p-10 rounded-3xl flex flex-col justify-between border border-outline-variant/10 shadow-sm transition-all hover:shadow-md">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">corporate_fare</span>
+<h3 class="text-2xl font-bold font-nunito text-on-surface mb-4">Office Ecosystems</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Sterile environments that don't feel clinical. Enhancing productivity through olfactory and visual order.</p>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-xs font-semibold text-slate-500">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Tech-Safe Disinfection
+                            </li>
+<li class="flex items-center gap-3 text-xs font-semibold text-slate-500">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Evening Concierge Service
+                            </li>
+</ul>
+<button class="text-primary font-bold text-sm text-left">View Corporate Packages →</button>
+</div>
+<!-- Service 3 -->
+<div class="col-span-12 md:col-span-4 bg-sky-900 p-10 rounded-3xl text-white">
+<h3 class="text-2xl font-bold font-nunito mb-4">Deep Sanitization</h3>
+<p class="text-sky-100/70 text-sm leading-relaxed mb-8">For when "clean" isn't enough. Our surgical-grade protocol for new moves or post-event restoration.</p>
+<div class="p-6 bg-white/10 rounded-2xl border border-white/10">
+<div class="text-[10px] font-bold uppercase tracking-widest mb-2 text-sky-200">HEPA-Grade Extraction</div>
+<div class="h-1 bg-white/20 rounded-full overflow-hidden">
+<div class="bg-sky-400 h-full w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="col-span-12 md:col-span-8 group relative rounded-3xl overflow-hidden h-[300px]">
+<img alt="Before/After" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Split screen style image showing a dusty disorganized bookshelf vs a perfectly color-coordinated and pristine white shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHwyJAjPXo_U8iz078aTMIY5IFqkYy5oCyd4jonj6GXRGjAJJadIbma5gIE1YdVGUCAlOERv_6H27TNvxE4ahveh0Y-E-Yr1cK6k1ANafC7cNRZUY0qFycaONjwFYGvr2lbDanM6_8r2gmsSmb8mEvPXeIQSnrD4ww0qut8OIRL8khhZeuYj3GHMn4ecGb1UZedrq181mxzmHrm2Yrx2ruNgl9pe86_K13CWPfCWQfE28K-GJYN6gnv4FpRP4FMQjnWG9xylhlv5Q"/>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="text-center text-white px-6">
+<h4 class="text-2xl font-bold mb-2">The Transformation Gallery</h4>
+<p class="text-sm font-inter">Witness the Editorial effect in real time.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+<div class="col-span-1">
+<h2 class="text-4xl font-bold font-nunito tracking-tighter text-on-surface mb-6">Client Editorials</h2>
+<p class="text-on-surface-variant mb-8">Verified experiences from the most discerning homeowners.</p>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="col-span-2">
+<div class="flex gap-6 overflow-visible">
+<div class="min-w-[400px] bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/5">
+<div class="flex gap-1 text-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg font-inter text-on-surface leading-relaxed mb-8 italic">"Their attention to detail is clinical. I've never seen my marble countertops truly shine until their curator finished the session."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200">
+<img alt="Reviewer" class="w-full h-full object-cover rounded-full" data-alt="Professional man with glasses and a thoughtful expression, warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGG_V05wnS4wIlZN9IDZseli_liX2vBXVqyX14TIcP0pLoJ6L5r7wRp2osbtSnPy0sMyUUk1TA3DSvxVbO-ocFxwVoh7op-SZLtqOfPiiwqLFtADDOlmvs0p7SpiBkVKeTK6AdtsXlAR1ags-kYk2MLjONjqE0WkEjOiSB8XesnHqrfMqEdU5W8UiFtbJkugbAnZ8bsFYqv0AKjGGhZ3S90_4ZEDd5-fOCqPwp-2Pq5fPJWKsoBzYan-tDXplumZ5nF5LeJNsawtI"/>
+</div>
+<div>
+<div class="text-sm font-bold font-nunito">Julian Thorne</div>
+<div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Architect</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="bg-primary text-white rounded-[3rem] p-16 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+<div class="z-10 relative">
+<h2 class="text-5xl font-bold font-nunito tracking-tighter mb-6">Ready to reset your atmosphere?</h2>
+<p class="text-sky-100 max-w-md mb-10 text-lg">Contact our curation desk for a bespoke quote tailored to your environment's specific DNA.</p>
+<div class="flex flex-wrap gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">mail</span>
+<span class="font-bold text-sm">concierge@clinicaleditorial.com</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">call</span>
+<span class="font-bold text-sm">1-800-CURATE-0</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/3 bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20 z-10">
+<form class="space-y-4">
+<input class="w-full bg-white/10 border-white/20 rounded-xl px-4 py-3 text-sm placeholder:text-white/50 focus:ring-primary-container focus:border-primary-container" placeholder="Your Name" type="text"/>
+<input class="w-full bg-white/10 border-white/20 rounded-xl px-4 py-3 text-sm placeholder:text-white/50 focus:ring-primary-container focus:border-primary-container" placeholder="Professional Email" type="email"/>
+<textarea class="w-full bg-white/10 border-white/20 rounded-xl px-4 py-3 text-sm placeholder:text-white/50 focus:ring-primary-container focus:border-primary-container" placeholder="Describe your space..." rows="3"></textarea>
+<button class="w-full bg-white text-primary font-bold py-4 rounded-xl hover:bg-sky-50 transition-all">Request Consultation</button>
+</form>
+</div>
+<!-- Decorative Background Circle -->
+<div class="absolute -bottom-20 -right-20 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto py-12 bg-slate-50 border-t border-slate-100">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto">
+<div class="mb-6 md:mb-0">
+<span class="font-nunito font-bold text-lg text-slate-900">The Clinical Editorial.</span>
+<p class="font-inter text-sm tracking-tight text-slate-500 mt-2">© 2024 The Clinical Editorial. Curating Environments.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-sm tracking-tight text-slate-400 hover:text-sky-500 hover:underline transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-sm tracking-tight text-slate-400 hover:text-sky-500 hover:underline transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-sm tracking-tight text-slate-400 hover:text-sky-500 hover:underline transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-sm tracking-tight text-slate-400 hover:text-sky-500 hover:underline transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-4 mt-6 md:mt-0">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">verified_user</span>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<div class="fixed bottom-8 right-8 z-50">
+<a class="flex items-center gap-3 bg-white p-4 rounded-2xl shadow-xl border border-outline-variant/10 hover:scale-105 transition-transform group" href="#">
+<div class="bg-emerald-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">WhatsApp Concierge</div>
+<div class="text-sm font-bold text-on-surface">Immediate Assistance</div>
+</div>
+</a>
+</div>
+</body></html>

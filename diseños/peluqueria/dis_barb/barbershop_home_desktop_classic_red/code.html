@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIBLY ATELIER | The Modern Craftsman</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#af8d11",
+                      "on-tertiary-container": "#b4b5b9",
+                      "surface": "#131313",
+                      "surface-variant": "#353534",
+                      "on-secondary-fixed": "#241a00",
+                      "tertiary-container": "#45474b",
+                      "on-surface-variant": "#e0bfbc",
+                      "outline": "#a78a87",
+                      "surface-container-low": "#1c1b1b",
+                      "on-error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#8a1a1a",
+                      "secondary": "#e9c349",
+                      "on-secondary-container": "#342800",
+                      "on-background": "#e5e2e1",
+                      "background": "#131313",
+                      "inverse-primary": "#ac322e",
+                      "surface-dim": "#131313",
+                      "error": "#ffb4ab",
+                      "primary-container": "#8b1a1a",
+                      "surface-bright": "#393939",
+                      "on-primary-container": "#ff9a91",
+                      "secondary-fixed-dim": "#e9c349",
+                      "on-surface": "#e5e2e1",
+                      "on-primary": "#680007",
+                      "surface-tint": "#ffb3ac",
+                      "on-error": "#690005",
+                      "primary-fixed-dim": "#ffb3ac",
+                      "secondary-fixed": "#ffe088",
+                      "error-container": "#93000a",
+                      "primary": "#ffb3ac",
+                      "tertiary-fixed-dim": "#c5c6ca",
+                      "tertiary": "#c5c6ca",
+                      "primary-fixed": "#ffdad6",
+                      "on-tertiary-fixed": "#1a1c1f",
+                      "on-tertiary-fixed-variant": "#45474a",
+                      "surface-container-high": "#2a2a2a",
+                      "outline-variant": "#58413f",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-secondary": "#3c2f00",
+                      "inverse-surface": "#e5e2e1",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-container-highest": "#353534",
+                      "inverse-on-surface": "#313030",
+                      "on-tertiary": "#2e3034",
+                      "on-primary-fixed": "#410003",
+                      "surface-container": "#201f1f",
+                      "tertiary-fixed": "#e2e2e6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .sharp-edge { border-radius: 0px !important; }
+        body { background-color: #131313; color: #e5e2e1; font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; letter-spacing: -0.02em; }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-white">
+<!-- Section 1: TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-900/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-stone-100">VIBLY</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-stone-100 border-b-2 border-amber-400 pb-1 hover:text-amber-400 transition-colors duration-300" href="#">Services</a>
+<a class="text-stone-400 font-medium hover:text-amber-400 transition-colors duration-300" href="#">Gallery</a>
+<a class="text-stone-400 font-medium hover:text-amber-400 transition-colors duration-300" href="#">Team</a>
+<a class="text-stone-400 font-medium hover:text-amber-400 transition-colors duration-300" href="#">Booking</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 font-bold uppercase tracking-widest text-sm sharp-edge active:opacity-80 active:scale-95 transition-all">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- Section 2: Hero -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover grayscale opacity-40" data-alt="dramatic interior of a luxury barbershop with leather chairs and vintage mahogany mirrors under soft warm spot lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUFXbF0MbFUQllVf_SG3-kZ9Y8vSorCAEzlHLqY2Kc9npcUvgJGRcc0gzEzPIofeG2UIKhnukibYT7B6-H6JFkdjXFm4zjvP5BD8U64swCmxvnP0Sk5AoUFiHmKmLRuNSVBz_kFjC65Vw1AM3P_j_H6kk4TywcHHMWiWHIBaxSfmCH06mFutDejlBRibhIw3nW2ZNvI1YOaVro3g-yiIbkCwaDXT5PWxWA6vhIKNhDkVoDpN5M8_83Rw1A89pT_jQxzZSGE6nO_10"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/80 via-transparent to-surface-container-lowest"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-6">
+<p class="text-secondary font-medium tracking-[0.4em] uppercase mb-4 text-sm">Est. 2024 • London</p>
+<h1 class="text-7xl md:text-9xl font-black mb-8 leading-tight">Precision <br/> &amp; Character</h1>
+<p class="text-lg text-outline max-w-xl mx-auto mb-10 font-light leading-relaxed">
+                Expert grooming for the modern gentleman. We combine heritage barbering techniques with urban precision.
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-on-primary-container px-10 py-5 font-bold uppercase tracking-widest text-base sharp-edge hover:bg-on-primary-fixed-variant transition-colors">
+                    Book Appointment
+                </button>
+</div>
+</div>
+<!-- Indicators -->
+<div class="absolute bottom-12 flex space-x-3">
+<span class="w-12 h-1 bg-primary-container"></span>
+<span class="w-12 h-1 bg-surface-variant"></span>
+<span class="w-12 h-1 bg-surface-variant"></span>
+</div>
+</section>
+<!-- Section 3: About Us -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative aspect-[4/5] bg-surface-container-low p-4">
+<img alt="" class="w-full h-full object-cover grayscale" data-alt="close-up of a classic leather barber chair in a professional studio with industrial lighting and brick wall background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNuY2tLAtqF7XdFqBdSVnFK5yQRawk4it6aRS15zlNUBfjjtK-51CmLofRSJFQeD-QkEs9JAnhJvP158rditl3Y8YpSFHHR6RV6VywGDP0VMw2pquMqo99OKRkRty5SITvIdfioDN1e_0cz0HDa_xP8ERCH2sQL0HeygUX5RffRbLPRC14IdJ97wSjkRRXSztBa5u9ZHs6poT95hg2RwJfBtuEMSV_H-q9DrmCkPouxVUhvpkVxjM5_XuZX2SYT_rb85U49GhBims"/>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 border-4 border-primary-container/20 -z-10"></div>
+</div>
+<div>
+<h2 class="text-5xl font-black mb-8">Heritage &amp; Craft</h2>
+<p class="text-outline text-lg leading-loose mb-8">
+                At Vibly, we believe barbering is an architectural pursuit. Each cut is designed to complement the natural geometry of the face, utilizing tools that have defined the trade for generations. Our space is a sanctuary where time slows down, and precision takes center stage.
+            </p>
+<div class="grid grid-cols-2 gap-8 py-8 border-t border-outline-variant">
+<div>
+<h4 class="text-xl font-bold mb-2">15+ Years</h4>
+<p class="text-outline text-sm">Combined Expertise</p>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Premium</h4>
+<p class="text-outline text-sm">Imported Materials</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Services -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<h2 class="text-5xl font-black">Curated <br/> Services</h2>
+<p class="text-outline max-w-xs text-sm">Select from our signature menu of grooming experiences.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Service Card 1 -->
+<div class="bg-surface p-8 group hover:bg-surface-container-highest transition-colors duration-500">
+<img alt="" class="w-full h-64 object-cover grayscale mb-8 group-hover:grayscale-0 transition-all duration-700" data-alt="barber precisely using a straight razor on a client's beard in a dark lit workshop atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjqxIgSOAmsvPr5gAN4_6aF0quBMC2VTf27kWCSIRH8NACl7GCymxQi5kzbd94wt35zQAipN-celz0EejdzX2AgVe_g_d4_YvOymyRBooRoCOkfZmMXvaqOb3AAb5EvAba2m8xAWVTQIxAJZVMlhWapKRonwPu4cKQTNt96c3xuQbw5Hfs0qVwPjOnPFuKjm-j2IU8cFaIi8SsmCib19m-YmGyk6ZwYUm3YQm5u1vZGoIIfX-yCCvgxH73opVGM5fVz6kMrgNeH00"/>
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold">Signature Cut</h3>
+<span class="text-primary-container font-black text-xl">$45</span>
+</div>
+<p class="text-outline text-sm leading-relaxed mb-6">A tailor-made haircut including consultation, wash, styling, and neck shave.</p>
+<button class="flex items-center text-xs uppercase tracking-widest font-bold group-hover:text-primary transition-colors">
+                        Book This <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface p-8 group hover:bg-surface-container-highest transition-colors duration-500">
+<img alt="" class="w-full h-64 object-cover grayscale mb-8 group-hover:grayscale-0 transition-all duration-700" data-alt="luxury hot towel shave service being performed on a man in a barbershop with warm steam visible" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnHCiVgLHM4g3Bo3y6pPW4Ge2Z3zmpGleWc0WmXcK0xZHH1JM4SMdGf5StuOhXTtjz-cxlQ52cu-QFUcHU3uMP7Lc-W7FWzGdmXjheS15VSueAdMgEPQE0C4aeB1RLfyrWopOPAYh7OpODem84swFHH1a9yfHnE7XkBZ_GDXq0nok4v3J_2KMrYLDKYsV85uYuOSIHo9ExPASZSrEM9MnOGmX-Iwy91PoBjlvS9oBiGxY7QHSAcTTOa0pbjzXCUBYgU5ow_OqV-Tk"/>
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold">Luxury Shave</h3>
+<span class="text-primary-container font-black text-xl">$35</span>
+</div>
+<p class="text-outline text-sm leading-relaxed mb-6">Classic straight-razor shave with hot towels, essential oils, and facial massage.</p>
+<button class="flex items-center text-xs uppercase tracking-widest font-bold group-hover:text-primary transition-colors">
+                        Book This <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface p-8 group hover:bg-surface-container-highest transition-colors duration-500">
+<img alt="" class="w-full h-64 object-cover grayscale mb-8 group-hover:grayscale-0 transition-all duration-700" data-alt="stylist applying grooming product to a man's beard with wooden brush and dark professional styling tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPwc7zrPCwcr6MgX3p6_jFAnvCQ9erJ1q3J16R0mY5ADiwRXvm7jHTOJwi65vfMkqS6KdIsShOoA89XtlPyK3vc_SS9eIVvWQ8WXn4qzAENsfDBDyugoByP1LI7uDJL289apWh0ud7Usp9Q-yE7LdvE9OUFtj04jHiDTb6xVRRaosmpQ0pbbFZkUxtTzc7xbYQ19AcsyAGD6FYR8h_cwAixIlkTCZMAH611bHAxqMBMSreZ7atYpWMooO117BY4mdJfH95p95Yy2o"/>
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold">The Works</h3>
+<span class="text-primary-container font-black text-xl">$70</span>
+</div>
+<p class="text-outline text-sm leading-relaxed mb-6">The ultimate experience: Signature cut, luxury shave, and beard sculpting.</p>
+<button class="flex items-center text-xs uppercase tracking-widest font-bold group-hover:text-primary transition-colors">
+                        Book This <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="border border-outline-variant px-12 py-4 text-xs font-bold uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all sharp-edge">
+                    View All Services
+                </button>
+</div>
+</div>
+</section>
+<!-- Section 5: Gallery -->
+<section class="py-32 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-5xl font-black mb-20 text-center">The Lookbook</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<div class="relative group cursor-pointer overflow-hidden aspect-square">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" data-alt="close-up portrait of a man with a fresh skin fade haircut and sharp beard lines in atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEnEx0rgW9Kq6gtJ9uSBjfvpPNwXwU37c03Bmdu0BCSa50fnMt8NRyzORd9Z-DFE7l6Htxbc3qQDHuf1sh-C6FoOnoTHVOAeW6CbBuriRAXKIoj35yWImPMx6KC2yt6ocD83P48Oi5O9n9Sl4WG4-qOCYPep-cwyGiM-3Jo3sOx4WSSVVcOEtpv4ieh4pzUYQ1_vYvQ_vCuJocnrtruVFX4PFy_MOPYsXpJLRwNaseS89qzt8uSJ7tUJg2oM255QVHyEVhGyZ9H4M"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+<span class="material-symbols-outlined text-4xl text-white">search</span>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden aspect-square">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" data-alt="professional barber tools including scissors and combs laid out on a dark wood table with cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6l069dVdFTrP5TJqKjDkvPrRc0meGSWd2mP4_eFOlujSfpsyJlZp1glcG2tQYO8_aV1yKBMu-fyQwv31pyGvqgy7UsabGnp-vHXVPBFiD-sHyelcw6L7rnwvRUtCt7wEbU5hdjujrDThuw7dx6aOYrZZIS3emBCvkEfFOOXAg4d8wlH90SPSgkk8auubMhWHrdd_Peh8Ru1-L5r3_1fEsKBRFY9c5f_4mm7UYYHCNjeoK2vi257c_XGbualAXcHG95Zny1DXD7jc"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+<span class="material-symbols-outlined text-4xl text-white">search</span>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden aspect-square">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" data-alt="interior view of a modern urban barbershop with dark walls, industrial mirrors and polished concrete floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSDkPAeDJ3jWqTUwLFXj2YmDm2HYer-KMCqmp3pTJOjB2y4vLAvxZnvxWMMDikYsln0M116GFN7qrpsor6rxK9z4yo0mq0WaokIXFvmGzHPZb1p90KX6FbO__NKQDaaT_1FPilbftj-ppKJBw3hZoopgM-5sfdn-ZxaliZKC8WupfSAB-nNlIjhbBooP_Elr8-LYqFCRQUfeISZle7FQnt4m-jCAcN59oBnuMiqO9q0xgf4i5V1lMxgiIgs0-URTD6MSeGgE28pfU"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+<span class="material-symbols-outlined text-4xl text-white">search</span>
+</div>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-surface-container-high px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-variant transition-all sharp-edge">
+                    Explore Gallery
+                </button>
+</div>
+</div>
+</section>
+<!-- Section 6: Team -->
+<section class="py-32 px-8 bg-surface-container-lowest">
+<div class="max-w-screen-2xl mx-auto text-center">
+<h2 class="text-5xl font-black mb-20">Master Craftsmen</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="group">
+<div class="mb-6 relative mx-auto w-48 h-48">
+<img alt="" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="portrait of a male barber with tattoos and a beard wearing a leather apron in a shop setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN5uyyH5g5qe2GkdpMiR8qhZ3QktS7cUU4dxQLysea1Pp848_d4Ye3Y-8kFhGRcZXi1WcIQXLxOa4GxRWFNVZKbIHHF8KuFN0kGiGjEI0DFhLH5n49Hyu9xuBoAubaODEfFREI17sdt0aJP1-PnoIkNnNq6nO-b0jj8vR5wee6LrVNUfbirbJ2ShEWjFdgb1Ovf1wyIRaDvl6mN0SWiakKf0JHBu6zKvi4JFfEKHaY-vKwOMDZuDQyjnNDy0WvlExNDDiGEhYAgPo"/>
+</div>
+<h4 class="text-xl font-bold">Arthur Vance</h4>
+<p class="text-secondary text-sm uppercase tracking-widest mt-1">Founder / Master</p>
+</div>
+<div class="group">
+<div class="mb-6 relative mx-auto w-48 h-48">
+<img alt="" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="professional male hairstylist with glasses and stylish haircut looking at camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZlmhTzrfDQlbmnv4tOFQoL3yVaPq3kkwD8qpptY-Qd_QKEoofKB_Jqt1G_B8xYXrcWkk6Ww7jN6D82vlCAaxmAJij0cIfkhIoX3j8-rsy8TbBJYt9cIeUqFzGNzBfIU1u8HGfz6cuhHhFWP_FXZoqklXQu4lE9YBnbTS19OCvsGGBa3iNyJ2wCnC5diM5q85ns1CWD5-uvY8m1TNOqWv7mR_lxGA5eyF0ipiitzmNWDbXHdcns1DnzfGaLUG-IhqbLjO0Lor4Aek"/>
+</div>
+<h4 class="text-xl font-bold">Julian Rex</h4>
+<p class="text-outline text-sm uppercase tracking-widest mt-1">Senior Barber</p>
+</div>
+<div class="group">
+<div class="mb-6 relative mx-auto w-48 h-48">
+<img alt="" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="young male barber with short hair and modern streetwear attire in a bright studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcQQfzUmom4StUPWhJAbc6Oo7pbSpWUM6cwSFjp495-VQVzv4yiCg0AAqyI9IkeN84Zhn0dEgBux_jmPSKoJsyiQN65pWpO8pCvaLypubOX_VmMaoprMXcVQQJM-DCC7R0LrkAkAtBIsERDXkzVgvLezotDyGOVY19MgOiDk7-MawWA1JrLRpipknQPoAtkH64QKYiF6k9FKysQDxXnOS6FEZcgj_drwPOx4iFZjzhNAze8kbxaESoW9OlHCG5gdvmPXGKqExXh4M"/>
+</div>
+<h4 class="text-xl font-bold">Dante Hayes</h4>
+<p class="text-outline text-sm uppercase tracking-widest mt-1">Grooming Artist</p>
+</div>
+<div class="group">
+<div class="mb-6 relative mx-auto w-48 h-48">
+<img alt="" class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="classic master barber with white beard and professional attire looking dignified" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNm4IwzI_Q-6_FwrZB9jQCZeLtEIVc4mwhSwWKiVrJ-cZs8vq90p4l0fI10jVbotqXt-zuFMHKthbzjeqqDBVuUUcritc6z71jLEzckB6lhpnrk1h8VY3RdDkz99a2d8faqbYWu3klFPOf4JttgT7Mua6M5YEDaNYI83T4tieSOxNLFF6EjksSkhwohSHrTVGAF-OwfX9DKoHGlAHEoJlAAKdiHIUiMegyU4rqIzWDQQN86g6H1HoG-VJSPRT4fGOqFfu1LZ9-IMg"/>
+</div>
+<h4 class="text-xl font-bold">Silas Thorne</h4>
+<p class="text-outline text-sm uppercase tracking-widest mt-1">Shave Specialist</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Reviews -->
+<section class="py-32 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-5xl font-black mb-20">The Verdict</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container p-10 relative">
+<div class="text-secondary mb-6">
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface text-lg italic mb-8">"Vibly is the only place in the city that understands architectural precision. Arthur's attention to detail is unrivaled."</p>
+<div class="border-t border-outline-variant pt-6">
+<p class="font-bold uppercase tracking-widest text-sm">Marcus Sterling</p>
+</div>
+</div>
+<div class="bg-surface-container p-10 relative">
+<div class="text-secondary mb-6">
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface text-lg italic mb-8">"The hot towel shave is a ritual. Atmosphere is dark, quiet, and incredibly professional. A true gentleman's refuge."</p>
+<div class="border-t border-outline-variant pt-6">
+<p class="font-bold uppercase tracking-widest text-sm">James Harrington</p>
+</div>
+</div>
+<div class="bg-surface-container p-10 relative">
+<div class="text-secondary mb-6">
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface text-lg italic mb-8">"Sharpest fade I've ever had. Dante is a master of his tools. The booking process is seamless and the service is elite."</p>
+<div class="border-t border-outline-variant pt-6">
+<p class="font-bold uppercase tracking-widest text-sm">Lukas Koven</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Contact -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h2 class="text-5xl font-black mb-12">Establishment</h2>
+<div class="space-y-10">
+<div class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-6 text-3xl">location_on</span>
+<div>
+<h4 class="font-bold mb-1">Location</h4>
+<p class="text-outline">124 Bruton Lane, Mayfair<br/>London, W1J 6QA</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-6 text-3xl">schedule</span>
+<div>
+<h4 class="font-bold mb-1">Business Hours</h4>
+<p class="text-outline">Mon - Fri: 09:00 - 20:00<br/>Sat - Sun: 10:00 - 18:00</p>
+</div>
+</div>
+<div class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-6 text-3xl">call</span>
+<div>
+<h4 class="font-bold mb-1">Inquiries</h4>
+<p class="text-outline">+44 20 7946 0120<br/>concierge@viblyatelier.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[450px] bg-surface-container-highest grayscale contrast-125 border border-outline-variant">
+<img alt="" class="w-full h-full object-cover grayscale opacity-50" data-alt="abstract dark satellite map of London urban grid with high contrast blacks and grays" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZZjQVAkpBDoyOfXnF99CiiZfEsFpFCvExr_rpEznm0crfd7Yu9zyZZee43EMW_XCqHI_eCu0jeXdXunbKIRZcFQScMJusZFoNcBjf5ikXxGwnLnk1jRffP-ueq07tFdVFUWyNQmnawFAEEangdoFFidPWkK0KDgh1rO4w4a_lHOzosVFMSe99--vvnONRdkkOVidPkjooFqpees6slH3lCgFryNmvYAYpT5JqltveBrpa45Z1VUaALJ6CEa3h7YJDfstt9YOKiew"/>
+</div>
+</div>
+</section>
+<!-- Section 9: Booking Widget -->
+<section class="py-32 px-8 max-w-4xl mx-auto">
+<div class="bg-surface-container-high p-12 border border-outline-variant/30">
+<h2 class="text-4xl font-black mb-12 text-center">Secure Your Slot</h2>
+<!-- Simple Calendar Simulation -->
+<div class="mb-10">
+<p class="text-xs font-bold uppercase tracking-widest text-outline mb-4">Select Date</p>
+<div class="grid grid-cols-7 gap-2 text-center text-xs">
+<div class="p-3 text-outline/50 uppercase font-bold">Mon</div>
+<div class="p-3 text-outline/50 uppercase font-bold">Tue</div>
+<div class="p-3 text-outline/50 uppercase font-bold">Wed</div>
+<div class="p-3 text-outline/50 uppercase font-bold">Thu</div>
+<div class="p-3 text-outline/50 uppercase font-bold">Fri</div>
+<div class="p-3 text-outline/50 uppercase font-bold">Sat</div>
+<div class="p-3 text-outline/50 uppercase font-bold">Sun</div>
+<div class="p-4 bg-surface-container-low text-outline">12</div>
+<div class="p-4 bg-surface-container-low text-outline">13</div>
+<div class="p-4 bg-primary-container text-white font-bold">14</div>
+<div class="p-4 bg-surface-container-low text-outline">15</div>
+<div class="p-4 bg-surface-container-low text-outline">16</div>
+<div class="p-4 bg-surface-container-low text-outline">17</div>
+<div class="p-4 bg-surface-container-low text-outline">18</div>
+</div>
+</div>
+<div class="mb-10">
+<p class="text-xs font-bold uppercase tracking-widest text-outline mb-4">Select Time</p>
+<div class="grid grid-cols-4 md:grid-cols-6 gap-3">
+<button class="py-3 border border-outline-variant text-xs font-bold hover:border-secondary transition-colors">09:00</button>
+<button class="py-3 border border-outline-variant text-xs font-bold hover:border-secondary transition-colors">10:00</button>
+<button class="py-3 border border-secondary text-secondary text-xs font-bold">11:00</button>
+<button class="py-3 border border-outline-variant text-xs font-bold hover:border-secondary transition-colors">12:00</button>
+<button class="py-3 border border-outline-variant text-xs font-bold hover:border-secondary transition-colors">14:00</button>
+<button class="py-3 border border-outline-variant text-xs font-bold hover:border-secondary transition-colors">15:00</button>
+</div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input class="w-full bg-surface border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary text-sm px-0 py-4 uppercase font-bold tracking-widest" placeholder="FULL NAME" type="text"/>
+<input class="w-full bg-surface border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary text-sm px-0 py-4 uppercase font-bold tracking-widest" placeholder="EMAIL ADDRESS" type="email"/>
+</div>
+<textarea class="w-full bg-surface border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary text-sm px-0 py-4 uppercase font-bold tracking-widest" placeholder="NOTES (OPTIONAL)" rows="3"></textarea>
+<button class="w-full bg-primary-container text-white font-black py-6 uppercase tracking-widest hover:bg-on-primary-fixed-variant transition-all mt-6" type="submit">
+                    Confirm Appointment
+                </button>
+</form>
+</div>
+</section>
+<!-- Section 10: Footer -->
+<footer class="bg-stone-950 text-stone-100 py-24">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 space-y-12 md:space-y-0 max-w-screen-2xl mx-auto">
+<div class="max-w-sm">
+<div class="text-xl font-bold text-stone-100 mb-6 tracking-tighter">VIBLY ATELIER</div>
+<p class="text-stone-500 text-xs font-label uppercase tracking-widest leading-relaxed">
+                    The Modern Craftsman. Architecture for the head. Heritage techniques for the contemporary man. 
+                </p>
+<p class="text-stone-500 text-xs mt-4 uppercase tracking-widest">
+                    London • New York • Berlin
+                </p>
+</div>
+<div class="flex space-x-12">
+<div class="space-y-4">
+<h5 class="text-stone-100 text-xs font-bold uppercase tracking-widest mb-6">Social</h5>
+<a class="block text-stone-500 text-xs font-label uppercase tracking-widest hover:text-amber-400 transition-colors" href="#">Instagram</a>
+<a class="block text-stone-500 text-xs font-label uppercase tracking-widest hover:text-amber-400 transition-colors" href="#">Facebook</a>
+<a class="block text-stone-500 text-xs font-label uppercase tracking-widest hover:text-amber-400 transition-colors" href="#">Twitter</a>
+</div>
+<div class="space-y-4">
+<h5 class="text-stone-100 text-xs font-bold uppercase tracking-widest mb-6">Legal</h5>
+<a class="block text-stone-500 text-xs font-label uppercase tracking-widest hover:text-amber-400 transition-colors" href="#">Privacy Policy</a>
+<a class="block text-stone-500 text-xs font-label uppercase tracking-widest hover:text-amber-400 transition-colors" href="#">Terms of Service</a>
+<a class="block text-stone-500 text-xs font-label uppercase tracking-widest hover:text-amber-400 transition-colors" href="#">Careers</a>
+</div>
+</div>
+</div>
+<div class="mt-20 border-t border-stone-900 pt-12 px-12 text-center max-w-screen-2xl mx-auto">
+<p class="text-stone-500 text-[10px] font-label uppercase tracking-[0.3em]">
+                © 2024 VIBLY ATELIER. ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+<!-- Section 11: Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 flex items-center justify-center rounded-full shadow-2xl animate-pulse hover:scale-110 transition-transform" href="#">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+</a>
+</body></html>

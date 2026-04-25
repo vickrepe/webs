@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800&amp;family=Lato:wght@300;400;700&amp;family=Epilogue:wght@200;700&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#77574d",
+                    "tertiary-fixed": "#cee5ff",
+                    "surface-container-low": "#f6f3f1",
+                    "tertiary-fixed-dim": "#98cbff",
+                    "surface-bright": "#fcf9f7",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "on-tertiary-fixed": "#001d33",
+                    "inverse-primary": "#ffb693",
+                    "on-primary": "#ffffff",
+                    "primary": "#712c00",
+                    "background": "#fcf9f7",
+                    "on-secondary": "#ffffff",
+                    "outline": "#887269",
+                    "on-primary-container": "#ffc2a5",
+                    "secondary-fixed": "#ffdbd0",
+                    "surface-dim": "#dcd9d8",
+                    "secondary-fixed-dim": "#e7bdb1",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#55433a",
+                    "on-primary-fixed-variant": "#7a3000",
+                    "on-tertiary-container": "#a8d3ff",
+                    "primary-container": "#92400e",
+                    "on-surface": "#1b1c1b",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffdbcb",
+                    "surface": "#fcf9f7",
+                    "primary-fixed-dim": "#ffb693",
+                    "secondary-container": "#fed3c7",
+                    "surface-container": "#f0edeb",
+                    "outline-variant": "#dcc1b6",
+                    "tertiary": "#00446d",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#eae8e6",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#795950",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e5e2e0",
+                    "on-primary-fixed": "#341000",
+                    "surface-tint": "#9a4614",
+                    "surface-container-highest": "#e5e2e0",
+                    "inverse-on-surface": "#f3f0ee",
+                    "tertiary-container": "#005c92",
+                    "on-tertiary-fixed-variant": "#004a77",
+                    "inverse-surface": "#31302f",
+                    "on-secondary-fixed": "#2c160e",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#1b1c1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Raleway", "Epilogue", "sans-serif"],
+                    "body": ["Lato", "Work Sans", "sans-serif"],
+                    "label": ["Lato", "Work Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    display: inline-block;
+    vertical-align: middle
+    }
+.bg-grain {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuC8GmIPtcr5OVLMdjaPT-qgVsda-4grWvg_Exs7oTCY3yQYn6Aq0AFWgre-H-XH33jd3JG_GlPtAzSMvs6PHCZjZZuI_yNE6uy8IeHV_j87bXMBKYMSEKFv-QZVeTaRVh-u77pZ54thO756gfUS5xWdhYQgxlxW2i0pAIlYgCHsmYJDAxLqShWHAs9EvDgq6E8TvIFSHetVhm6iULSAE7wFw84Mcai42TNS-nGD0qW_3SDSnCTJad0EEe_KiNt-k0m6gcobBEWU2vs);
+    opacity: 0.03
+    }</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/85 backdrop-blur-xl shadow-sm shadow-amber-900/5 px-8 py-4 flex justify-between items-center max-w-full mx-auto">
+<div class="text-2xl font-semibold tracking-tighter text-amber-900 font-headline">Carpintero</div>
+<div class="hidden md:flex gap-10 items-center font-['Raleway'] font-light tracking-tight">
+<a class="text-amber-900 border-b-2 border-amber-800 pb-1" href="#projects">Projects</a>
+<a class="text-stone-600 hover:text-amber-800 transition-colors" href="#workshop">Workshop</a>
+<a class="text-stone-600 hover:text-amber-800 transition-colors" href="#materials">Materials</a>
+<a class="text-stone-600 hover:text-amber-800 transition-colors" href="#about">About</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-lg font-label text-sm uppercase tracking-widest shadow-md hover:scale-95 transition-all duration-200">
+            Hire Master
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center overflow-hidden bg-surface-container-low pt-20">
+<div class="absolute inset-0 z-0">
+<img alt="Wood texture" class="w-full h-full object-cover opacity-20" data-alt="close-up of raw cedar wood planks with beautiful grain patterns in a brightly lit artisanal workshop setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB43CS2WI3h-nD8iyfrELoAA4iSiztEdfpWWC8VVBLMcuTAnfv2Ls5u9VWzml9FiJQBGJ-3JrwLHjm0p0ufbYWfE4WeviwoRWe_YDDcagTPmMYBJoA2FEJZexv-TceySnxeCm96o-MwfRaS1cSJ_iQI8jcZ8FVKLU5IbByDt_gIvBvxhO_MRkAfo6FPrCcIoaUtaQyqNk8HSo3el6kyQY-XHleQf2-cLgEDohTokv6Gg5ary3r_CWTbV7ipJrHiLSfeYdHS8A7x8M"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface-container-low/50 to-surface-container-low"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-6">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6 block">Est. 1984 | Handcrafted Excellence</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary-container leading-tight mb-8 tracking-tighter -kern-0.02em">
+                The Soul of Timber, <br/>The Hand of a Master.
+            </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+                Transforming raw materials into legacy pieces. From bespoke furniture to complete architectural restorations, we honor the grain of every project.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-lg font-bold shadow-xl hover:scale-95 transition-transform flex items-center justify-center gap-2" href="#booking">
+<span class="material-symbols-outlined">calendar_today</span>
+                    Book a Consultation
+                </a>
+<a class="bg-surface-container-highest text-primary px-8 py-4 rounded-lg font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2" href="#services">
+                    Explore Services
+                </a>
+</div>
+</div>
+</header>
+<!-- About Us Section: Asymmetric Layout -->
+<section class="py-32 px-8 bg-surface" id="about">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-secondary-container/30 -z-10"></div>
+<img alt="Craftsman at work" class="w-full aspect-[4/3] object-cover rounded shadow-2xl" data-alt="experienced carpenter focusing on carving intricate details into a oak wood piece with hand tools and wood shavings around" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVzgsNHoYiKEI8FYXaoH4d0gWF2ndlM6pQjCWvvoUKPKafMGYira-wJ1ebEIBmAvRRb2WftQmQrLliKNLW9Ywlaq79h1oll3R5mFmNJiGTur20jGOi2HPHzDCJjhm4_nlsqyugVchwGpvp6SXFMcAhPfUS9zVSkd_IUGvteGE8GDRxfGg30FuBI5Vbp5D5e0aG0nIIgsNNPqOBdtXLkT7SD240egRyWQrFUfqMH5fab_NpJLgXmpLncsh07YcX3euCJ8wjM6VZLcU"/>
+<div class="absolute -bottom-8 -right-8 p-8 bg-primary text-on-primary max-w-xs hidden lg:block rounded">
+<p class="font-headline italic text-lg">"Respect the wood, and it will speak to the generation that follows."</p>
+</div>
+</div>
+<div class="md:col-span-5">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-8 tracking-tight">Our Philosophy</h2>
+<div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+<p>At <span class="text-primary font-bold">Carpintero</span>, we don't just build furniture; we curate environments. Every joint is hand-cut, every surface hand-sanded, and every finish selected for its longevity and tactile warmth.</p>
+<p>Founded by Master Artisan Elena Moreno, our workshop merges traditional joinery techniques with modern structural engineering to create pieces that are as durable as they are beautiful.</p>
+</div>
+<div class="mt-12 flex gap-8">
+<div>
+<div class="text-3xl font-bold text-primary">35+</div>
+<div class="text-xs font-label uppercase tracking-widest text-outline">Years Experience</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-primary">1.2k</div>
+<div class="text-xs font-label uppercase tracking-widest text-outline">Custom Projects</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services: Glassmorphism Bento Grid -->
+<section class="py-32 px-8 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Precision Services</h2>
+<div class="w-16 h-1 bg-primary mx-auto opacity-30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-lg mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">chair</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Custom Furniture</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Unique statement pieces designed specifically for your space and lifestyle. From dining tables to heirloom desks.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 hover:underline" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-lg mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">countertops</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Bespoke Kitchens</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Hand-crafted cabinetry and integrated timber surfaces that turn the heart of the home into a work of art.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 hover:underline" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-lg mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">hand_package</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Restorations</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Breathing new life into antique structures and furniture using period-correct materials and ancestral methods.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 hover:underline" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery: Masonry Style -->
+<section class="py-32 px-8 bg-surface" id="projects">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline text-4xl font-bold text-on-surface">The Gallery</h2>
+<p class="text-on-surface-variant mt-2">A visual record of timber transformed.</p>
+</div>
+<div class="flex gap-4">
+<span class="px-4 py-2 bg-on-secondary-fixed text-on-secondary-fixed-variant rounded-full text-xs font-label uppercase tracking-widest cursor-pointer">All Projects</span>
+<span class="px-4 py-2 hover:bg-surface-container text-outline rounded-full text-xs font-label uppercase tracking-widest cursor-pointer transition-colors">Residential</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 group overflow-hidden rounded-lg relative aspect-video md:aspect-auto h-full">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern minimalist living room featuring a large handcrafted oak wood bookshelf and matching coffee table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAylVstB3EK-waYlNd8XAUuNanHJrWVw6Z5oP9lNDt644edkmJcBa3h_zxLnNY-13RIkyjmZypVSFsQuvLmeryP6Up8QJUdtzBG6vZgtJBAKCFZBAMQzW3vYGSTYwf5Os74LcbMxFa-C9SdbLYFUJ0FJ1AyWEVB5LHp2qzW530CDdP1ENgQqpdBl2lUgBnsTp_-QsD7a_eA4rJwMCQPSPpxTIbunFOCC_jutQCRXUqBpa9TyKn4KEK5P2XIw48GSxndjF3utUAxkik"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<h4 class="text-white font-headline text-2xl font-bold">The Nordic Study</h4>
+</div>
+</div>
+<div class="md:col-span-4 group overflow-hidden rounded-lg relative aspect-square">
+<img alt="Project 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="extreme close up of a hand-planed walnut wood joint showing high precision craftsmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5TcoCvO2fQ5XtwrAu9ArdSKocch6OIm3V_d3l4M3-J8q0GA_JwRY7JEb-gMRVkVFk8GxBHUO-DgFRf2sBEpGJHkGMnbH77yJyYzwhvCFqBOjAxN245jEV6eDU5Wnx2V3eTf1B7JHpLVj5-dQkpBkii0msYgfjC2QX3GdTWfdk3Aze67qvq81CF8yD6wxEHIhL8vxSkwE-GN6i-wU6STfDD5S2KdKd0AbBVcpVZ6xGBWQICFd_DzD0jhEAD34u6fWK7fqN-yrKbWs"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<h4 class="text-white font-headline text-xl font-bold">Walnut Joinery</h4>
+</div>
+</div>
+<div class="md:col-span-4 group overflow-hidden rounded-lg relative aspect-square">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="luxury kitchen with custom dark wood cabinets and marble countertops in a sunlit home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbQLzp2hJJTR5Bc4Mznr2BpJbJBE9iwwj7tiNH0Bz0EW9WdjPiC5-4xxX_57gQc5OqPdTZtEbFkcnP3CJtExvS2-tvjcxNhCshUPCYGVELhQuS5YfNXdsSFV_KRmavXsXVHon7InG-jBLqnAy9eyv5ycY2OgrC7K5p0vDLlcrCYNnxw62Zn6q1avYcVnbnW_6Kn-H_xlFyoW8HU_uWmDWmWPqQ5C1mIuF4rzsMO35arnGXiJNSuP0hVM8ef7nQLht2MlNxZLmxFP0"/>
+</div>
+<div class="md:col-span-8 group overflow-hidden rounded-lg relative aspect-video">
+<img alt="Project 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="asymmetric wooden dining table with live edge finish in a modern airy interior space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV6f_VrioFTUJPM0dkAsvx4HpPtL9q67U1_yk7XHB4xcx38IXkjrgtrm2fYvw_oUdWYmpIW8ChJuSlzOQ7S6x2r9sFZMN8vzMtPv_HMMi2557D4_MS-beStxZRtXxwyv50Ip2t1EebqV806Kitz3PWqCrdXII_qHWC-rUKlKBNg8RBXgU64AtKf34ej22abrisfusqwDiR6rAs3FuzrC0c468xXLqamBLc1798NH-P-bQMX_ikswyVDCLNIGtcz7h3WGQSU1dJfjU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="py-32 px-8 bg-surface-container">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-8">format_quote</span>
+<div class="relative overflow-hidden">
+<blockquote class="font-headline text-3xl font-light italic text-on-surface-variant leading-relaxed">
+                    "We commissioned a dining table that is now the center of our home. The attention to detail and the quality of the wood is unlike anything you can buy in a store. It is a true heirloom."
+                </blockquote>
+<div class="mt-10">
+<p class="font-bold text-primary tracking-widest uppercase text-sm">Julian &amp; Clara Rossi</p>
+<p class="text-outline text-xs mt-1">Custom Dining Project, 2023</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Widget & Contact -->
+<section class="py-32 px-8 bg-surface-bright" id="booking">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Start Your Project</h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed">Ready to bring your vision to life? Schedule a discovery call or visit our workshop. We’ll discuss materials, dimensions, and the soul of your piece.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold text-on-surface">The Workshop</p>
+<p class="text-on-surface-variant">128 Timber Lane, Artisans District<br/>Madrid, Spain</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div>
+<p class="font-bold text-on-surface">Email Us</p>
+<p class="text-on-surface-variant">master@carpinteroworkshop.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-10 rounded-xl shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
+<h3 class="font-headline text-2xl font-bold mb-8">Request a Quote</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="col-span-2 md:col-span-1">
+<label class="block text-xs font-label uppercase tracking-widest text-outline mb-2">Name</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded py-3" type="text"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-xs font-label uppercase tracking-widest text-outline mb-2">Email</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded py-3" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-label uppercase tracking-widest text-outline mb-2">Project Type</label>
+<select class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded py-3">
+<option>Custom Furniture</option>
+<option>Kitchen Cabinetry</option>
+<option>Restoration</option>
+<option>Structural Woodwork</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-label uppercase tracking-widest text-outline mb-2">Message</label>
+<textarea class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded py-3" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded font-bold uppercase tracking-[0.2em] shadow-lg hover:bg-primary-container transition-colors">
+                        Send Project Inquiry
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 py-20 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-10 border-b border-stone-200/40 pb-16 mb-16">
+<div>
+<div class="text-3xl font-bold text-amber-900 tracking-tighter mb-4 font-headline">Carpintero</div>
+<p class="text-stone-500 font-body max-w-xs">Honoring materials, preserving craft, and building for the future since 1984.</p>
+</div>
+<div class="flex flex-wrap gap-12 font-['Lato'] text-sm tracking-wide">
+<div class="flex flex-col gap-4">
+<span class="font-bold text-amber-900">Craftsmanship</span>
+<a class="text-stone-500 hover:text-amber-800 transition-colors" href="#">The Process</a>
+<a class="text-stone-500 hover:text-amber-800 transition-colors" href="#">Wood Library</a>
+<a class="text-stone-500 hover:text-amber-800 transition-colors" href="#">Portfolio</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-amber-900">Contact</span>
+<a class="text-stone-500 hover:text-amber-800 transition-colors" href="#">Work With Us</a>
+<a class="text-stone-500 hover:text-amber-800 transition-colors" href="#">Locations</a>
+<a class="text-stone-500 hover:text-amber-800 transition-colors" href="#">Support</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 font-['Lato'] text-xs text-stone-400 uppercase tracking-widest">
+<p>© 2024 Carpintero Workshop. Built with integrity.</p>
+<div class="flex gap-8">
+<a class="hover:text-amber-900 transition-colors" href="#">Terms</a>
+<a class="hover:text-amber-900 transition-colors" href="#">Privacy</a>
+<a class="hover:text-amber-900 transition-colors" href="#">Sustainability</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Action -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-lg flex items-center justify-center shadow-2xl z-[100] hover:scale-110 transition-transform" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.538-2.961-2.654-.087-.116-.708-.941-.708-1.795 0-.855.448-1.274.607-1.441.159-.166.347-.208.462-.208s.231.001.332.005c.101.005.255-.067.398.28.145.347.491 1.201.535 1.289.043.089.072.191.014.305-.058.114-.087.19-.173.29-.087.1-.183.224-.261.312-.087.098-.178.204-.077.377.101.174.45.743.965 1.202.665.592 1.226.776 1.399.863.173.088.275.074.377-.044.101-.118.434-.506.549-.68.116-.174.232-.145.39-.087s1.012.477 1.185.564.289.13.332.202c.045.072.045.419-.1.824z"></path>
+</svg>
+</a>
+</body></html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MODA CREATIVE | The Editorial Lens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f2f4f7",
+                        "error-container": "#fe8b70",
+                        "inverse-on-surface": "#9c9d9f",
+                        "tertiary-dim": "#62512d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d3dbe2",
+                        "on-secondary-fixed": "#453e39",
+                        "secondary": "#655e58",
+                        "surface": "#f9f9fb",
+                        "on-tertiary-fixed": "#4d3d1b",
+                        "tertiary-fixed-dim": "#ead1a3",
+                        "inverse-primary": "#ffffff",
+                        "primary-fixed-dim": "#dad3cf",
+                        "on-surface": "#2d3338",
+                        "error-dim": "#5c1202",
+                        "tertiary": "#6f5d37",
+                        "surface-container-highest": "#dde3e9",
+                        "primary-container": "#e9e1dd",
+                        "outline": "#757c81",
+                        "surface-variant": "#dde3e9",
+                        "on-surface-variant": "#596065",
+                        "on-primary-fixed": "#433e3c",
+                        "tertiary-container": "#f9e0b0",
+                        "outline-variant": "#acb3b8",
+                        "on-secondary": "#fff7f4",
+                        "surface-container-high": "#e4e9ee",
+                        "surface-bright": "#f9f9fb",
+                        "on-background": "#2d3338",
+                        "background": "#f9f9fb",
+                        "primary-dim": "#56514f",
+                        "on-tertiary": "#fff8f1",
+                        "secondary-fixed-dim": "#ddd2cc",
+                        "secondary-container": "#ece0da",
+                        "primary-fixed": "#e9e1dd",
+                        "on-primary-container": "#55514e",
+                        "inverse-surface": "#0c0e10",
+                        "on-tertiary-fixed-variant": "#6b5934",
+                        "on-primary-fixed-variant": "#5f5b58",
+                        "tertiary-fixed": "#f9e0b0",
+                        "surface-container": "#ebeef2",
+                        "on-secondary-fixed-variant": "#625a55",
+                        "on-error-container": "#742410",
+                        "on-tertiary-container": "#614f2b",
+                        "on-error": "#fff7f6",
+                        "secondary-dim": "#59524d",
+                        "primary": "#625d5b",
+                        "error": "#9e422c",
+                        "secondary-fixed": "#ece0da",
+                        "on-primary": "#fef6f2",
+                        "surface-tint": "#625d5b",
+                        "on-secondary-container": "#58504b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .pulse-animation-infinite { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(22, 163, 74, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<span class="text-2xl font-serif font-bold tracking-tighter text-stone-900">MODA</span>
+<div class="hidden md:flex items-center space-gap gap-8">
+<a class="text-stone-500 hover:text-stone-900 transition-colors font-sans tracking-wide" href="#about">About</a>
+<a class="text-stone-900 border-b-2 border-stone-900 pb-1 font-sans tracking-wide" href="#portfolio">Portfolio</a>
+<a class="text-stone-500 hover:text-stone-900 transition-colors font-sans tracking-wide" href="#gallery">Gallery</a>
+<a class="text-stone-500 hover:text-stone-900 transition-colors font-sans tracking-wide" href="#reviews">Reviews</a>
+<a class="text-stone-500 hover:text-stone-900 transition-colors font-sans tracking-wide" href="#blog">Blog</a>
+<span class="material-symbols-outlined text-stone-900 cursor-pointer hover:opacity-70 transition-opacity">shopping_bag</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center pt-20 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 z-10">
+<p class="font-label uppercase tracking-[0.2em] text-[10px] text-tertiary mb-4">Influencer / Creator</p>
+<h1 class="text-6xl md:text-8xl font-serif leading-tight tracking-tighter text-on-surface mb-6">
+                    The <br/>Editorial <br/><span class="italic">Lens</span>
+</h1>
+<p class="text-lg text-on-surface-variant font-light mb-10 max-w-md">
+                    Curating the future of fashion and lifestyle through a sophisticated, intentional digital atelier.
+                </p>
+<a class="inline-block bg-[#1C1917] text-white px-10 py-5 rounded-lg font-label uppercase tracking-widest text-xs hover:opacity-90 transition-opacity" href="#contact">
+                    Work With Me
+                </a>
+</div>
+<div class="md:col-span-7 relative h-[716px]">
+<img class="w-full h-full object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="high-fashion portrait of a sophisticated woman in neutral minimalist clothing against a soft architectural background with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2LJqkyiYCUzb01XBNzOahbp4dHIAlz2fWRWJrcYfgmVSaTonINdSr2hDhf5TgZO6dWQsY4a37Mjs_CU9FquFyGF5_m1dh4trSolrRdiPu3YuqWU17GhbqdVh5HOszhtdvVg-9XL81ztTpACHj1FTnz4-XJrsbzFBOt_Bpzvz3AvyqCtHEfn4urA_f7G0vsu0_n_jUPZ5SCX4uhJ4XFe9QjBOguw3Fvryk3mQOa-tS4nS08AEw-RPaHrkt2uRwGc0LkJfAGrMNL8s"/>
+<div class="absolute -bottom-10 -left-10 bg-primary-container p-8 hidden lg:block rounded-lg max-w-xs">
+<p class="font-serif italic text-xl text-on-primary-container">"Elegance is the only beauty that never fades."</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Links Grid -->
+<section class="py-12 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8">
+<a class="flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined text-3xl mb-2 text-[#1C1917] group-hover:scale-110 transition-transform">photo_camera</span>
+<span class="font-label uppercase tracking-widest text-[10px]">Instagram</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined text-3xl mb-2 text-[#1C1917] group-hover:scale-110 transition-transform">movie</span>
+<span class="font-label uppercase tracking-widest text-[10px]">TikTok</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined text-3xl mb-2 text-[#1C1917] group-hover:scale-110 transition-transform">play_circle</span>
+<span class="font-label uppercase tracking-widest text-[10px]">YouTube</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined text-3xl mb-2 text-[#1C1917] group-hover:scale-110 transition-transform">push_pin</span>
+<span class="font-label uppercase tracking-widest text-[10px]">Pinterest</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined text-3xl mb-2 text-[#1C1917] group-hover:scale-110 transition-transform">person</span>
+<span class="font-label uppercase tracking-widest text-[10px]">LinkedIn</span>
+</a>
+</div>
+</section>
+<!-- About Me -->
+<section class="py-32 bg-white" id="about">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover rounded-lg" data-alt="editorial shot of fashion director at a minimalist white desk with design magazines and coffee, soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYwBQpysadsXYYSEiOHoAabCSumXbINKo93YiZ5qO8Uy6OpZ5OwKma4B9ES5oVw3ITB9lWWM6tvkPEcsUTc4wkqDTPvk-Swma6f6xGUO5DasDYA_GZMcqIsth57H0np0fVX2pDNehrlv88bautWBU1AYQCgtrEDGArjypfbEZwYdLRk-7f-Jvj7V6V-EYQO1fpMT_K7Ko70x0EJX1vhOZHQmCEF2iG3QS5q4QnLV7QoZW6pI6A7JGjCsq_xADzZbKNskWKP5U0yk4"/>
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-tertiary-container/30 rounded-full blur-3xl -z-10"></div>
+</div>
+<div>
+<p class="font-label uppercase tracking-[0.2em] text-[10px] text-tertiary mb-6">The Creative Soul</p>
+<h2 class="text-5xl font-serif mb-8 leading-tight">Crafting Stories <br/>Behind the Frame</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed font-light text-lg">
+<p>With a background rooted in high-fashion editorial houses in Paris and Milan, I bring a refined eye to every collaboration. My journey started in the print rooms of vintage mastheads, where I learned that true style isn't about what you wear, but how you perceive the world.</p>
+<p>Today, I translate that heritage into the digital space, working with global brands to create content that feels like a timeless magazine spread—intentional, quiet, and profoundly impactful.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content / Portfolio -->
+<section class="py-32 bg-surface" id="portfolio">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-16">
+<div>
+<p class="font-label uppercase tracking-[0.2em] text-[10px] text-tertiary mb-4">Latest Work</p>
+<h2 class="text-5xl font-serif">Curated Projects</h2>
+</div>
+<a class="text-[#1C1917] font-label text-xs uppercase tracking-widest border-b border-[#1C1917] pb-1 hover:opacity-50 transition-all" href="#">View All Work</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Project 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-low">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="fashion model in avant-garde beige coat standing against a concrete wall, minimalist composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEgs8qhaeragXhUhV16DmNxec2ZeSBWtEd2UqmvYj5iyDV-YcX6_aTeJaAYdWaBXZRc61ymIbM8jybNxJoDEnL_W2_52PXqAZ1IgL0UCBxV0w-dDrio2oppNMxTZAJQ81npei-nPuzpf-xDaRS2mlpXAyZq0VIxyJEJVKwoLDty4M4vPMLWTYzYeKCTMLe9XJZok6Hvk93NmEClL81N98nbIAfKkX_CQRwzh5jYB424mHbJs2ADpzU9T0RXhNAa0359DTTqqa6ov8"/>
+</div>
+<p class="font-label uppercase text-[10px] tracking-widest text-tertiary mb-2">Editorial</p>
+<h3 class="text-2xl font-serif mb-1 group-hover:italic transition-all">Neutral Paradox</h3>
+<p class="text-sm text-on-surface-variant opacity-60">Winter 2024</p>
+</div>
+<!-- Project 2 -->
+<div class="group cursor-pointer translate-y-12">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-low">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="flat lay of high-end silk accessories and perfume bottles on a marble surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEOPK-yQ4O9fc2GHjutMG3m6OXJWPyXXPj-GBorhTTjFYnnB0F2hZ9XJRrj83vgh2Pdz1OiDxMLCXSls8Cu9dKhoBbtDGOG3f9SKqnpL7GtKyVXOtmqMonYmsB9fyWBTjWxKeW6bWIWlZsBVYsVMznDNsPhFg6Ck61Ykzy_BwU85i9-eYtD1-xbHDkpqcDl3O1VBrPc2BVHda7wwhgj8dAHsbMyc2_MTAY3-s_yjQ4Xal7DBKiUucbSor5TaslBhTRE_yyUz-Ci7w"/>
+</div>
+<p class="font-label uppercase text-[10px] tracking-widest text-tertiary mb-2">Campaign</p>
+<h3 class="text-2xl font-serif mb-1 group-hover:italic transition-all">Silk &amp; Shadow</h3>
+<p class="text-sm text-on-surface-variant opacity-60">Autumn 2024</p>
+</div>
+<!-- Project 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-low">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="chic street style in Paris with person walking past classic Haussmann architecture, blurred motion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7h0pi4Ieb0vS_dFng9Nzb9Ofy5bDenMhW5tgfeiYZMm6fRgCP2_HKYPKU6gOEHMvPb54vqw66SH_CLyjC9qCqhDaEU12tnBvkplSueK9Os84FPsBI8UXh7X93dQmkSLxQjrJ8OA7_DU0f3PKgAG4-bOyfetUdY_H8iUZy1DK7XnP36COEAu75IGopAbptXDVaZYiJ1pV9v-_YlSbz58Mx0cDGN3-GjkDUXQaE03XAYvzy3K5vVB9gX5QXDj_NluD5Pa31ukPpRzY"/>
+</div>
+<p class="font-label uppercase text-[10px] tracking-widest text-tertiary mb-2">Street</p>
+<h3 class="text-2xl font-serif mb-1 group-hover:italic transition-all">Haussmann Soul</h3>
+<p class="text-sm text-on-surface-variant opacity-60">Spring 2024</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Masonry -->
+<section class="py-32 bg-white" id="gallery">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-serif mb-16 text-center italic">Living Art</h2>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+<div class="break-inside-avoid overflow-hidden rounded-lg group">
+<img class="w-full hover:scale-110 transition-transform duration-500 cursor-zoom-in" data-alt="minimalist watch on a white pedestal with sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbo1_jRGOpnEBlWH2DN1L42f7-mE0JS_fAtyaGLiua9lPRtrKag2NdqkvKzaOkV2-ov4t2_En-17lItaukVSYfMLEKJwkXdKv1IhzfMD6uQuiyO932fOEjLsYbXOLLkzTr_4QOznsSWWxi-EZxdp0E4VZOrzkY3TRsUIHOVu_HZxaw581u0mqm5T6j7ECnWHvH6aAAsI-0k3yOQoFBlrdtYa09YgRQMWZoWVG_ANtHL-erzONhMk8Rfzz_3xpcKwQWqaR2dfudomA"/>
+</div>
+<div class="break-inside-avoid overflow-hidden rounded-lg group">
+<img class="w-full hover:scale-110 transition-transform duration-500 cursor-zoom-in" data-alt="fashion magazines stacked on a wooden floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS9DsTjTnaRhYhezsZ4sgfNHQFl37SuQc8hwm1nGMfFqBq7lBUQcmTRW-j6WHqMGOSyzhhYAdPcQPrtRfATuW4QuQl10K_hJSKGO6YIi9Ejg4T_rAHn4zx9P8XEn5EV6ouLwb4PROEDHLv0BpGBajTrSIjMYi12hncorWzF0OxuQ76R2nAEp_tf670YhtDtNaYWPnTE4OzaqXAc0shWHMDxNaLwUHCps7jGFRQiDVMr3rIfs_t07SGaS0NqR9Vun3HxyTHoIPM0Ww"/>
+</div>
+<div class="break-inside-avoid overflow-hidden rounded-lg group">
+<img class="w-full hover:scale-110 transition-transform duration-500 cursor-zoom-in" data-alt="close up of eyes with high fashion makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD-L4CBz064gnoCkn5bydcBTZVIGEI5tqzEe20Ivbg1rB-X_By6N4Phr6Zd2D8L1d4PwZ8oOM89KZlSg_8pkJa_OZsZOMLYBQbxV1ltcUmgrCgadM3px6J21XTqWM1FyT111AOhIkgVg30wgUkSXrDD5CdL_neICSEhJ4zaAHQIG_9MtUk0t15CZdB-n-PZ39S6NZoGsWW0QsovbZ-ZLBwWjKVmNmI0xUIj435YlAdmTeZJ-Am28pnhx8uEyIPdFu1-PmXA-WfjWs"/>
+</div>
+<div class="break-inside-avoid overflow-hidden rounded-lg group">
+<img class="w-full hover:scale-110 transition-transform duration-500 cursor-zoom-in" data-alt="minimalist interior with a single design chair and a plant shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlTz_5J8rvJONPAw9_1B4XKJ0WVj6x__Qwie2IoGyoL6vq_dSQ9kuYnOxrtEdsuzTvy4V2MIXYBCke5um8GXBtY6wOdEjIM9q5e6XCxdERMIJaEer9SbOHFSRfFUr18BiNoGnocQCDn34U0Fr54Gpwbt7sMl38zVdZIUhoXZUeqJvOT8c9UsxkRz_ZOjGB7UEtEfJmCP10jljEwItttq25MPtGZcnKVbT30yzFTShRinttTwJG7J7vJlRhMU2qf_O0EH7QiO3O47c"/>
+</div>
+<div class="break-inside-avoid overflow-hidden rounded-lg group">
+<img class="w-full hover:scale-110 transition-transform duration-500 cursor-zoom-in" data-alt="woman in flowing dress running through a field of tall grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3x6ytcGBKFkqN04qI74ujJF7XN6usPSuvWr6xNEFnZtYoEM5PcivCdaK0BcNECT85KqPXX-C8Sberh6l7J806s_zHcOuDwMcrowGzH4Mn_-qPWLvOnoYOtHVD08IYRK7osCtv-IkeDgY0jFwu8yECIC2QuIM5TzDkv3Xk1TjIkLWKpNNzfsOu9W13CODZWobXSF_6U4e9ZY2nxbT-uvJ6s4GEtBK7I0W4bKtBxRu1glOQ0S-49Qio1j5JzE3l9_nsozDitgp3cUg"/>
+</div>
+<div class="break-inside-avoid overflow-hidden rounded-lg group">
+<img class="w-full hover:scale-110 transition-transform duration-500 cursor-zoom-in" data-alt="detail shot of luxury jewelry on skin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqcteIcL3QA_NCKH-PLGKybgiKm9lwSRBWCdtZ_Jp0-ipjDalDd7iGpvg3PoFN1sQxYNGNyh8NPrJSGPS6VCqK8Ij3Y2gdxu3aWc8ycF3x_zWYrizCELwrNBJCq7dnUd8wl3wQ3zOfFNuWaciBHWTzD0_0KJ5BRht31U8lr0ZQEHusAVmuozmHazgKTv7ftB0oG8lCTqJm3nKIvHFqFuxBb66oA2msDQ4PbaUte_8G8Poy36VZIgxi-8sI8BEaolO38RM7mnXdzKU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="py-32 bg-surface-container-low" id="reviews">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-serif mb-20 tracking-tight">Voices of Authority</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="flex flex-col items-center">
+<div class="text-[#1C1917] mb-6 flex gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-xl mb-6">"A visionary eye that understands the soul of our brand aesthetics."</p>
+<span class="font-label uppercase tracking-widest text-xs opacity-40">Creative Director, VOGUE</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-[#1C1917] mb-6 flex gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-xl mb-6">"Redefining what digital storytelling means in the modern luxury era."</p>
+<span class="font-label uppercase tracking-widest text-xs opacity-40">Global Marketing, ZARA</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-[#1C1917] mb-6 flex gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-xl mb-6">"Seamless execution from concept to final frame. Truly elite."</p>
+<span class="font-label uppercase tracking-widest text-xs opacity-40">PR Manager, LVMH</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking / Masterclasses -->
+<section class="py-32 bg-white">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5">
+<h2 class="text-4xl font-serif mb-6 leading-tight">Mastering the Lens</h2>
+<p class="text-on-surface-variant font-light text-lg mb-8">Join my exclusive monthly masterclasses on creative direction, aesthetic building, and the business of high-fashion influencer marketing.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface hover:bg-primary-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 flex items-center justify-center bg-white rounded-full font-serif text-lg group-hover:bg-[#1C1917] group-hover:text-white transition-all">24</div>
+<div>
+<p class="font-medium">Creative Storytelling</p>
+<p class="text-xs text-on-surface-variant opacity-60">March 2024 • Online Live</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface hover:bg-primary-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 flex items-center justify-center bg-white rounded-full font-serif text-lg group-hover:bg-[#1C1917] group-hover:text-white transition-all">12</div>
+<div>
+<p class="font-medium">The Aesthetic Business</p>
+<p class="text-xs text-on-surface-variant opacity-60">April 2024 • Milan Workshop</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 bg-surface-container-low p-10 rounded-lg">
+<div class="flex justify-between items-center mb-8">
+<span class="font-serif text-2xl">Select a Date</span>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-50">chevron_left</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-50">chevron_right</span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-4 text-center mb-4">
+<span class="text-[10px] font-label uppercase opacity-40">Sun</span>
+<span class="text-[10px] font-label uppercase opacity-40">Mon</span>
+<span class="text-[10px] font-label uppercase opacity-40">Tue</span>
+<span class="text-[10px] font-label uppercase opacity-40">Wed</span>
+<span class="text-[10px] font-label uppercase opacity-40">Thu</span>
+<span class="text-[10px] font-label uppercase opacity-40">Fri</span>
+<span class="text-[10px] font-label uppercase opacity-40">Sat</span>
+</div>
+<div class="grid grid-cols-7 gap-4 text-center">
+<div class="py-4 text-sm opacity-20">28</div>
+<div class="py-4 text-sm opacity-20">29</div>
+<div class="py-4 text-sm hover:bg-[#1C1917] hover:text-white transition-all rounded-lg cursor-pointer">1</div>
+<div class="py-4 text-sm hover:bg-[#1C1917] hover:text-white transition-all rounded-lg cursor-pointer">2</div>
+<div class="py-4 text-sm bg-primary text-on-primary rounded-lg cursor-pointer">3</div>
+<div class="py-4 text-sm hover:bg-[#1C1917] hover:text-white transition-all rounded-lg cursor-pointer">4</div>
+<div class="py-4 text-sm hover:bg-[#1C1917] hover:text-white transition-all rounded-lg cursor-pointer">5</div>
+<!-- Calendar continues... simplified for UI -->
+<div class="col-span-7 pt-8 text-center">
+<button class="bg-[#1C1917] text-white px-10 py-4 rounded-lg w-full font-label uppercase tracking-widest text-xs">Reserve My Spot</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-32 bg-surface" id="blog">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-5xl font-serif mb-16">The Journal</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="group">
+<div class="aspect-video overflow-hidden rounded-lg mb-8">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="minimalist white studio space with soft shadows and a single designer lamp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtayQ7DlUsiv7wbFBgzuhN6k-1wEkHu0Q6EMsvL5NpiAWWWG9V0h3YFVTenJIyxYhm2zQYRvZ2f5-n6BTmhVq10qJxQ7FR6kmtpbBtB7I5-nJRHJ4cAY-ROypwreta6t5FmMpqhLhruFQT7ldQQBpAZ4v_5VTDqxClzYA2YTnjArXfwICsneBDC4H-g5NRdXEhjpTh37b77yVFqVGPB8XAfZsCH3haHOHhUXnEAhtvhttIEzjT3aQ9ZWMSbOjjSojQZqq4doRytMw"/>
+</div>
+<time class="text-[10px] font-label uppercase tracking-widest text-tertiary">January 15, 2024</time>
+<h3 class="text-2xl font-serif my-4">The Ethics of Aesthetic</h3>
+<p class="text-on-surface-variant font-light mb-6">Why minimalism is becoming the new rebellion in an era of digital saturation...</p>
+<a class="text-xs font-label uppercase tracking-widest border-b border-[#1C1917] pb-1 hover:opacity-50 transition-all" href="#">Read More</a>
+</article>
+<article class="group">
+<div class="aspect-video overflow-hidden rounded-lg mb-8">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="detail of a high-end designer handbag and textured fabric close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCzok6xv7UOVb9PTdEd6UgfKFnk7Wc8yD838K6BS39jgMOG5Oy5IPuktmJDDOKvMB91Ua1iiv6QPiokMrCde0K81hgNY3stCCsp2ycNt-FcxFRLaBTrV_YFU5alF510kUZHJ_D7PDa_4TBZETFthTDsgdqZ7qpKGL6L7YYdnQR0fZ3-oE2xPwa5mJojOscMidL2EMBRzoWNGONYFlb1MBJGYwXKQcqPipQrxr4XdAcB2bxKcVNUpTCULoxwIL4vptZkOdpm0Mn-k"/>
+</div>
+<time class="text-[10px] font-label uppercase tracking-widest text-tertiary">January 10, 2024</time>
+<h3 class="text-2xl font-serif my-4">Curating Your Digital Atelier</h3>
+<p class="text-on-surface-variant font-light mb-6">Building a feed that feels like a physical gallery space rather than a stream...</p>
+<a class="text-xs font-label uppercase tracking-widest border-b border-[#1C1917] pb-1 hover:opacity-50 transition-all" href="#">Read More</a>
+</article>
+<article class="group">
+<div class="aspect-video overflow-hidden rounded-lg mb-8">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="vibrant street fashion scene in Tokyo at dusk with neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe6VjpKMP80lBofQ3KI_XDy38uzFC3mO4U7vni5nWrKzf_MiE7BIcsZsymsCEeePf6Yr1IXrR-DO1-c3eFwowPDA9F5bIm0OW3sEmsGYtwi5Xg4-JiHuHZKXq7RKSXgqNGcx8EVWVrlfrLuppymdLGz5XT5iPpv9LT_op5N1Y4mhKhlLVxQ99IupcWgY9I4WfVdyA7i2MUSUeVF0buOUb4i7-CvKQlCR-YZlPzCi7qhvnZ4YUIR8PjOzXIW5aUxL_D-EXBFQqeOwI"/>
+</div>
+<time class="text-[10px] font-label uppercase tracking-widest text-tertiary">January 02, 2024</time>
+<h3 class="text-2xl font-serif my-4">Milan Fashion Week: Silence</h3>
+<p class="text-on-surface-variant font-light mb-6">The most powerful statements this year were the ones made without a single word...</p>
+<a class="text-xs font-label uppercase tracking-widest border-b border-[#1C1917] pb-1 hover:opacity-50 transition-all" href="#">Read More</a>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="py-32 bg-white" id="contact">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-24">
+<div>
+<h2 class="text-5xl font-serif mb-8">Let's Create.</h2>
+<p class="text-lg text-on-surface-variant font-light mb-12">I am always seeking purposeful collaborations with brands that value intention and editorial excellence.</p>
+<div class="space-y-6">
+<div>
+<p class="font-label uppercase tracking-[0.2em] text-[10px] opacity-40 mb-2">Direct Inquiries</p>
+<a class="text-2xl font-serif border-b border-outline-variant hover:border-[#1C1917] transition-all" href="mailto:collabs@moda.com">collabs@moda.com</a>
+</div>
+<div>
+<p class="font-label uppercase tracking-[0.2em] text-[10px] opacity-40 mb-2">Social Hub</p>
+<div class="flex gap-6 mt-4">
+<span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900 transition-colors">photo_camera</span>
+<span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900 transition-colors">movie</span>
+<span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-900 transition-colors">play_circle</span>
+</div>
+</div>
+</div>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="border-b border-outline-variant/40 focus-within:border-primary transition-colors py-2">
+<label class="block font-label uppercase tracking-widest text-[10px] opacity-40">Your Name</label>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface px-0 py-2" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="border-b border-outline-variant/40 focus-within:border-primary transition-colors py-2">
+<label class="block font-label uppercase tracking-widest text-[10px] opacity-40">Email Address</label>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface px-0 py-2" placeholder="jane@brand.com" type="email"/>
+</div>
+</div>
+<div class="border-b border-outline-variant/40 focus-within:border-primary transition-colors py-2">
+<label class="block font-label uppercase tracking-widest text-[10px] opacity-40">Subject</label>
+<select class="w-full bg-transparent border-none focus:ring-0 text-on-surface px-0 py-2">
+<option>Brand Collaboration</option>
+<option>Editorial Commission</option>
+<option>Speaking / Masterclass</option>
+</select>
+</div>
+<div class="border-b border-outline-variant/40 focus-within:border-primary transition-colors py-2">
+<label class="block font-label uppercase tracking-widest text-[10px] opacity-40">Message</label>
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-on-surface px-0 py-2 min-h-[100px]" placeholder="Tell me about your vision..."></textarea>
+</div>
+<button class="bg-[#1C1917] text-white px-12 py-5 rounded-lg font-label uppercase tracking-widest text-xs hover:bg-stone-800 transition-all">Send Proposal</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-20 px-6 bg-stone-100 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<span class="text-3xl font-serif italic font-bold tracking-tighter text-stone-900">MODA CREATIVE</span>
+<div class="flex gap-12">
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 underline-offset-4 hover:underline transition-all" href="#about">About</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 underline-offset-4 hover:underline transition-all font-bold" href="#portfolio">Portfolio</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 underline-offset-4 hover:underline transition-all" href="#blog">Blog</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500 hover:text-stone-900 underline-offset-4 hover:underline transition-all" href="#contact">Contact</a>
+</div>
+<p class="font-sans uppercase tracking-[0.2em] text-[10px] text-stone-500">© 2024 MODA CREATIVE. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- SideNavBar (Floating WhatsApp) -->
+<div class="fixed bottom-8 right-8 z-50">
+<a class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white shadow-[0_0_20px_rgba(22,163,74,0.4)] hover:scale-110 hover:bg-green-500 transition-transform pulse-animation-infinite" href="#">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</a>
+</div>
+</body></html>

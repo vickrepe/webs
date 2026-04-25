@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#e9e1dd",
+                    "on-secondary": "#fff8f2",
+                    "on-primary-fixed": "#433e3c",
+                    "tertiary": "#6f5d37",
+                    "outline": "#837972",
+                    "tertiary-container": "#f9e0b0",
+                    "on-tertiary-fixed-variant": "#6b5934",
+                    "on-primary-fixed-variant": "#5f5b58",
+                    "surface": "#fff8f5",
+                    "surface-variant": "#ede0d8",
+                    "on-secondary-fixed-variant": "#5f5b56",
+                    "inverse-on-surface": "#a29c98",
+                    "surface-container": "#f6ece6",
+                    "on-surface-variant": "#665d57",
+                    "secondary-fixed": "#e9e1db",
+                    "primary-fixed-dim": "#dad3cf",
+                    "surface-bright": "#fff8f5",
+                    "on-secondary-fixed": "#433f3b",
+                    "surface-dim": "#e5d7cf",
+                    "secondary-container": "#e9e1db",
+                    "surface-container-highest": "#ede0d8",
+                    "error-container": "#fe8b70",
+                    "surface-container-low": "#fbf2ed",
+                    "tertiary-dim": "#62512d",
+                    "inverse-surface": "#100e0c",
+                    "surface-tint": "#625d5b",
+                    "on-tertiary-container": "#614f2b",
+                    "secondary-dim": "#57524e",
+                    "secondary": "#635e5a",
+                    "inverse-primary": "#ffffff",
+                    "on-secondary-container": "#55514d",
+                    "on-tertiary-fixed": "#4d3d1b",
+                    "on-surface": "#38312c",
+                    "error": "#9e422c",
+                    "surface-container-high": "#f2e6df",
+                    "primary-dim": "#56514f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#fff8f1",
+                    "on-background": "#38312c",
+                    "tertiary-fixed-dim": "#ead1a3",
+                    "on-error": "#fff7f6",
+                    "tertiary-fixed": "#f9e0b0",
+                    "primary-container": "#e9e1dd",
+                    "background": "#fff8f5",
+                    "outline-variant": "#bbb0a9",
+                    "on-primary-container": "#55514e",
+                    "secondary-fixed-dim": "#dad3cd",
+                    "primary": "#625d5b",
+                    "on-error-container": "#742410",
+                    "error-dim": "#5c1202",
+                    "on-primary": "#fef6f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f5;
+            color: #38312c;
+            max-width: 390px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- 1. TopAppBar (Shared Component Mapping) -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#fff8f5]/80 backdrop-blur-xl flex justify-between items-center px-6 h-20 shadow-[0_12px_48px_rgba(28,25,23,0.04)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1C1917]" data-icon="menu">menu</span>
+</div>
+<span class="text-2xl font-bold tracking-tighter text-[#1C1917] font-headline">ATELIER</span>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1C1917]" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</nav>
+<!-- 2. Hero Slideshow -->
+<section class="relative h-[707px] w-full pt-20">
+<div class="relative h-full w-full overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Modern high-end tailoring atelier with sharp charcoal suits hanging on minimalist racks in a warm sunlit studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO6WmkaCMkvF4ljklzTUZY13ZEvBlWv4LtHr5NEeYyEsIakKV7JdQUCwFgilWRjTGzAhl2J412uzN1DgDM1nVCFClYhkJ4mIHVVnuussx4wJKDMqnSWG7YJlseLyJuP8-atc309kB2UXywaJYR3Ng88d2yFAM4pi4If8epqURtv39Cl-LPocb-757sZYWHlcSyksVAvH_bET5YYzxv-LY-qlcXeDBAR6utppo9fKIbqa3MmnthVjC-msPxJ2wVhP5Ah-V2rtVz578"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C1917]/60 to-transparent"></div>
+<div class="absolute bottom-12 left-6 right-6 text-[#fff8f5]">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase opacity-80">THE AUTUMN COLLECTION</span>
+<h1 class="font-headline text-5xl font-bold leading-[1.1] mt-2 mb-6">UNCOMPROMISED PRECISION.</h1>
+<button class="bg-[#1C1917] text-[#fff8f5] px-8 py-4 text-xs font-label tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all">
+                    EXPLORE BESPOKE
+                </button>
+</div>
+</div>
+</section>
+<!-- 3. About Us (Stacked Editorial Layout) -->
+<section class="py-24 px-6 bg-surface">
+<div class="flex flex-col gap-8">
+<div class="w-full">
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase">THE PHILOSOPHY</span>
+<h2 class="font-headline text-3xl font-bold mt-4 leading-tight">The intersection of architectural form and tactile luxury.</h2>
+</div>
+<div class="w-full space-y-6 text-on-surface-variant leading-relaxed text-sm">
+<p>Founded on the principle that clothing is the first layer of architecture, ATELIER focuses on the silence of pure materials and the integrity of a perfectly executed stitch.</p>
+<p>Every piece is a dialogue between the wearer and the craftsman, designed to withstand the fleeting nature of trends through enduring silhouettes.</p>
+</div>
+<div class="relative w-full aspect-[4/5] bg-surface-container mt-4">
+<img class="w-full h-full object-cover grayscale brightness-90" data-alt="Close-up of high-quality wool fabric being hand-stitched by an artisan's hands with soft studio lighting and extreme detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3tWP6XKhPay2M1ucveOtPvegsH0XupbSZEWqo5Zv2ioRXeIHj6987-6S1BomI5008A4Yin7-LhCTNc1Wqr7Ey3xMN5xb9fG_CT9RPdwQfg-nB0Il8uAWNQ-mIkS2VzNnFm0Z5RTGTa4kVO48yWefkV30mWKaBIutW6icQjnrHKbzh2Wo5bJ-4RR5B7ybuVU9ZktJV3zu8g1e7QzhbxipRj4-YdPxQY0hu_ZS573XfGKAkHYxmuYHW9w1GuuO3XBTVcl_KsEbjQSI"/>
+</div>
+</div>
+</section>
+<!-- 4. Products (1-column grid) -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase">CURATED SELECTION</span>
+<h2 class="font-headline text-3xl font-bold mt-2 uppercase">ESSENTIALS</h2>
+</div>
+</div>
+<div class="flex flex-col gap-16">
+<!-- Product 1 -->
+<div class="group">
+<div class="aspect-[3/4] w-full bg-surface-variant mb-6 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sharp charcoal grey double-breasted blazer worn by a professional model in a clean minimal concrete setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBteD5QIvwMWCdyk86M4BcLXZDSSinC4gkOWasu1mFLXdh4VXK7T9YT31KFMc4myzqR6lf8wp-wDHfbdpQVWJausgVW2RJNxrxqjWNEeu_tkWmHeMiREBbbGde240WYBvqrkjEFTJ4nzpPLcxaihf4ZPRwQ-tQhKgUd6lFlqGKC0jh-spq-kGAP-3Q7FeotU5M2fqTc4tPsUyjnnBaSFtfs2ITR67aQPhwprnd73z5zYof26XM_TdSYYMy87cAYRStb1DEKBL5ASGI"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">ARCHITECTURAL BLAZER</h3>
+<p class="font-label text-[10px] text-on-surface-variant tracking-widest mt-1">SUPER 120s ITALIAN WOOL</p>
+</div>
+<span class="font-headline text-xl font-bold text-[#1C1917]">$1,250</span>
+</div>
+<button class="w-full mt-6 py-4 border border-outline/20 font-label text-[10px] tracking-widest uppercase hover:bg-[#1C1917] hover:text-white transition-colors">
+                    QUICK VIEW
+                </button>
+</div>
+<!-- Product 2 -->
+<div class="group">
+<div class="aspect-[3/4] w-full bg-surface-variant mb-6 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a crisp white bespoke cotton shirt with French cuffs against a soft beige background with elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxK-znOIci180-Lw4jMT7hBWqxzg2hPs94wosw_0zG-pPHn991pr5PwWzBDoRAJbkmIoZ-WYyAb90gLfe3jC8mILNmE3y28Rmb_Jw5Aq4ZSX1-CKGn7qnmSLe_TeXK6c66Q9GJliHBBbeQaPQ9DQJoytyxOdoy4RMx-j83HBIS1EKijMPpAm9xsTVbYq3DNIsg-dqOanOHuP_xlFriu1w0tl01LLpC5eOn-KO6qemkTImqHZYxMDGmcMPHOMADzEGmfhjiHRABQKc"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">EGYPTIAN COTTON SHIRT</h3>
+<p class="font-label text-[10px] text-on-surface-variant tracking-widest mt-1">HAND-ROLLED HEMS</p>
+</div>
+<span class="font-headline text-xl font-bold text-[#1C1917]">$380</span>
+</div>
+<button class="w-full mt-6 py-4 border border-outline/20 font-label text-[10px] tracking-widest uppercase hover:bg-[#1C1917] hover:text-white transition-colors">
+                    QUICK VIEW
+                </button>
+</div>
+</div>
+</section>
+<!-- 5. Lookbook (Editorial Masonry Concept for Mobile) -->
+<section class="py-24 bg-surface">
+<div class="px-6 mb-12">
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase">AUTUMN/WINTER 2024</span>
+<h2 class="font-headline text-4xl font-bold mt-2 uppercase">EDITORIAL</h2>
+</div>
+<div class="flex flex-col gap-4">
+<div class="grid grid-cols-2 gap-4 px-6">
+<div class="aspect-[3/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial fashion shot of a model in a long charcoal coat walking through a brutalist concrete courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC31k3_E9nUCdS4Z7DEXq-gIrA7JnaTkN3QYjUwF-Ou_ClyzgmfVsI0f3UdkVOwZRnxqOCQDAHT8LkHTh2zee07hhGqW1b9UOZ0TqsoTsKI-uNZ2FnfspX9Rzp6PerzdAFDuLicsp6cT9srFS2Zu4NZZw9RaM-DGPfvWs7aAZuCWNNBKZoCk73F_uIEHr75w4syjycP36Fl72Dal6_ppuxhKA-PYO57ZJ7s_gkfVZu6xFGj74BHqHa6PfRPRz9EiEsacMKJa8j2ZZw"/>
+</div>
+<div class="flex flex-col gap-4">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of leather details on a luxury briefcase in dark espresso tone with rich grain texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpq5lVTVKcJ5sBCZ5Dyqig4o0OqlPZihYuNkap2Mw7LbaW5PB0dwww4iav6jnZowQ-AWDXt34S3eW9OqcUP6nQz4i2QM1nrqb1iA19rvAISv_oNBeEPd8bXEVEENJeb03pxtS88ZPkfx2CRfyL8LOddmQt-Z7fyB6aMUTXy0IgbTQxfqCegUZtNKVFzX7tWslfEGSlnlvBJnNWgkaMcr8uRlM714pb1sRQsCxXQbOKQXotlXVRclII_VrS5reZnIop8GFlAJkUk6A"/>
+</div>
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist composition of silk ties and metallic cufflinks on a stone surface with high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT_4RcoMAoOWZriAdiXTVvQWbh2NxeU8yR786H0kIHDLBp4EsQJZN41QYy-dh4-ThnjyiFTT1v6UGrcT2hlZwFo6nW7CYLyHrDTxKWrfgFIuUOARNbwaJbZUbj50TmSEb14PRtGSAZw2rqgTHn8wffeS-TWDbTBTzvvmLETS0uLjPBjs4upRIHo_SN-AFmg-Nunze_49h9kMq0xA9xacMc2Z7xrHFdZVEFovP4Zci_HnliXFCy_UzTKgVsm4dbKAOOklstS8DLJP0"/>
+</div>
+</div>
+</div>
+<div class="px-6 w-full">
+<div class="aspect-video bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Wide angle view of a luxury minimalist boutique interior with marble floors and soft directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7epDzdyd_54mDy4hsthSZZd0R6byH1chYJWz7twB0i4WXh0y2QsuNnfS4aK0rxXMd3MI5w85jq_l1drXF_LXhSH4xXW_tkX01iXdqXWwbHZYsJs8hC2MJO_jrB1vIjaDvviWkeDB5Rwicps9vfNbWkcUOSu3sO3_ZgPDDlKhVhQyVCMBAU6UZpdEWBQiJoV4dq57l0nzrBU5GsKeXViqUGMtBbPu0OS6S4Alyr1-pTJzR-T3H3NM6b4z4Q-uWTd5-1IrMU_3I3Z0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Reviews (Carousel) -->
+<section class="py-24 bg-surface-container px-6 overflow-hidden">
+<h2 class="font-headline text-xl italic text-center max-w-[300px] mx-auto leading-relaxed">"The silhouette is unmatched. ATELIER has returned a sense of dignity to the modern professional wardrobe."</h2>
+<div class="mt-8 flex flex-col items-center">
+<span class="font-label text-[10px] tracking-[0.2em] font-bold">JULIAN VANCE</span>
+<span class="font-label text-[10px] opacity-60 tracking-[0.1em] mt-1">CREATIVE DIRECTOR</span>
+</div>
+<div class="flex justify-center gap-4 mt-8">
+<div class="w-1.5 h-1.5 bg-[#1C1917]"></div>
+<div class="w-1.5 h-1.5 bg-[#1C1917]/20"></div>
+<div class="w-1.5 h-1.5 bg-[#1C1917]/20"></div>
+</div>
+</section>
+<!-- 7. Contact (Details + Map) -->
+<section class="py-24 bg-surface px-6">
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase">VISIT THE ATELIER</span>
+<h2 class="font-headline text-3xl font-bold mt-4 mb-12 uppercase">LONDON FLAGSHIP</h2>
+<div class="space-y-12">
+<div>
+<h4 class="font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">ADDRESS</h4>
+<p class="font-headline text-lg leading-snug">42 SAVILE ROW<br/>MAYFAIR, LONDON<br/>W1S 3EP</p>
+</div>
+<div>
+<h4 class="font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">APPOINTMENTS</h4>
+<p class="font-headline text-lg">+44 (0) 20 7946 0123<br/>CONCIERGE@ATELIER.COM</p>
+</div>
+<div class="w-full h-64 bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="Stylized monochromatic map of London's Mayfair district highlighting Savile Row in a minimalist aesthetic" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkAWsBtzs1Xl-KfB9fbgPMLNCELxqGCR-C0H7QEPkTz2lxVyM45OwEXgmxg9Q9w2oLe_WIXK5I9YOrp73XdoNQfACgVwYJiBn-NWCP_5H5h9eKe5svQiSp6jAMB8PuPuXpjJiw8vEKJSR5zL5K0CwT-Qg01h3SaKBA30KMW0dNJUEjZefvuAhcb1ZHLG_5LiRjruDVzqItVeXGCH40yvyuUKAQvx2EFDd6-J96-JhdlO0KPBQV28kGNS6cuYOU5Mh7LFBHnhlb4ro"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-[#1C1917]" data-icon="location_on">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Blog -->
+<section class="py-24 bg-surface-container-low px-6">
+<div class="flex justify-between items-baseline mb-12">
+<h2 class="font-headline text-2xl font-bold uppercase">EDITORIALS</h2>
+<span class="font-label text-[10px] border-b border-[#1C1917] pb-1 uppercase tracking-widest">VIEW ALL</span>
+</div>
+<div class="space-y-12">
+<article class="flex flex-col gap-4">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest uppercase">OCTOBER 12. 2024</span>
+<h3 class="font-headline text-xl font-bold leading-tight">The Evolution of the Double-Breasted Silhouette</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">Exploring the resurgence of classic military tailoring in the modern boardroom.</p>
+</article>
+<div class="w-full h-px bg-outline/10"></div>
+<article class="flex flex-col gap-4">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest uppercase">SEPTEMBER 28. 2024</span>
+<h3 class="font-headline text-xl font-bold leading-tight">Ethics of Luxury: Our Wool Sourcing</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">A journey from the rolling hills of Biella to our London workshop.</p>
+</article>
+</div>
+</section>
+<!-- 9. Footer (Shared Component Mapping) -->
+<footer class="w-full rounded-none pt-24 pb-12 bg-[#fbf2ed]">
+<div class="max-w-[1440px] mx-auto px-6 flex flex-col items-center text-center">
+<span class="font-headline text-4xl mb-8 block text-[#1C1917] tracking-tighter font-bold">ATELIER</span>
+<div class="flex flex-col gap-6 mb-16">
+<a class="font-label text-[11px] tracking-[0.1em] opacity-60 hover:opacity-100 transition-opacity uppercase" href="#">PRIVACY POLICY</a>
+<a class="font-label text-[11px] tracking-[0.1em] opacity-60 hover:opacity-100 transition-opacity uppercase" href="#">TERMS OF SERVICE</a>
+<a class="font-label text-[11px] tracking-[0.1em] opacity-60 hover:opacity-100 transition-opacity uppercase" href="#">SHIPPING &amp; RETURNS</a>
+<a class="font-label text-[11px] tracking-[0.1em] opacity-60 hover:opacity-100 transition-opacity uppercase" href="#">STOCKISTS</a>
+</div>
+<div class="flex gap-8 mb-12">
+<span class="material-symbols-outlined text-xl opacity-60" data-icon="share">share</span>
+<span class="material-symbols-outlined text-xl opacity-60" data-icon="photo_camera">photo_camera</span>
+<span class="material-symbols-outlined text-xl opacity-60" data-icon="mail">mail</span>
+</div>
+<p class="font-label text-[10px] tracking-[0.1em] opacity-60 uppercase">© 2024 THE EDITORIAL MONOLITH. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- 10. Floating WhatsApp (SideNavBar Mapping) -->
+<div class="fixed bottom-8 right-8 z-50 bg-[#1C1917] text-[#fff8f5] w-16 h-16 flex items-center justify-center shadow-[0_12px_48px_rgba(28,25,23,0.1)] hover:scale-105 transition-transform duration-500 ease-out active:scale-95">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+<!-- Floating Label for Mobile Focus -->
+<span class="absolute -top-10 right-0 bg-[#1C1917] text-[8px] font-label tracking-widest px-3 py-1 uppercase whitespace-nowrap">CHAT WITH US</span>
+</div>
+</body></html>

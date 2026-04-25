@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#dedacb",
+                    "background": "#fdf9e9",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e6e3d3",
+                    "on-surface-variant": "#554336",
+                    "outline-variant": "#dbc2b0",
+                    "on-secondary-container": "#784c25",
+                    "surface": "#fdf9e9",
+                    "inverse-surface": "#323126",
+                    "primary-fixed": "#ffdcc3",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#007abd",
+                    "on-tertiary-fixed": "#001d32",
+                    "surface-bright": "#fdf9e9",
+                    "secondary-fixed": "#ffdcc3",
+                    "secondary": "#82542c",
+                    "on-primary-fixed-variant": "#6e3900",
+                    "on-tertiary-container": "#fdfcff",
+                    "on-secondary-fixed-variant": "#673d17",
+                    "surface-container": "#f2eede",
+                    "primary": "#8d4b00",
+                    "on-primary": "#ffffff",
+                    "outline": "#887364",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#96ccff",
+                    "inverse-primary": "#ffb77d",
+                    "inverse-on-surface": "#f5f1e1",
+                    "primary-container": "#b15f00",
+                    "surface-tint": "#904d00",
+                    "surface-container-low": "#f8f4e4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#2f1500",
+                    "on-surface": "#1c1c13",
+                    "tertiary": "#006096",
+                    "on-primary-fixed": "#2f1500",
+                    "on-background": "#1c1c13",
+                    "secondary-container": "#fdbf8f",
+                    "secondary-fixed-dim": "#f7ba8a",
+                    "primary-fixed-dim": "#ffb77d",
+                    "surface-container-high": "#ece8d9",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#e6e3d3",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#cee5ff",
+                    "on-tertiary-fixed-variant": "#004a75"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="w-full sticky top-0 z-50 bg-[#fdf9e9] dark:bg-stone-950">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<h1 class="text-2xl font-bold text-[#8d4b00] dark:text-amber-500 font-['Plus_Jakarta_Sans'] tracking-tight">The Hearth &amp; Harvest</h1>
+<div class="flex items-center gap-4">
+<button class="text-[#8d4b00] scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">shopping_basket</span>
+</button>
+<button class="md:hidden text-[#8d4b00]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:flex justify-center gap-8 pb-4">
+<a class="text-[#8d4b00] dark:text-amber-500 border-b-2 border-[#8d4b00] dark:border-amber-500 pb-1 font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#b15f00] transition-colors duration-300" href="#">Breads</a>
+<a class="text-[#1c1c13]/70 dark:text-stone-400 pb-1 font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#b15f00] transition-colors duration-300" href="#">Pastries</a>
+<a class="text-[#1c1c13]/70 dark:text-stone-400 pb-1 font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#b15f00] transition-colors duration-300" href="#">Workshops</a>
+<a class="text-[#1c1c13]/70 dark:text-stone-400 pb-1 font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#b15f00] transition-colors duration-300" href="#">Our Story</a>
+</div>
+</nav>
+<main class="px-6 py-4 space-y-12">
+<section class="relative overflow-hidden rounded-xl h-[500px] flex items-end p-8">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Close-up of artisan sourdough bread loaves on a wooden table with flour dusting and warm morning sunlight streaming through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIQBpf0QWBAJudg2wUOyV9193surlwZ-9fl1kmDEjg_OzS5VYZek0RFTGlVD3zj0S2es7m_kBO2rOkKELxHFEMrOge9dp1-abuil7MB9PLccBG5xAMfvDVlQIdELYZK9sFv89xe3X_2HTMzsUGRcA_N-EjZZcxMgMFu60bfAmvT56gjQzFP9fvitIv-Cf6Y7Zetq8vby70wCwk_IHesBhbrlQcs2numOID6wgd-cUkTFxHYmNE4jYruL0P29PVVOdA1cQcsW9njCE"/>
+<div class="relative z-20 space-y-4">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-widest">Fresh Today</span>
+<h2 class="text-white text-5xl font-extrabold font-headline leading-tight">The Sourdough Soul</h2>
+<p class="text-white/90 text-lg max-w-xs font-body">Crafted with a 50-year-old starter and heritage grains.</p>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg shadow-xl scale-95 active:scale-90 transition-transform">Explore the Bakery</button>
+</div>
+</section>
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<h3 class="text-3xl font-bold font-headline text-primary">Signature Bakes</h3>
+<a class="text-secondary font-semibold border-b-2 border-secondary/20 pb-1" href="#">View All</a>
+</div>
+<div class="flex overflow-x-auto gap-6 hide-scrollbar pb-4 -mx-6 px-6">
+<div class="flex-none w-72 group">
+<div class="relative aspect-square mb-4 overflow-hidden rounded-lg bg-surface-container-high transition-transform duration-500 group-hover:scale-105">
+<img class="w-full h-full object-cover" data-alt="Golden brown honey-glazed croissant on a ceramic plate, flaky layers visible, soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbXw-14y8fRZKB9p-0FRf-HpjKGKagMiVxtMr_H_fSfxYFvtxR4_llCFWoyI2EI2A_eICCmYVeSyRndq7JySj6ewumVSY89lp4wWLlMI2Ujh8w5j1sHGE9QxOM-Bjc2guCjHYb6x9pRNRRWCaSwpzFa3S1AB3lpS0iL5_8V6deQk7mBpGUftnTRAAGxp_yASXSndaj-y7hO9ZB19AkJoDg7JpJKbCUdTUJACslyLnYtJzGk8mA6Ns2oUaBOdqY5mj4al-EpwGJIMY"/>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Honey Glazed Croissant</h4>
+<p class="text-on-surface-variant text-sm">3-day lamination process</p>
+<div class="flex justify-between items-center mt-2">
+<span class="text-primary font-bold text-lg">$4.50</span>
+<button class="bg-surface-container-highest p-2 rounded-full text-primary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<div class="flex-none w-72 group">
+<div class="relative aspect-square mb-4 overflow-hidden rounded-lg bg-surface-container-high transition-transform duration-500 group-hover:scale-105">
+<img class="w-full h-full object-cover" data-alt="Rustic loaf of olive and rosemary focaccia topped with coarse sea salt and fresh herbs on a cooling rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_1mNhA1h4eTgGhJmEUC65wsfq8V7-U1Alz8yZo889S0ba8l7qzSIzh1CYnlo9fceObNwfbPcSN2E_pZSA8YzpY7HwdB_eYjThrggW5FXU4hjoI9aTUjLFx8vH3yZwUD5P285kz8pVY1H4Xxv-T7odOS8KsoKxs8-m64bkyEg1TAhByWQUqIL28xcWAEY1SJKyIfakPuNZTV15YdojTtjB3MsHltiRhm4VB1tapIhetx2SOvyGy5D7-sxyhQV5cD4g-otN6bAq2CM"/>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Rosemary Focaccia</h4>
+<p class="text-on-surface-variant text-sm">Infused with cold-press oil</p>
+<div class="flex justify-between items-center mt-2">
+<span class="text-primary font-bold text-lg">$6.25</span>
+<button class="bg-surface-container-highest p-2 rounded-full text-primary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<div class="flex-none w-72 group">
+<div class="relative aspect-square mb-4 overflow-hidden rounded-lg bg-surface-container-high transition-transform duration-500 group-hover:scale-105">
+<img class="w-full h-full object-cover" data-alt="Artisan cinnamon roll with thick white cream cheese icing and a dusting of cinnamon powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkCgVMbcKGp3FQD1rfYK2FsVcP5GPDh1te7sucOXNZ6w6UlgTixZsz4N_TVlP_y7_Yt2mTjgPpia0L4dujgoP8ZyqAuXazDewYkyRE6nBkSmhVxZaux0fz3qJefbiYRrEyGxMTkoElCE57j2Sw9u0pA6a3xMXQxtD3oW0S5tJDqPCMPCUdqdOcBC-IVTDXFGLjOSXjPbnbnyyP2kSU1aXzdlUwrNA-F2t6_DmgoqpHLRKnUQq4Q4J3YCaCUEBIoQnOxDI5SNos4PE"/>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Cinnamon Brioche</h4>
+<p class="text-on-surface-variant text-sm">Velvety cream cheese swirl</p>
+<div class="flex justify-between items-center mt-2">
+<span class="text-primary font-bold text-lg">$5.75</span>
+<button class="bg-surface-container-highest p-2 rounded-full text-primary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-secondary-container rounded-lg p-8 space-y-4 flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container">bakery_dining</span>
+<h3 class="text-2xl font-bold text-on-secondary-container font-headline">Bread Workshops</h3>
+<p class="text-on-secondary-container/80 font-body">Master the art of the perfect crust in our weekly weekend classes.</p>
+<button class="bg-on-secondary-container text-white px-6 py-3 rounded-full w-fit font-bold">Book a Spot</button>
+</div>
+<div class="bg-surface-container-high rounded-lg p-8 relative overflow-hidden h-64 flex items-center">
+<div class="relative z-10 w-2/3">
+<h3 class="text-2xl font-bold text-primary font-headline">Our Heritage</h3>
+<p class="text-on-surface-variant text-sm font-body mt-2">Born in a stone oven, raised with community love.</p>
+</div>
+<div class="absolute -right-8 -bottom-8 w-48 h-48 opacity-20">
+<span class="material-symbols-outlined text-[12rem] text-primary">grain</span>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-low rounded-xl p-8 text-center space-y-6">
+<h3 class="text-3xl font-extrabold text-primary font-headline">Join the Hearth</h3>
+<p class="text-on-surface-variant max-w-md mx-auto">Get notified about limited-batch releases and exclusive seasonal recipes.</p>
+<div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+<input class="bg-surface-container-lowest border-none rounded-lg px-6 py-4 flex-grow focus:ring-2 focus:ring-primary/20 placeholder:text-outline/50" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold">Sign Up</button>
+</div>
+</section>
+</main>
+<footer class="w-full rounded-t-[3rem] mt-12 bg-[#fdf9e9] dark:bg-stone-950">
+<div class="bg-[#f5f0db] dark:bg-stone-900 px-12 py-12 flex flex-col items-center gap-10 rounded-t-[3rem]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full gap-6">
+<div class="text-center md:text-left">
+<span class="text-lg font-semibold text-[#8d4b00] font-['Be_Vietnam_Pro'] leading-relaxed block mb-2">The Hearth &amp; Harvest</span>
+<p class="text-[#1c1c13]/60 dark:text-stone-400 text-sm max-w-xs">Handcrafted daily with organic flour and tradition.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#1c1c13]/60 dark:text-stone-400 text-sm hover:underline decoration-[#b15f00] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Sustainability</a>
+<a class="text-[#1c1c13]/60 dark:text-stone-400 text-sm hover:underline decoration-[#b15f00] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Wholesale</a>
+<a class="text-[#1c1c13]/60 dark:text-stone-400 text-sm hover:underline decoration-[#b15f00] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Careers</a>
+<a class="text-[#1c1c13]/60 dark:text-stone-400 text-sm hover:underline decoration-[#b15f00] underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant/30"></div>
+<div class="text-center">
+<p class="text-[#1c1c13]/60 dark:text-stone-400 text-sm font-['Be_Vietnam_Pro'] leading-relaxed">
+                    © 2024 The Hearth &amp; Harvest. Baked with love and golden wheat.
+                </p>
+</div>
+</div>
+</footer>
+<nav class="fixed bottom-0 left-0 right-0 bg-surface/80 backdrop-blur-xl border-t border-outline-variant/10 md:hidden z-50 flex justify-around items-center py-4 px-6">
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant/60">
+<span class="material-symbols-outlined">bakery_dining</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Breads</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant/60">
+<span class="material-symbols-outlined">cake</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Pastries</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant/60">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Story</span>
+</button>
+</nav>
+<div class="pb-20 md:pb-0"></div>
+</body></html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ELECTRICISTA | Technical Electrical Services</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "#faf8ff",
+                      "on-background": "#191b23",
+                      "surface-container-high": "#e7e7f3",
+                      "on-secondary-container": "#394c84",
+                      "secondary-fixed": "#dbe1ff",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#0053db",
+                      "on-secondary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#434655",
+                      "tertiary-container": "#bc4800",
+                      "outline-variant": "#c3c6d7",
+                      "on-primary-fixed": "#00174b",
+                      "outline": "#737686",
+                      "surface-variant": "#e1e2ed",
+                      "primary-container": "#2563eb",
+                      "primary": "#004ac6",
+                      "surface-container-highest": "#e1e2ed",
+                      "tertiary": "#943700",
+                      "on-error": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#ffede6",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "on-surface": "#191b23",
+                      "surface-container": "#ededf9",
+                      "on-secondary-fixed-variant": "#31447b",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "inverse-primary": "#b4c5ff",
+                      "tertiary-fixed": "#ffdbcd",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "surface": "#faf8ff",
+                      "secondary": "#495c95",
+                      "on-tertiary-fixed": "#360f00",
+                      "inverse-surface": "#2e3039",
+                      "on-secondary-fixed": "#00174b",
+                      "primary-fixed": "#dbe1ff",
+                      "surface-dim": "#d9d9e5",
+                      "on-primary-container": "#eeefff",
+                      "secondary-container": "#acbfff",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed-dim": "#b4c5ff",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f0f0fb",
+                      "error-container": "#ffdad6",
+                      "surface-container-low": "#f3f3fe",
+                      "background": "#faf8ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Work Sans"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .tonal-depth-via-blur {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl sticky top-0 z-50 w-full shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-black tracking-tighter text-blue-800 dark:text-blue-400 font-['Work_Sans']">
+                ELECTRICISTA
+            </div>
+<!-- Desktop Links (Hidden on Mobile as per prompt) -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 font-['Work_Sans'] font-bold tracking-tight px-1" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Certifications</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded text-sm font-bold tracking-tight hover:bg-primary-container transition-all active:scale-95">
+                    Request Quote
+                </button>
+</div>
+<!-- Mobile Menu Trigger -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Slideshow (Static Representation for UI) -->
+<section class="relative h-[751px] w-full overflow-hidden flex items-center bg-on-background">
+<div class="absolute inset-0 z-0">
+<img alt="Technical mastery" class="w-full h-full object-cover opacity-60 scale-105" data-alt="Close-up of a modern electrical panel with perfectly organized blue and copper wires in a high-tech industrial setting with soft bokeh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC76_QETZUTTMyt_XrRPVVRsmbMk7yWeJcnCaB5zsmsXQx_tOPhfAnS0y-8DNdBlTsPEUzMs8QFbk_Oi4oL4AT-edV2X5Zqmqj5N_aRyJKVFKWcfqe1UYTh8Gk3MitCo86evnhRQuIIsJwzrggrKLvDaWTYxcHreqtdYF911fnjY6WkKEnSBR7ZktRcwWSeFwJe-ZrCr-hC98iXCm2N7aNVXNAHXrdnS8jQgu63pO_KWJ2BJa0CIvzJ4NLFCSfuX4KI_Apk7O6Zpd0"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-tr from-on-background via-on-background/40 to-transparent z-10"></div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 pt-20">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 backdrop-blur-md rounded border border-primary/20 mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-xs font-bold tracking-[0.1em] text-primary-container font-label uppercase">High Voltage Certified</span>
+</div>
+<h1 class="font-headline font-black text-5xl md:text-7xl text-white tracking-tighter leading-[0.95] mb-6">
+                    ENGINEERING<br/>PRECISION.
+                </h1>
+<p class="text-surface-container-high text-lg md:text-xl max-w-md mb-8 leading-relaxed opacity-90">
+                    Industrial-grade electrical solutions for complex infrastructures and high-end residential developments.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-bold text-sm tracking-tight flex items-center justify-center gap-3">
+                        DISPATCH EMERGENCY TEAM
+                        <span class="material-symbols-outlined text-lg">bolt</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded font-bold text-sm tracking-tight hover:bg-white/20 transition-all">
+                        VIEW CAPABILITIES
+                    </button>
+</div>
+</div>
+<!-- Page Indicators -->
+<div class="absolute bottom-12 left-6 z-20 flex gap-2">
+<div class="w-12 h-1 bg-primary"></div>
+<div class="w-8 h-1 bg-white/30"></div>
+<div class="w-8 h-1 bg-white/30"></div>
+</div>
+</section>
+<!-- About Section (Tonal Architecture) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary-fixed/50 -z-10 rounded"></div>
+<img alt="Technical Expert" class="rounded shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional electrician in high-visibility gear inspecting a complex circuit board with a digital multimeter in a clean laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAve3j9kb-Ucc9-1nGMVP3PsVTrrKpjt3sx4ph-amh9pn1YcDLRY7zHemoLNFELh_COXDaVjrxeoJGGYxqy_MlJauGqHZrDHaocvO5Y_v92GyJvtwTZT8eCHpvvqnjeTmcGzLDvGO3UMPL9BzCfYM0jVuXD20mCZqWaObWVcKlvmBqDH6UU_P_nQLIgmaRWFKx3jrMiEhomyYbDGNtVkpshtgrcfXy9_2NYrnsRLJfa_xyTvEUSHz4EXgX4CQI3nEdA_4ulN5BC00I"/>
+</div>
+<div>
+<span class="text-primary font-black tracking-widest text-xs font-label uppercase block mb-4">The Master Circuit</span>
+<h2 class="font-headline text-4xl font-extrabold text-on-surface tracking-tight mb-6">Absolute Order in Invisible Complexity.</h2>
+<p class="text-on-surface-variant leading-loose mb-8">
+                        ELECTRICISTA Technical Services operates at the intersection of traditional craftsmanship and digital-age electrical engineering. We don't just wire buildings; we design the nervous systems of modern productivity.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-3xl font-black text-primary font-headline mb-1">15+</div>
+<div class="text-xs font-bold text-on-surface tracking-widest font-label uppercase">Years Mastery</div>
+</div>
+<div>
+<div class="text-3xl font-black text-primary font-headline mb-1">2.4k</div>
+<div class="text-xs font-bold text-on-surface tracking-widest font-label uppercase">Active Nodes</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-4xl font-black tracking-tighter mb-2">Technical Domains</h2>
+<p class="text-on-surface-variant max-w-sm">Specialized capabilities across vertical industries.</p>
+</div>
+<div class="hidden md:block">
+<button class="text-primary font-bold text-sm flex items-center gap-2 group">
+                            FULL CATALOGUE
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Major Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded shadow-sm border border-outline-variant/10 group cursor-pointer hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-weight="fill">factory</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Industrial Power Systems</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">High-load distribution, motor controls, and emergency backup systems designed for 24/7 reliability in manufacturing environments.</p>
+<div class="flex gap-2">
+<span class="bg-surface-container px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded">480V Max</span>
+<span class="bg-surface-container px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded">Redundancy Focused</span>
+</div>
+</div>
+<!-- Side Card -->
+<div class="md:col-span-4 bg-primary p-8 rounded flex flex-col justify-between text-on-primary">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4">bolt</span>
+<h3 class="font-headline text-xl font-bold mb-2">Emergency Dispatch</h3>
+<p class="opacity-80 text-sm">Priority response for critical infrastructure failures.</p>
+</div>
+<button class="w-full bg-white text-primary font-bold py-3 rounded mt-8 active:scale-95 transition-transform">
+                            0800-POWER
+                        </button>
+</div>
+<!-- Small Cards -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">home_work</span>
+<h3 class="font-headline font-bold text-lg mb-2">Commercial Buildouts</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Adaptive wiring for modern office layouts and retail environments.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">ev_station</span>
+<h3 class="font-headline font-bold text-lg mb-2">EV Infrastructure</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Level 2 and 3 charging station network design and deployment.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">shield</span>
+<h3 class="font-headline font-bold text-lg mb-2">Safety Audits</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Comprehensive thermal imaging and compliance certifications.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Widget (Floating/Focused) -->
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-6 relative z-10">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl p-8 md:p-12 border border-outline-variant/20">
+<div class="text-center mb-10">
+<h2 class="font-headline text-3xl font-black tracking-tight mb-2">Schedule Engineering Site Visit</h2>
+<p class="text-on-surface-variant text-sm">Professional assessment for complex electrical projects.</p>
+</div>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-outline">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-outline">Service Type</label>
+<select class="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary transition-all">
+<option>Industrial Consultation</option>
+<option>Commercial Maintenance</option>
+<option>Residential High-End</option>
+<option>Safety Audit</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-outline">Project Brief</label>
+<textarea class="w-full bg-surface-container-low border-none rounded p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Describe the technical requirements..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary-container text-white font-black py-5 rounded-lg shadow-lg shadow-primary/20 hover:translate-y-[-2px] active:translate-y-0 transition-all uppercase tracking-[0.15em] text-xs">
+                            Confirm Technical Request
+                        </button>
+</form>
+</div>
+</div>
+<!-- Decorative Circuit Element -->
+<div class="absolute top-1/2 left-0 w-full h-px bg-primary/5 -z-0"></div>
+<div class="absolute top-1/2 left-1/4 w-2 h-2 rounded-full bg-primary/20 -mt-1"></div>
+</section>
+<!-- Project Gallery (Asymmetric) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 text-center">
+<span class="text-primary font-black tracking-widest text-xs font-label uppercase">Execution Proof</span>
+<h2 class="font-headline text-4xl font-black mt-2">The Archive of Precision</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:h-[600px]">
+<div class="col-span-2 row-span-2 relative group overflow-hidden rounded">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a massive, brightly lit server room with blue LED lighting and miles of neatly routed network and power cables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAukaMsmd-RHPxbt4k3rwkstQCjraZfwlRn9-geKjsMEUFhUQPWXhaQNeX_HNIHeyG2o0DUaanzThQSY6YomN1oQyyhZbtq9ILXuHQm55rOstrGzqpzrmAGUygrVrzf5SV88Cc_fuWc4hEyal5XoGH41wQsjAybcnge4RRsoA6oQI-LgCuAZSvT_kODYc9quF4wmhiAqoVuVfOk9SP5Nk34NBvb-vHzGlnaELWSlcTql751dbnO3l2P2QNg_Aegtsa5FnjHAuvTYKU"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+<span class="text-[10px] font-bold uppercase tracking-widest mb-1">Data Center</span>
+<h4 class="font-headline font-black text-xl">Core Power Grid</h4>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded">
+<img alt="Project 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Architectural lighting installation on the exterior of a brutalist concrete building at night with sharp blue and white beams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp3SA617Lx_ZzPzOJHix840PYoE6sjxjX0922Iq0rFChr7BBMYB-lP4HSidf8TQpjrAxJ4vhymi89kLQoQCdAUcL1h8iVIKuFNmFWTK7iB6GANSeDFfddhDD6nGoH8b_dmFMKn0Uj-Ptz61sPrzkIAJfoH98Xlm56MI2Af13uS12u1tpzxkPfAvOkUy171FD997py9VDA0wAOr-wIibsOwbII2tqsXnf4cpd2YWSiMjteWujXQHbxdYmWIFxyYK5mdnBf5aTAR-Yk"/>
+</div>
+<div class="relative group overflow-hidden rounded">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ultra-modern office interior with geometric LED light fixtures suspended from a high industrial ceiling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASs_T4rs6h26pRUZHWJKtZbcPgP27fnYwOkngpU8O7QTzvR16N1Tpq_CTjuIUTFrZzFsGcOAqjOs41q0Z5XoX26JnM3HUymTFKWnAG_7CtXK0yEN-ysDl2K_QKyGTVc6SSk0tAwwlT9W9eHX2-aDXe5r7W0Dw0ZBaKx3vO0AS07ONbuixk7XMaWQOpxQ9XSFAOMGNXxDtFqY7GB0MsY-QVKCSIJQE7mnZ56UTEM7dbAZO-ysYawYUQFug56O4RFeLjbBKNyFOzx0o"/>
+</div>
+<div class="col-span-2 relative group overflow-hidden rounded">
+<img alt="Project 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Technician working on a high-voltage transformer substation during a dramatic sunset with purple and orange skies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVoiWrbV4gV2r2wN-_nUI2ZPW5K5fheMNAd3i1w_Jm3pKNlu3AZZcYuI45bAmbUexC3mtmBolWB9GL210Siq7FncFQac_ou0d71cJC0GQATY86XLP7wip76Iyz0lHjyfFsRrXPpIkJOYLjxsarY0kUE8ajuZZHdMY6sV3y5tx7hN7_-d4uURcMfuXpK5FECfdKQV1qtbieyQq_cMDnA1WEKKlLkcjOW-EgM-O-ceQrez_wTWCB9p0h8ehOTtGfaC02ZCICjzrJh2Q"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews (Tonal Depth) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 overflow-hidden">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/3">
+<h2 class="font-headline text-3xl font-black mb-4">Validated Performance.</h2>
+<p class="text-on-surface-variant text-sm">Long-term partnerships with leading facility managers and developers.</p>
+<div class="mt-8 flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="md:w-2/3 flex gap-6 overflow-x-auto no-scrollbar pb-8">
+<!-- Review Card -->
+<div class="min-w-[320px] bg-surface-container-lowest p-8 rounded shadow-sm">
+<div class="flex gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic leading-relaxed mb-6">"The level of technical documentation and organizational discipline Electricista brought to our manufacturing facility upgrade was unmatched."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container rounded-full overflow-hidden">
+<img alt="Reviewer" class="w-full h-full object-cover" data-alt="Portrait of a professional man in a business suit, clear focus, neutral studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8cMseVBDyomgyiZV_JakZ1-uBK1NtY61R5nd33LaFjIJIVjTqmo7JSv6n2VNbJKoC8TLnpgG_ke66GCNz8p_8C8ZO1gXJHB2g3SoOuSn7saiJnsdHip6sFsaY5UhkXudlr5awaFZiCs8CEDOXJ86NxxBdeDyxWlqcA6xJPpZh0Zmpp5AsOO_hXKv1OOvWFbN1-gyCfuOcUqKmkv4ZPlxAU4xV-EAr0wzI5yeh5qf-097SQkis-oBndyWunUQ3I1JO4nT029RYYHE"/>
+</div>
+<div>
+<div class="text-sm font-black uppercase tracking-tight">Marcus Thorne</div>
+<div class="text-[10px] text-on-surface-variant font-medium">Operations Director, Zenith Ind.</div>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="min-w-[320px] bg-surface-container-lowest p-8 rounded shadow-sm">
+<div class="flex gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic leading-relaxed mb-6">"Exceptional attention to safety standards. Their audit found critical vulnerabilities we had overlooked for years."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container rounded-full overflow-hidden">
+<img alt="Reviewer" class="w-full h-full object-cover" data-alt="Professional woman with glasses smiling confidently, clean corporate setting background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBANTWk8GQAfSpxA65uE76nQ_CCgf4jV5iq3vu-HwwWho6yDmtKyUQOtT9UT7SaqHhaQ9EgGlH2sl8RlkuA37ljrjIAVH2haBUzBaGDysEyCzLbTT5f0rKr86wgXY4xXzQsikFalZopAdNYn53v0-YyloW-gsUfQA64qtZh3FkvdYlhQzlP0DimgiLz4vrmwsSwWgd_dbkLOkIlFlHO5wxXtfNYz1rNxE-ybw26idk1z2yOlI3up4CfZr_Ll3P9iSCOQIi122kr9gs"/>
+</div>
+<div>
+<div class="text-sm font-black uppercase tracking-tight">Elena Rossi</div>
+<div class="text-[10px] text-on-surface-variant font-medium">Facility Manager, Global Logistics</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-24">
+<div>
+<h2 class="font-headline text-4xl font-black mb-8">Technical Support Hub.</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/5 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-black text-xs uppercase tracking-widest mb-1">Central Operations</h4>
+<p class="text-on-surface-variant text-sm">Industrial District, Suite 404<br/>Metro Power Precinct</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/5 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary">phone_in_talk</span>
+</div>
+<div>
+<h4 class="font-black text-xs uppercase tracking-widest mb-1">24/7 Hotline</h4>
+<p class="text-on-surface-variant text-sm">+1 (555) 0123-9000<br/>Emergency: Ext 1</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/5 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h4 class="font-black text-xs uppercase tracking-widest mb-1">Tenders &amp; Quotes</h4>
+<p class="text-on-surface-variant text-sm">engineering@electricista.tech</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[400px] rounded overflow-hidden shadow-inner bg-surface-container">
+<img alt="Map location" class="w-full h-full object-cover grayscale" data-alt="An artistic grayscale top-down view of an organized industrial district with grid-like streets and large warehouse structures." data-location="Metropolis Industrial Hub" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtIeRIOjzLI8z637E9F8Bechz74PmFVqzssCGzDBEuxqjq4yRaSMdz-XNLsHYrhW_fzehsKoBtcMFA7Ymm0b_Y1fTF3WQDZxF4sWXyGWxZIAsQPH8JLbY81ccJLZFE1PYkYCkprxN2f1WLu6WS7G-Vwwoj4Ml1ZMdiXUVtODXqw5gQvIYLLHZ8h9G7nHSNgXWBuRbLAEOOIt0nsMKalPOgR2VoUSFNzwClFJu8kLnWt_-Fh1_EXFqWcIwqMeyZ9FOPE9p7pgIPyrQ"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full pt-16 pb-8 font-['Inter'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8">
+<div>
+<div class="text-lg font-black text-white tracking-widest uppercase mb-6">ELECTRICISTA</div>
+<p class="text-slate-400 max-w-xs mb-8">Engineering excellence for the modern electrical landscape. Certified, reliable, and technically superior.</p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">terminal</span>
+</a>
+<a class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">lan</span>
+</a>
+<a class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">settings_input_composite</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h5 class="text-white font-bold mb-6">Resources</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-blue-400 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-blue-400 transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-slate-400 hover:text-blue-400 transition-all" href="#">Safety Standards</a></li>
+<li><a class="text-slate-400 hover:text-blue-400 transition-all" href="#">Emergency Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Sectors</h5>
+<ul class="space-y-4 text-slate-400">
+<li>Manufacturing</li>
+<li>Data Centers</li>
+<li>Healthcare</li>
+<li>Education</li>
+</ul>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">System Status</h5>
+<div class="bg-white/5 p-4 rounded border border-white/10">
+<div class="flex justify-between items-center mb-4">
+<span class="text-xs text-slate-400">Emergency Response</span>
+<span class="text-[10px] bg-primary/20 text-blue-400 px-2 py-0.5 rounded font-black">ACTIVE</span>
+</div>
+<div class="w-full h-1 bg-white/10 rounded overflow-hidden">
+<div class="w-3/4 h-full bg-primary-container"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-16 mt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-slate-500 text-[10px] uppercase font-black tracking-widest">© 2024 ELECTRICISTA TECHNICAL SERVICES. ALL RIGHTS RESERVED.</div>
+<div class="flex gap-8 text-[10px] font-black uppercase tracking-widest">
+<span class="text-slate-500">v4.0.2</span>
+<span class="text-primary">ISO 9001:2015</span>
+</div>
+</div>
+</footer>
+</body></html>

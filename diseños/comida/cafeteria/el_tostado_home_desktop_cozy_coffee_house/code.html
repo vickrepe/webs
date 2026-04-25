@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>El Tostado | El salón de tu barrio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#dcc1b6",
+                    "on-secondary-fixed-variant": "#663c27",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#33302b",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e8e1da",
+                    "on-primary-fixed": "#341000",
+                    "inverse-on-surface": "#f7f0e8",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ede683",
+                    "surface-container": "#f4ede5",
+                    "error": "#ba1a1a",
+                    "primary-container": "#92400e",
+                    "surface-bright": "#fff8f1",
+                    "secondary-fixed-dim": "#f5b99d",
+                    "on-primary-container": "#ffc2a5",
+                    "on-surface": "#1e1b17",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#9a4614",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdbcb",
+                    "primary-fixed-dim": "#ffb693",
+                    "tertiary": "#656107",
+                    "primary-fixed": "#ffdbcb",
+                    "on-tertiary-fixed": "#1e1c00",
+                    "primary": "#712c00",
+                    "tertiary-fixed-dim": "#d0ca6a",
+                    "surface-container-high": "#eee7df",
+                    "on-tertiary-fixed-variant": "#4c4800",
+                    "outline": "#887269",
+                    "surface-container-low": "#f9f3eb",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#7a3000",
+                    "on-secondary-container": "#7a4d37",
+                    "secondary": "#81533d",
+                    "background": "#fff8f1",
+                    "on-background": "#1e1b17",
+                    "inverse-primary": "#ffb693",
+                    "surface-dim": "#dfd9d1",
+                    "secondary-container": "#ffc1a5",
+                    "surface": "#fff8f1",
+                    "on-tertiary-container": "#444100",
+                    "on-secondary-fixed": "#321203",
+                    "surface-variant": "#e8e1da",
+                    "tertiary-container": "#b4ae52",
+                    "on-surface-variant": "#55433a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ritual-card-shadow {
+            box-shadow: 0px 12px 32px rgba(30, 27, 23, 0.06);
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- 1. Sticky Navbar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFF8F1]/80 backdrop-blur-xl shadow-[0px_12px_32px_rgba(30,27,23,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold italic text-[#712C00]" href="#">El Tostado</a>
+<div class="hidden md:flex items-center gap-8 font-semibold tracking-tight text-[#712C00]">
+<a class="text-stone-500 hover:text-[#712C00] transition-all" href="#roast">The Roast</a>
+<a class="text-stone-500 hover:text-[#712C00] transition-all" href="#pour">Evening Pour</a>
+<a class="text-stone-500 hover:text-[#712C00] transition-all" href="#rituals">Rituals</a>
+<a class="text-stone-500 hover:text-[#712C00] transition-all" href="#find">Find Us</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-6 py-2 rounded-DEFAULT font-bold scale-98 active:opacity-80 transition-transform">
+                Order Now
+            </button>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<header class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Cafe" class="w-full h-full object-cover" data-alt="Warmly lit artisanal cafe interior with steam rising from a coffee machine and sunlight filtering through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhI_nz7vmSq17TL1Xtfxe7GIWJWcLq2uts6mEagVfFWsXAyQ6xMpp-MGzzJvEqQY8WFBc9hxBjHAUplrdveXdh1uRAiVHo5GkGSQfcO25xGZRtzeM6MI08DoQIYgy8H2uOjHaU23VHvIQH0lNjJRhFxtpq8FHaHU10oIWpiNi53bgSmhjs4qC23qWQFGvrjhJ4v5oVS8QLuE8lAi2PiWXrccCQodfY5NtvSDNKxK14nNWpL2TI-9r2prZ7v2mmCo7dl3uqJ9glx1Y"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-brightness-75"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="text-7xl md:text-8xl font-extrabold text-white leading-tight tracking-tighter mb-4">El Tostado</h1>
+<p class="text-2xl md:text-3xl text-surface-container-lowest font-medium mb-8">El salón de tu barrio</p>
+<a class="inline-flex items-center bg-primary text-white px-8 py-4 rounded-DEFAULT font-bold text-lg hover:bg-primary-container transition-colors" href="#reservas">
+                    Reserva ahora
+                    <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- 3. Nuestra Historia (Editorial Layout) -->
+<section class="py-24 bg-surface" id="roast">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] overflow-hidden rounded-lg">
+<img alt="Barista" class="w-full h-full object-cover" data-alt="Professional barista in a leather apron carefully pouring latte art into a ceramic cup in a sunlit workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLhiccUmAAPOoww6D0fkOTb8ST84bUzat5jJw7G5MKIoFfua31li6XS-zaIrdHQTgY49Q3r_36fUgWtWnDPMLa6ZdCl2BIbtGQlIpw59yHd6igis4X5eG1IzbEeJ6NNnydRDDyL66ZzMmxtuIU5lxlNHha0L08CuchT0c7wkciu6AJNMUkSPW41fzxXbhJJ1OdinclWSc7src9w2FV-ndYKo_pvMjH6B2SfnwZiGVT8fVoset_6CtQMJAQqM-LfxLeFR1yPnpIudk"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-surface-container-high p-8 max-w-xs ritual-card-shadow">
+<p class="text-primary italic font-serif text-lg">"El café es el pretexto, la comunidad es el destino."</p>
+</div>
+</div>
+<div class="space-y-6">
+<span class="uppercase tracking-[0.2em] text-sm font-bold text-primary">Nuestra Historia</span>
+<h2 class="text-5xl font-bold text-on-surface leading-tight">Artesanía en cada grano.</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Nacimos de la convicción de que el barrio necesitaba un refugio. Un lugar donde el tiempo se detiene y la única prisa es la del aroma que emana de nuestra tostadora. En El Tostado, seleccionamos granos de origen único, respetando los ciclos de la tierra y el trabajo del productor.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        No somos solo una cafetería; somos el salón donde nacen las ideas, se cierran tratos y se celebran los reencuentros bajo una luz cálida y acogedora.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Menú (Grid) -->
+<section class="py-24 bg-surface-container-low" id="pour">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Especialidades de la Casa</h2>
+<div class="h-1 w-20 bg-primary-container mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Coffee 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg ritual-card-shadow transition-transform hover:-translate-y-2">
+<img alt="Flat White" class="w-full h-48 object-cover mb-6 rounded-DEFAULT" data-alt="Creamy flat white coffee with elegant tulip latte art in a textured ceramic cup on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW8MGtzOPlDUQ2xlwFBwFFsn0aR4O4xf1dkhvGBniu0Zv7bIfpN2bJTriV026OxLkpg0LGQqlGkclE3cIVjz3V82LVwNUiVU9Wv7I9PNIrMKuy_fOhnHfLPSB_UI37ASszE6hKI3fJJidDCV_HXU8Vlkd72iSQXtWjJgyv8a8PbBk8k7Qw6XpVFcC6CMXh4gShXOqrePBy2j6VYYdSQ4CEhNhFFccOAF-f-7oBP0TOQHjvn7UT4SE7qWHitnd_DHsKN7yojYl_41Y"/>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Flat White Australiano</h3>
+<span class="text-primary font-bold tracking-tight">$4.50</span>
+</div>
+<p class="text-on-surface-variant text-sm">Doble shot de espresso con micro-espuma de leche sedosa y densa.</p>
+</div>
+<!-- Pastry (No Image Test) -->
+<div class="bg-primary-container p-8 rounded-lg flex flex-col justify-center ritual-card-shadow">
+<div class="mb-4">
+<span class="material-symbols-outlined text-white text-4xl">bakery_dining</span>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-bold text-white">Croissant de Mantequilla</h3>
+<span class="text-on-primary-container font-bold text-xl">$3.20</span>
+</div>
+<p class="text-on-primary-container/80 text-base leading-relaxed">Hojaldre artesanal con 24 horas de fermentación y mantequilla de Normandía.</p>
+</div>
+<!-- Coffee 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg ritual-card-shadow transition-transform hover:-translate-y-2">
+<img alt="Cold Brew" class="w-full h-48 object-cover mb-6 rounded-DEFAULT" data-alt="Ice cold brew coffee in a tall glass with large ice cubes, sweat on the glass, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3lEeHglgEmllMiAoTdhEGlFpXV5aZqR1_bsSOr3eFR38ZCCPFNFF7CbQyVntaXfwnJeK7WjrfLC2ltiJFwYfIklZSIPUaclJFxayQ_fYSIXWb_ji2WNQllzAvM6ypKiCl1HjsqfXab_wAsYai3o-wByGZmOtgLf8U_PCCouRy4VfG44gkzv8Adb8el1GtQsQNkq_FnZ-YziEErnpcWhLMxMv61O3PMzrGGe5G1G5X2MwUX3VrYBOEFG6UD7gzoK6dCHXXGStYFE8"/>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Cold Brew Infusion</h3>
+<span class="text-primary font-bold tracking-tight">$5.00</span>
+</div>
+<p class="text-on-surface-variant text-sm">Infusión en frío por 18 horas con notas de chocolate amargo y cítricos.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Galería (Masonry-ish) -->
+<section class="py-24 bg-surface" id="rituals">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+<div class="col-span-2 row-span-2">
+<img alt="Gallery" class="w-full h-full object-cover rounded-DEFAULT" data-alt="Vibrant close-up of a tray of freshly baked sourdough bread and golden pastries on a counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5NY-s6Kaud74elxcG2uLZyKk8JZus6lnV2nk1gvmct2XUGKTe8Z_ii9GpcEES8iGh-nNbjXKviKh_Xllqb1Bovnf4mkeNRB48iNJNd7Or4Q98DCg38jUapSxVD2waG-Y4oLSwDF57dHeJF5ifvsGWqAqeHOqeezQxWNr26d0vZAvsFj7oE7hB7MnR7IR73LtQoyHRdKMENDRek16dYIcRKPWamUxbHqfIbMevGIBfVZfXR6NMEPYG3gMkeZmzfYu6v4SbGIA1hvo"/>
+</div>
+<div class="col-span-1 row-span-1">
+<img alt="Gallery" class="w-full h-full object-cover rounded-DEFAULT" data-alt="Soft focused interior of the cafe during evening hours with warm pendant lights reflecting on marble" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaLLE0Gwazreb5JhweGTmZf8M9fX8JA6TDr9is6UbonBUnwR8wKvvARTgGAq9RCfcJen7UzVQFTqnF9L0Gl_X2qr-Svg15n0PNEpqGN28G5IU831iXdPzujjtj8dhkHRhsRPw92VosIhpxp0HPTo28jLN5x28RXvZEo9fEknRhL7WZuozELIqZjJnNKMi3Cy8a7QHAkV23i6V-dua_TPgUtcasK3c2dMIullEjTPgpjPxo9raH7FNkknglIYtcTzaKrQFbeZO41uw"/>
+</div>
+<div class="col-span-1 row-span-2">
+<img alt="Gallery" class="w-full h-full object-cover rounded-DEFAULT" data-alt="Hand pouring roasted coffee beans into a professional grinder, motion blur of the beans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu-g3t7WpMWqeVQ9UxkPLnLWp9NQsh3-V9LucyBZZO3hZGTRL3H0ENwIHQVa1sNxuFnfatCSnr0n8Au_rzvyXEKbvxQVHMpM1Ud2QsAfFl2rU6E2jAYKkE_jkd4HmA1gm1vxuI4_Yvk8CguOkqAMGINo0KXkzkCnP5wr4M0TunfTBBuSq1xtpeVBIu9PVkSpI7uOEQ1f4t3ZQYJQb35M43lFIrdRnJsI6SbOrBHphO1qPv8oV6UineuxF6s9MKPAStO7PAwKOX3z4"/>
+</div>
+<div class="col-span-1 row-span-1">
+<img alt="Gallery" class="w-full h-full object-cover rounded-DEFAULT" data-alt="A small plate with a slice of cake and a vintage spoon on a rustic table surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI7SwvXIPLH2Xitk8vEQjQHtI6wBesl9J4EaNDmITQLdeNNGxlPXldY0j0t0P0JkWE4ovQClXWiit_xZil9mZKhPf403y6y7BC1WuKSuD0Il3hzToBp5JyRlL20T8V4X7-Fl-yxX985curt1MpX79JuhReg6itAq22ON-NNlwMzIT-Q0E_VU24vJ6AdOU--pqGLPrD5-xLEb6C4R_CdzulN5n83py8gSAjqtU74xZYxqK9_7q7Tk5z7mgRSjCU7VGWjRbnx9jLvDo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Reseñas -->
+<section class="py-24 bg-surface-container-high">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface p-8 rounded-lg">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-6">"El mejor flat white que he probado fuera de Melbourne. El ambiente es simplemente inmejorable."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed"></div>
+<span class="font-bold text-on-surface">Carlos R.</span>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-lg">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-6">"Es mi oficina favorita. Internet rápido y café de calidad superior. Un tesoro del barrio."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed"></div>
+<span class="font-bold text-on-surface">Lucía M.</span>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-lg">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-6">"Los croissants son de otro planeta. Recomiendo llegar temprano porque vuelan."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed"></div>
+<span class="font-bold text-on-surface">Elena S.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Contacto & Maps -->
+<section class="py-24 bg-surface" id="find">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-12 bg-surface-container-low rounded-lg overflow-hidden ritual-card-shadow">
+<div class="p-12 space-y-8">
+<div>
+<h2 class="text-3xl font-bold text-primary mb-4">Visítanos</h2>
+<p class="text-on-surface-variant">Calle de la Torrefacción, 12. Madrid.</p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface mb-4">Horarios</h3>
+<div class="space-y-2 text-on-surface-variant">
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Lunes - Viernes</span>
+<span class="font-medium">08:00 - 20:00</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Sábado</span>
+<span class="font-medium">09:00 - 22:00</span>
+</div>
+<div class="flex justify-between">
+<span>Domingo</span>
+<span class="font-medium">09:00 - 18:00</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">phone</span>
+<span class="text-on-surface font-semibold">+34 912 345 678</span>
+</div>
+</div>
+<div class="h-full min-h-[400px]">
+<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+<!-- Mock Map Container -->
+<div class="text-center p-8">
+<span class="material-symbols-outlined text-primary text-6xl mb-4">location_on</span>
+<p class="text-on-surface font-bold">Google Maps Embed</p>
+<p class="text-xs text-on-surface-variant mt-2" data-location="Madrid, Spain">Interactive Location Preview</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Reservas Widget -->
+<section class="py-24 bg-surface-container-highest" id="reservas">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface p-12 rounded-lg ritual-card-shadow">
+<h2 class="text-4xl font-bold text-center mb-12">Reserva tu rincón</h2>
+<form class="grid md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<label class="block">
+<span class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Nombre</span>
+<input class="mt-1 block w-full border-0 border-b-2 border-outline-variant/40 bg-transparent focus:ring-0 focus:border-primary px-0 text-lg py-2" type="text"/>
+</label>
+<label class="block">
+<span class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Personas</span>
+<select class="mt-1 block w-full border-0 border-b-2 border-outline-variant/40 bg-transparent focus:ring-0 focus:border-primary px-0 text-lg py-2">
+<option>1 Persona</option>
+<option>2 Personas</option>
+<option>4 Personas</option>
+<option>6+ Personas</option>
+</select>
+</label>
+</div>
+<div class="space-y-4">
+<label class="block">
+<span class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Fecha</span>
+<input class="mt-1 block w-full border-0 border-b-2 border-outline-variant/40 bg-transparent focus:ring-0 focus:border-primary px-0 text-lg py-2" type="date"/>
+</label>
+<label class="block">
+<span class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Notas</span>
+<input class="mt-1 block w-full border-0 border-b-2 border-outline-variant/40 bg-transparent focus:ring-0 focus:border-primary px-0 text-lg py-2" placeholder="Alguna preferencia..." type="text"/>
+</label>
+</div>
+<div class="md:col-span-2 pt-8">
+<button class="w-full bg-primary text-white py-4 rounded-DEFAULT font-bold text-xl hover:bg-primary-container transition-all">
+                            Confirmar Reserva
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 9. Blog -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-bold mb-12">Desde el Tostador</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<article class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Blog" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of dry coffee beans in a wooden scoop on a dark surface with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ZNWUOMH3qV19CL10zUeGG69OhzycXJpRYA9TsoSrMxdORT112xjqFa9sR9UCEGXX0bxnquuMDlLZI1654XFfTTu4dTP03kEsnwHWkpL2RxvyVCcJGDt9YNVxKhHqTWXzEsi4uJkPtxK9z4xYAbZMM5Jlyg4RKPtT6bSHwLsimDRHzcGxskdxvt7WY9YROlHiWsFceUbpo5OBQTvTSDvKva0mPnuUAL4vfQenPOBe_zzUUBHIsYYXRDqOQJ0NM_ZE6jvSTr3RmKY"/>
+</div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Guía del Café</span>
+<h3 class="text-2xl font-bold mt-2 group-hover:text-primary transition-colors">Cómo catar un origen único</h3>
+<p class="text-on-surface-variant mt-4 line-clamp-2">Descubre los secretos de los catadores profesionales para identificar notas frutales en tu taza.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Blog" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Warm evening interior of the cafe with people laughing and sharing cheese platters and wine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_q2v0laKBGsxegkcmZbVdDBYbbNsVfZZkdNJ7UGOg7PXfB6ct5KdSsXXHWGK3dY27aV-Cq-R1P0C-orSHmi0emqIgbpY0rGqyHVCWeVVJCmz-12CogL2Jm2AhntzXOHG1H9E6JIx6oKXsvGsUoaT-RXa_bK4jsmDzdIK9ldCQufwRE85rY9k2oOxlG4LMY_L5eU5tOQA1HT9JLlnu_dU0uFrH-w7FH5DCCjM4bN_CXqS7Lo_eLrOCZCCVbCWGDjHjk3t1B74PQAY"/>
+</div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Eventos</span>
+<h3 class="text-2xl font-bold mt-2 group-hover:text-primary transition-colors">Jazz &amp; Pour: Noches de Jueves</h3>
+<p class="text-on-surface-variant mt-4 line-clamp-2">Vuelven nuestras sesiones en vivo. Café, vino artesanal y los mejores músicos locales.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Blog" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional kitchen scene showing a chef assembling a fresh avocado toast with microgreens and seeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARhw6ZtuTHOyYaFcHAaNJJnY_t3cJupHxWvrz-AZi7NlqiJmhWMXbtUly3ueNElUwFsRnCaf7I50OxQBB3b6s2NrPY7x945fbcFRR9LuZ5JELUL5UFg22nmHUBBkIsGqiCECXwT-ldmlEvJLwyPqEmiy4mOfP3fN1TQWnFmHRKF_iovOndLzcS48BVJnBXVlL3-v8LY0kOO4NAtkDsBu4X201_CNxHX6BIbrt_dVtUrnqDPtCoeELeF_hm5A1pd-NRinNBcuhUqHs"/>
+</div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Recetas</span>
+<h3 class="text-2xl font-bold mt-2 group-hover:text-primary transition-colors">El secreto de nuestro Brunch</h3>
+<p class="text-on-surface-variant mt-4 line-clamp-2">Te enseñamos a preparar la masa madre perfecta en casa para tus tostadas dominicales.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- 10. Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.53.909 3.321 1.389 5.148 1.39h.005c5.561 0 10.087-4.527 10.089-10.088 0-2.694-1.049-5.227-2.956-7.135-1.907-1.906-4.441-2.955-7.137-2.956-5.562 0-10.09 4.526-10.092 10.088 0 1.879.52 3.712 1.503 5.307l-.986 3.603 3.693-.969zm10.748-7.551c-.305-.153-1.805-.891-2.085-.991-.28-.102-.484-.153-.687.153-.203.305-.788.991-.965 1.194-.177.203-.355.228-.66.076-.305-.152-1.288-.475-2.454-1.515-.907-.81-1.518-1.81-1.296-2.064.223-.253.253-.406.406-.558.153-.152.203-.254.305-.431.102-.178.051-.33-.025-.482-.076-.153-.687-1.653-.941-2.261-.248-.593-.5-.513-.687-.522-.177-.009-.381-.01-.584-.01-.203 0-.533.076-.812.381-.28.305-1.066 1.042-1.066 2.541 0 1.498 1.091 2.946 1.243 3.149.153.203 2.148 3.281 5.204 4.602.726.314 1.292.502 1.734.642.73.232 1.393.199 1.918.121.585-.087 1.805-.737 2.058-1.448.254-.711.254-1.321.178-1.448-.076-.127-.279-.203-.584-.355z"></path></svg>
+</a>
+<!-- 11. Footer -->
+<footer class="bg-surface-container-low dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6 w-full max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-[#712C00]">El Tostado</span>
+<p class="font-['Be_Vietnam_Pro'] text-sm tracking-wide text-stone-500">© 2024 El Tostado. Crafted for the Neighborhood.</p>
+</div>
+<div class="flex gap-8 font-['Be_Vietnam_Pro'] text-sm tracking-wide">
+<a class="text-stone-500 hover:text-[#712C00] underline decoration-[#92400E] underline-offset-4 transition-opacity opacity-90 hover:opacity-100" href="#">Instagram</a>
+<a class="text-stone-500 hover:text-[#712C00] underline decoration-[#92400E] underline-offset-4 transition-opacity opacity-90 hover:opacity-100" href="#">Contact</a>
+<a class="text-stone-500 hover:text-[#712C00] underline decoration-[#92400E] underline-offset-4 transition-opacity opacity-90 hover:opacity-100" href="#">Privacy</a>
+<a class="text-stone-500 hover:text-[#712C00] underline decoration-[#92400E] underline-offset-4 transition-opacity opacity-90 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#712C00]">local_cafe</span>
+<span class="material-symbols-outlined text-[#712C00]">restaurant</span>
+</div>
+</div>
+</footer>
+</body></html>

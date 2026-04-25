@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZEN PRECISION | The Art of Kaiseki</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-dim": "#525359",
+                "surface-bright": "#f7f9fb",
+                "secondary": "#5e5f65",
+                "on-primary-fixed-variant": "#535b71",
+                "on-primary": "#f7f7ff",
+                "surface-dim": "#cfdce3",
+                "background": "#f7f9fb",
+                "surface-variant": "#d9e4ea",
+                "outline-variant": "#a9b4b9",
+                "surface": "#f7f9fb",
+                "tertiary-container": "#e3dbfd",
+                "on-tertiary-fixed": "#3e3a54",
+                "secondary-container": "#e2e2e9",
+                "secondary-fixed-dim": "#d4d4db",
+                "on-primary-container": "#4a5167",
+                "error-dim": "#4e0309",
+                "on-tertiary": "#fcf7ff",
+                "tertiary-fixed-dim": "#d4cdee",
+                "error": "#9f403d",
+                "inverse-primary": "#dae2fd",
+                "primary-dim": "#4a5268",
+                "surface-tint": "#565e74",
+                "on-secondary-fixed": "#3e3f45",
+                "surface-container-low": "#f0f4f7",
+                "on-surface": "#2a3439",
+                "tertiary": "#605c78",
+                "on-primary-fixed": "#373f54",
+                "secondary-fixed": "#e2e2e9",
+                "on-tertiary-container": "#514d68",
+                "primary": "#565e74",
+                "surface-container": "#e8eff3",
+                "on-secondary-fixed-variant": "#5a5b61",
+                "outline": "#717c82",
+                "on-error": "#fff7f6",
+                "on-surface-variant": "#566166",
+                "on-secondary-container": "#505157",
+                "inverse-surface": "#0b0f10",
+                "primary-fixed": "#dae2fd",
+                "tertiary-dim": "#54506b",
+                "error-container": "#fe8983",
+                "on-error-container": "#752121",
+                "primary-fixed-dim": "#ccd4ee",
+                "surface-container-high": "#e1e9ee",
+                "surface-container-highest": "#d9e4ea",
+                "on-secondary": "#f9f8ff",
+                "tertiary-fixed": "#e3dbfd",
+                "on-tertiary-fixed-variant": "#5b5672",
+                "inverse-on-surface": "#9a9d9f",
+                "primary-container": "#dae2fd",
+                "surface-container-lowest": "#ffffff",
+                "on-background": "#2a3439",
+                "indigo-black": "#0F172A"
+            },
+            "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Montserrat"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-2xl">
+<div class="flex justify-between items-center w-full px-12 py-8 mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-slate-100">ZEN PRECISION</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-['Montserrat'] tracking-[-0.02em] font-bold uppercase text-sm text-slate-900 dark:text-slate-50 border-b-2 border-slate-900 dark:border-slate-50 pb-1" href="#">MENU</a>
+<a class="font-['Montserrat'] tracking-[-0.02em] font-bold uppercase text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200" href="#">PHILOSOPHY</a>
+<a class="font-['Montserrat'] tracking-[-0.02em] font-bold uppercase text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200" href="#">RESERVATIONS</a>
+<a class="font-['Montserrat'] tracking-[-0.02em] font-bold uppercase text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200" href="#">CONTACT</a>
+</div>
+<button class="bg-indigo-black text-on-primary font-['Montserrat'] font-bold text-sm tracking-widest px-8 py-4 hover:bg-primary-dim transition-colors duration-200">BOOK A TABLE</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-surface-container-lowest">
+<div class="container mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 z-10">
+<p class="text-xs font-bold tracking-[0.3em] text-primary mb-6 uppercase">ESTABLISHED MCMXCV</p>
+<h1 class="text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] text-indigo-black mb-8">SYMMETRY <br/> IN SUSHI</h1>
+<p class="text-on-surface-variant max-w-md leading-relaxed text-lg mb-10">Experience the clinical precision of Edo-style mastery where every cut is a calculation of flavor and form.</p>
+<div class="flex gap-6">
+<button class="bg-indigo-black text-on-primary px-10 py-5 font-bold text-sm tracking-widest">DISCOVER THE TASTE</button>
+</div>
+</div>
+<div class="lg:col-span-7 relative h-[819px]">
+<img class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" data-alt="ultra-minimalist overhead shot of two identical pieces of nigiri sushi on a dark slate plate, perfectly symmetrical, cinematic soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX2fn4F60bhR7WpPMbCiCJZMilSq2LDPeJyfE57hJpspKsOXQ435jAfOiLix97bW_2OMRkQv236R7a7331diHQ8tuFaa-btT77FhmJpM5Gsw--fZJAzPhvbj2MKaOAk3TvGWlpwye4SY54CUkrySyGymM2HNVkdiF5tJ-54Cy5uw1a4NcGmg7cFWmL0x7fkqwWJmjh1SfzoIF_HOIfoShzYJ3MdYygbUUJhRtD63d7SABmqHbp056Bb78fLJJouW6AjUy-yS7-_AE"/>
+<div class="absolute -bottom-12 -left-12 p-12 bg-white hidden lg:block">
+<span class="text-4xl font-black text-indigo-black">01 / 08</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Zen Philosophy (Our Story) -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-12">
+<div class="flex flex-col md:flex-row items-end justify-between mb-24 gap-12">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-black tracking-tighter text-indigo-black mb-12">ZEN PHILOSOPHY</h2>
+<p class="text-2xl font-light italic leading-relaxed text-on-surface-variant">"Ma is the space between notes that makes the music. We apply the same principle to the palate."</p>
+</div>
+<div class="md:w-1/3">
+<p class="text-on-surface-variant leading-loose">The architecture of our kitchen is built on three pillars: silent preparation, local seasonality, and the absolute elimination of the unnecessary.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20">
+<div class="bg-surface py-20 pr-12">
+<img class="aspect-video object-cover mb-10" data-alt="chef's hand using a traditional Japanese knife to slice a fresh piece of tuna with extreme precision, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhTYnjgrV2je9Rug6NkrYACIEoYrsOK-It3ybsgB4-oWixgoCgruaxXHwDl8t_8rk7GRoy5ZUVFzeXLedhw-soj3MiQMQTj285d_Mrj_R61MJwQnpvl3tUAdfv81Vqs-HOaN9TNXIB-Vf6qfTuh1urM1QaIaY4D2lDLIuSbqdCdOc0U2-p8wbOeKjd3PSt3pYuobOrIUrX1loSBmbgKzufbLOrtCEdAOFMR48HTXdjujHnul0WjJyOvC8QveG48RjCfyFNWhWDpAA"/>
+<h3 class="text-2xl font-bold mb-4">THE SHOKUNIN WAY</h3>
+<p class="text-on-surface-variant">Dedication to the craft that spans decades. Our head chef spent seven years mastering the temperature of rice alone.</p>
+</div>
+<div class="bg-surface py-20 pl-12">
+<img class="aspect-video object-cover mb-10" data-alt="minimalist Japanese garden with sand ripples and a single dark rock, representing zen atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChfLw8NT9t1b3cltWndU-_EW_h8G7iyJV0HoH1bhXrZIlL6Aag0MQQxQ-UNT5nNcP_-e5Wn99kw-BZoHEpra_YFbVVqoir9NRFQ_zLv84pUFE9OLaPHT6GBsA8IDHmMnBVoVufr565BaXMlQMTSyZnEICOYGgMaHUluxrscHIV1Hu-owr_Q_GYsN_TrbupKambS4Jbsb8U1L2iYZ1fsLTvFPijcSdNvTbpZHmzh0haZPGbJbX7LM8fESTUICzF5HpfcRgjaYT4tJE"/>
+<h3 class="text-2xl font-bold mb-4">PURITY OF SOURCE</h3>
+<p class="text-on-surface-variant">We source exclusively from sustainable day-boats and our own organic garden in the foothills of the Kyoto mountains.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Precise Grid (Menu) -->
+<section class="py-32 bg-surface-container-low">
+<div class="container mx-auto px-12">
+<div class="flex justify-center mb-20">
+<div class="w-10 h-0.5 bg-primary-fixed-dim"></div>
+</div>
+<div class="text-center mb-24">
+<h2 class="text-6xl font-black tracking-tighter mb-4">THE MENU</h2>
+<p class="uppercase tracking-[0.4em] text-xs font-bold text-primary">Curated Precision</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Menu Category 1 -->
+<div class="space-y-12">
+<h4 class="text-xs font-bold tracking-[0.2em] border-b border-indigo-black/10 pb-4">NIGIRI SELECTION</h4>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">O-TORO</span>
+<span class="text-sm font-medium">18</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Fatty tuna belly, 5-day aged, aged soy brush.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">HAMACHI</span>
+<span class="text-sm font-medium">14</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Yellowtail, yuzu kosho, lime zest.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">UNI</span>
+<span class="text-sm font-medium">24</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Hokkaido sea urchin, crispy nori, wasabi leaf.</p>
+</div>
+</div>
+<!-- Menu Category 2 -->
+<div class="space-y-12">
+<h4 class="text-xs font-bold tracking-[0.2em] border-b border-indigo-black/10 pb-4">COLD PLATES</h4>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">USUZUKURI</span>
+<span class="text-sm font-medium">28</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Thinly sliced whitefish, ponzu, chives, momiji oroshi.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">TATAKI</span>
+<span class="text-sm font-medium">32</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Seared wagyu A5, smoked salt, garlic chips.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">ZUKKIRI</span>
+<span class="text-sm font-medium">22</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Pickled seasonal vegetables, miso emulsion.</p>
+</div>
+</div>
+<!-- Menu Category 3 -->
+<div class="space-y-12">
+<h4 class="text-xs font-bold tracking-[0.2em] border-b border-indigo-black/10 pb-4">OMAKASE</h4>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">THE ZEN PATH</span>
+<span class="text-sm font-medium">185</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">12 Courses curated daily by the chef. Seasonal focus.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="text-xl font-bold group-hover:text-primary transition-colors">PRECISION TASTE</span>
+<span class="text-sm font-medium">250</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">18 Courses including premium rare cuts and sake pairing.</p>
+</div>
+<div class="pt-8">
+<button class="w-full py-4 border border-indigo-black text-xs font-bold tracking-widest hover:bg-indigo-black hover:text-on-primary transition-all">VIEW FULL WINE LIST</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery (Quiet Luxury) -->
+<section class="bg-indigo-black py-32 text-on-primary overflow-hidden">
+<div class="container mx-auto px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-4 sticky top-40">
+<h2 class="text-6xl font-black tracking-tighter mb-8 leading-none">QUIET <br/> LUXURY</h2>
+<p class="text-on-primary/60 max-w-xs leading-loose">A visual journey through the silence of our interiors and the intensity of our craft.</p>
+</div>
+<div class="lg:col-span-8 grid grid-cols-2 gap-8">
+<div class="space-y-8 pt-20">
+<img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="interior of a high-end minimalist Japanese restaurant with light wood counters and warm amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAApMIBBI9XsrkswzpIEFnGLrMPR65ZSKE2jd0f8vS71rHmth4ppTNsJ3pnquIW-L0ivJ1Fi4jvjwmIWZ4jMEgUgQdNikZNvH75xewyf3vBMubyfpQaZsVcfywpBEfMpoMJiQNOZmKD4I7jyve6fPm7Oprjn9ahTSuNeK_Zdd3pZVuMLMaxRz23wK0E3OmT4DR-HqkXdJaYk22v16JvZxC2pG_5F_OTMltqSsYQ9Qrvjh2ls4-q1oMnDSl0cNvDt7amHmUFFirv8gY"/>
+<img class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="close up of a ceramic tea cup on a dark textured table with steam rising" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAseTnhXvC2CLqee3EVePlqrdaGREctQcV5M46_G0lqvwL1eKDTlGH9JldaWe8yb8GlbE3S-WhIeIVy02ajbEVcuo2zp83u7NwC13-RaAN4k6QlFC-8cr1twHJi148clP0inOQEagSkdCf15gi_AMucIcxZbfUT_r_7Z0Pl6mBEpWHrCf4eyIr14tRpcvOVJSUVpP8JTwzszdGYomsO1bsHUK-4Ys33XV12SEIPsJTKtNh7hgU19fUU38dOYFv847FK085jBvpr59g"/>
+</div>
+<div class="space-y-8">
+<img class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="extreme close-up of caviar pearls being placed on a scallop with tweezers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQJIesG6nbW7uC8BQmB0UmXp5ImdG-XOrR8HcyZuYWjyqs0Jl7zmI20NnofJ9SR32jKk5LT-PP572WW2NTaYewjzzyDvLdQYX6ZLFPJ8K64gCujLOA8kECgd8dOPpWQ9owoaaBySuzfxDokGcG_-fA-mM6kaoOBQMZN9z17Gi6phbSSdaIpKsuRtg5vFRCHd84O4Ztk_8g2liBOLdJEoz_T1xeu4_8w-DhQzduqXFcPIt4_m8WbRfmHq9nc4L3XTyyVhflbLpAf8E"/>
+<img class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="minimalist architectural shot of a doorway in a Japanese restaurant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtk_PbSkgDdUJB8v8XxtgD6YftU_A_atIoE6_V0N4OHHkrX5C1nHQUrK88eOxVV0_bqMiGSiROzZRllxfirdjE8VaKPYyGmhdziXIK9ex1FlrJhVZr68bv7LGMoTNH1eO0g-ATRRIEHcXVVAU0mD-KW8NaRfC81l357bMTarOyePYB9yE1W9otu7kw2Ktv6RyCaDu2CT9FtRvwEpg17NZECtpvj8rqfqVL3-wXlOJhpKQOimoqEZHy0fevjwJlPPyFV7C4PuZSx5k"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-12">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-10">format_quote</span>
+<h3 class="text-3xl font-light italic leading-relaxed text-indigo-black mb-12">"Zen Precision is not just a meal, it's a meditative experience. The restraint shown in each dish is breathtaking. It's the most architectural sushi I've ever tasted."</h3>
+<div class="flex flex-col items-center">
+<div class="w-12 h-0.5 bg-outline-variant mb-6"></div>
+<p class="text-sm font-bold tracking-widest uppercase">THE GASTRONOMIC JOURNAL</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking & Contact -->
+<section class="py-32 bg-surface-container-high">
+<div class="container mx-auto px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div>
+<h2 class="text-5xl font-black tracking-tighter text-indigo-black mb-8">SECURE A SEAT</h2>
+<p class="text-on-surface-variant mb-12 max-w-md">Reservations open 30 days in advance. We operate a strictly limited seating policy to ensure focus.</p>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mb-2 block">DATE</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-indigo-black outline-none py-2 transition-all" type="date"/>
+</div>
+<div class="relative">
+<label class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mb-2 block">PEOPLE</label>
+<select class="w-full bg-transparent border-b-2 border-outline-variant focus:border-indigo-black outline-none py-2 transition-all">
+<option>1 Person</option>
+<option>2 People</option>
+<option>3 People</option>
+<option>4 People</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mb-2 block">FULL NAME</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-indigo-black outline-none py-2 transition-all placeholder:text-outline-variant/50" placeholder="Your name" type="text"/>
+</div>
+<button class="bg-indigo-black text-on-primary px-12 py-6 font-bold text-sm tracking-widest w-full md:w-auto">CONFIRM BOOKING</button>
+</form>
+</div>
+<div class="space-y-16">
+<div>
+<h4 class="text-xs font-bold tracking-[0.2em] mb-6">LOCATION</h4>
+<p class="text-xl font-medium">8-2-1 Ginza, Chuo City,<br/>Tokyo 104-0061, Japan</p>
+<a class="inline-flex items-center gap-2 mt-4 text-xs font-bold text-primary group" href="#">
+                            VIEW ON MAP 
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.2em] mb-6">HOURS</h4>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold mb-1">LUNCH</p>
+<p class="text-lg">12:00 — 14:30</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold mb-1">DINNER</p>
+<p class="text-lg">18:00 — 22:30</p>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mt-4">Closed on Mondays</p>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.2em] mb-6">CONTACT</h4>
+<p class="text-xl font-medium">+81 3-5555-0123</p>
+<p class="text-xl font-medium">concierge@zenprecision.com</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-12">
+<div class="flex items-center justify-between mb-20">
+<h2 class="text-4xl font-black tracking-tighter">JOURNAL</h2>
+<a class="text-xs font-bold tracking-widest border-b-2 border-indigo-black pb-1" href="#">READ ALL ARTICLES</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="group cursor-pointer">
+<div class="overflow-hidden mb-6">
+<img class="aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="bowl of white rice being perfectly steamed, with gentle steam rising" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHIa-YeAmYbQt1WHh9krS2t9BNI-pEIUdfsYy8bzEneozULnRnzVGT36G0dHw2yrQeToaKcPz0PSN5_2GdMXLlbiRnlAqCKz4Iy5cFCOqLAsGQnop4boVfEXY001jP-ysceeNeeWkq8Gaj_gIq-EWNXCQ5wQvh8hviQwGxzLdUnC9F3HkqpnxMsbC8aCA_rumdSxaxJHGLXdt71nGYFkSnD6R0kkwHcTbAQcZD2fX8I6RvpAWkIOj0BpQKCVDK-W0RqdjT1S8_KNM"/>
+</div>
+<p class="text-[10px] font-bold text-primary mb-3">GASTRONOMY / OCT 12</p>
+<h3 class="text-2xl font-bold mb-4 leading-tight">The Science of Perfect Rice Temperature</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">How a two-degree shift changes the molecular structure of vinegar absorption.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="overflow-hidden mb-6">
+<img class="aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="artisanal hand-crafted Japanese pottery plate with a matte black finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvAcQbSbAYAKN5vjvOVeduMkWeeAUUWRVX07UlY_Kj-LYuz90GUIIZW6c820EUAFpytuOASZXzO_8TaqeTIZmZ4ibRwDvnmzDaMbKNiLDEp88ehEbYvLvFq49ZmxEJwEkVwcbOgk6HcluV6JdP_BhjKci5PyvYUneMsZ5kJQ0Bbk58XsuxqMUqGmmfo6xd1H4Rfm-mJkw4ThXuNv123H6X1JTtC-8E0tqH6TxCuF9fkH2WwoHpHi6ZcdghyJ6bJWcQpnaKlWygwQ0"/>
+</div>
+<p class="text-[10px] font-bold text-primary mb-3">ARTISAN / SEP 28</p>
+<h3 class="text-2xl font-bold mb-4 leading-tight">Vessels of Spirit: The Pottery of Bizen</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Selecting the ceramics that hold our seasonal narratives.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="overflow-hidden mb-6">
+<img class="aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="blurry atmospheric night shot of a traditional street in Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-SFy-1hewSQg0jovG5CJzcs6LIbR6_VNYB7FMWN4KATBCpGu9gxjAdbjo2-rsUQWzB9OpAG_FyAt9sD7qPfXUbxE8n5-vvQkbDfHFOtSefT2j9ZSwx5tiLVmmpjZ06mz7BN50dVkMUCgJa3sbTOk9pIjTDuItpI4ZwnjYJ88iugGU9YKnLGGqU3j5nv-W8YNMU9chj4GyCoVgHfXsYosdEgf_FLQ388FMWF9BbzccSUsa4x_G-wuheTed9ahqAyVBbBzRqSApRXU"/>
+</div>
+<p class="text-[10px] font-bold text-primary mb-3">PHILOSOPHY / SEP 05</p>
+<h3 class="text-2xl font-bold mb-4 leading-tight">Ma: The Luxury of Space</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Why we removed four tables to increase the quality of the silence.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 w-full rounded-none">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-24 w-full gap-8 text-center">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">ZEN PRECISION</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] tracking-[0.05em] text-[10px] uppercase font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity duration-200" href="#">INSTAGRAM</a>
+<a class="font-['Inter'] tracking-[0.05em] text-[10px] uppercase font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity duration-200" href="#">PRESS</a>
+<a class="font-['Inter'] tracking-[0.05em] text-[10px] uppercase font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity duration-200" href="#">JOURNAL</a>
+<a class="font-['Inter'] tracking-[0.05em] text-[10px] uppercase font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity duration-200" href="#">LEGAL</a>
+</div>
+<p class="font-['Inter'] tracking-[0.05em] text-[10px] uppercase font-medium text-slate-900 dark:text-slate-50">© 2024 ZEN PRECISION. THE ART OF KAISEKI.</p>
+</div>
+</footer>
+</body></html>

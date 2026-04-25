@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#433e3c",
+                        "on-surface": "#f0e3db",
+                        "tertiary": "#fbf9f8",
+                        "on-secondary-fixed": "#423f3c",
+                        "surface-container-low": "#161310",
+                        "surface-tint": "#ccc5c2",
+                        "primary-dim": "#beb7b4",
+                        "error": "#ed7f64",
+                        "tertiary-fixed-dim": "#e7e5e4",
+                        "inverse-primary": "#635e5b",
+                        "on-tertiary": "#5f5f5e",
+                        "error-dim": "#ba573f",
+                        "on-primary-container": "#d6cfcb",
+                        "secondary-container": "#3e3b38",
+                        "secondary-fixed-dim": "#dad3cf",
+                        "tertiary-container": "#edeae9",
+                        "on-tertiary-fixed": "#494a49",
+                        "surface": "#100e0c",
+                        "outline-variant": "#4e4641",
+                        "surface-variant": "#2b2420",
+                        "surface-dim": "#100e0c",
+                        "background": "#100e0c",
+                        "on-primary": "#433f3d",
+                        "secondary": "#a39d99",
+                        "on-primary-fixed-variant": "#5f5b58",
+                        "surface-bright": "#322b25",
+                        "secondary-dim": "#a39d99",
+                        "on-background": "#f0e3db",
+                        "surface-container-lowest": "#000000",
+                        "primary-container": "#4a4643",
+                        "inverse-on-surface": "#595451",
+                        "tertiary-fixed": "#f5f3f2",
+                        "on-tertiary-fixed-variant": "#666665",
+                        "on-secondary": "#23201d",
+                        "surface-container-highest": "#2b2420",
+                        "primary-fixed-dim": "#dad3cf",
+                        "surface-container-high": "#241f1a",
+                        "on-error-container": "#ff9b82",
+                        "error-container": "#7e2b17",
+                        "inverse-surface": "#fff8f5",
+                        "primary-fixed": "#e9e1dd",
+                        "tertiary-dim": "#edeae9",
+                        "on-surface-variant": "#b4a9a2",
+                        "on-secondary-container": "#c5beba",
+                        "on-error": "#450900",
+                        "outline": "#7d746d",
+                        "on-secondary-fixed-variant": "#5f5b57",
+                        "primary": "#ccc5c2",
+                        "surface-container": "#1d1915",
+                        "on-tertiary-container": "#575756",
+                        "secondary-fixed": "#e8e1dd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-nav { background: rgba(16, 14, 12, 0.8); backdrop-filter: blur(24px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-none bg-[#100e0c]/80 backdrop-blur-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center px-6 py-5 w-full">
+<span class="text-2xl font-headline italic tracking-widest text-[#ccc5c2]">L'ELIXIR</span>
+<div class="flex items-center gap-4">
+<button class="bg-[#ccc5c2] text-[#433f3d] px-4 py-2 font-label text-[10px] tracking-widest uppercase hover:bg-[#beb7b4] transition-all duration-400">
+                    Reservations
+                </button>
+<span class="material-symbols-outlined text-[#ccc5c2]">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[751px] flex flex-col justify-end px-6 pb-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4]" data-alt="Moody atmospheric shot of a dimly lit high-end restaurant table with a single candle and crystal glassware reflecting dark shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWgbsbxDHq0XwjUAET66zQSwjNO65aCXC-BJsnsPlowmu7nxzI6DVfFcVtdm0UVPbZ_UbCQWcQLciFUbD2Vn-UYpNZh90Scfx1NyXf4Bn5U4iY-BVp8Svs-msajxC9HCaungQ8oArMbGBiKQvR4q0sO95wuuhFckLSEFuO5m3zuyll7PMbfGHdnFhqIVcx_LE9k3nP5PuD_p-ifZpFP-9HnmUFQNzLNSbezxEp89mCGspbJUHB_vJFy9keiGw5lWBZkDcntHxA16g"/>
+</div>
+<div class="relative z-10 space-y-4">
+<span class="font-label text-[10px] tracking-[0.3em] text-primary uppercase">Est. 1924 — Paris</span>
+<h1 class="font-headline text-5xl leading-tight font-bold text-on-surface">The Alchemy of <br/><span class="italic">Fine Dining</span></h1>
+<p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed">
+                    A curated journey through the senses, where time dissolves into the quiet hum of perfection.
+                </p>
+</div>
+</section>
+<!-- Signature "Dégustation" Carousel -->
+<section class="py-24 bg-surface-container-lowest overflow-hidden">
+<div class="px-6 mb-12 flex justify-between items-end">
+<div>
+<span class="font-label text-[10px] tracking-[0.3em] text-outline uppercase block mb-2">The Collection</span>
+<h2 class="font-headline text-3xl italic">Dégustation</h2>
+</div>
+</div>
+<div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-4 px-6">
+<!-- Course 01 -->
+<div class="snap-center shrink-0 w-[85%] group">
+<div class="aspect-[3/4] bg-surface relative mb-6 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Artistic plating of a single scallop on a dark stone plate with micro-greens and a delicate citrus foam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGU9r-5lPOUb7TyQliYeXVapR0xbUOx6FP5CubpSkYmioTZcYi5AnDcybr5ff-MT6-0aTYD_YIhyi21gI2OgGzGgwL0SS9nhXpNT_w_xHx1rcbqyeDRJpq9xQe3mjWWCgHuJydMQ6ZVtdmnDjsu8JXDc30iMsVwBH7OESRiu_Ca39ym-bveBN7Rz8rbXg1YzoxEkcl2x-8m0uphPUARssVJBicd5fhd3c-By1-A9DCsnvuSG_yR96reD41weTjaPnr5gAvxD6ACh8"/>
+</div>
+<div class="space-y-1">
+<span class="font-label text-[9px] text-outline tracking-widest uppercase">Course 01</span>
+<h3 class="font-headline text-xl text-primary">Le Printemps</h3>
+</div>
+</div>
+<!-- Course 02 -->
+<div class="snap-center shrink-0 w-[85%] group">
+<div class="aspect-[3/4] bg-surface relative mb-6 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Modernist dessert presentation with dark chocolate shards and gold leaf on a matte black ceramic dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCeEUw3Wo3_Xk6tfxNOGCHCgXyXBjNoPVK1UNIEVGvbSBAQxNlD1BsIQGXpG9X2DvpDcUoT_9eK1Bmo0r2j_i0tfJmq7XFHB5J-EBtYg5eKtM2G4ap-Ug83Y2_613GC9r3kQlVUQ2HJwxdNZLYX3x7aS0N3qe-0yq7WdD23NDUGBduKgCrRkvHcRQymuVLvaqPhV4jKblBYRHPU0iGi2K32LUSR-TYPTgFV1DxQxP9Gi6VlBdfAxNVf8klZvB-EtVVlmiovehSZM0"/>
+</div>
+<div class="space-y-1">
+<span class="font-label text-[9px] text-outline tracking-widest uppercase">Course 02</span>
+<h3 class="font-headline text-xl text-primary">L'Obsidienne</h3>
+</div>
+</div>
+<!-- Course 03 -->
+<div class="snap-center shrink-0 w-[85%] group">
+<div class="aspect-[3/4] bg-surface relative mb-6 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Deep red wine being poured into a crystal decanter with dramatic backlighting emphasizing the rich color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAblcWoykkVEKiEPImzus_GLGHOxb1_F5bKsfB79lwDHfPm0b0E1ava8saXMeclgCwRGEbGlXQfSL-iCE_frUrGfeBhBnfgTsyHjHpJiDb0uvV6Yrlmny2VA9nBU7lSsiZNx5XOepwlmnRC5YF-s8vOH5Ng_v5GVtj568T_GnUPcpLUNL6o4xhHxsqxxIJgirVpla8C6e2GdfxpeEyF19RnqzW8Wy0i-f6rNPGdU7F7c7SuUPOoQw2IwerKAZl3aCUjKRmpD6Mqmx8"/>
+</div>
+<div class="space-y-1">
+<span class="font-label text-[9px] text-outline tracking-widest uppercase">Course 03</span>
+<h3 class="font-headline text-xl text-primary">Vignoble Noir</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews / Testimonials -->
+<section class="py-24 px-6 bg-surface">
+<div class="mb-16 text-center">
+<span class="font-label text-[10px] tracking-[0.4em] text-outline uppercase block mb-4">Accolades</span>
+<div class="h-[1px] w-12 bg-primary mx-auto mb-8"></div>
+</div>
+<div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-8 pb-8">
+<div class="snap-center shrink-0 w-full space-y-6">
+<p class="font-headline text-2xl leading-relaxed text-on-surface italic text-center">
+                        "A masterclass in silence and flavor. The most quiet, yet profound meal in all of Paris."
+                    </p>
+<div class="text-center">
+<span class="font-label text-[10px] tracking-widest uppercase text-primary">— The Gastronomic Journal</span>
+</div>
+</div>
+<div class="snap-center shrink-0 w-full space-y-6">
+<p class="font-headline text-2xl leading-relaxed text-on-surface italic text-center">
+                        "The atmosphere is architectural, the service invisible, the taste unforgettable."
+                    </p>
+<div class="text-center">
+<span class="font-label text-[10px] tracking-widest uppercase text-primary">— L'Horizon Review</span>
+</div>
+</div>
+</div>
+</section>
+<!-- The Table / Philosophy -->
+<section class="py-24 bg-surface-container-low px-6">
+<div class="grid grid-cols-1 gap-12">
+<div class="space-y-8">
+<h2 class="font-headline text-4xl leading-tight">The Table Is <br/>Our <span class="italic text-primary">Altar</span></h2>
+<p class="font-body text-on-surface-variant text-base leading-loose">
+                        We believe in the ritual of the meal. At L'ELIXIR, every element is curated to foster connection—with the food, the wine, and the company. No distractions. No clutter. Only the essence.
+                    </p>
+<button class="border border-outline/20 px-8 py-4 font-label text-[10px] tracking-[0.2em] uppercase hover:bg-surface-bright transition-colors duration-400">
+                        Discover the Atelier
+                    </button>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist restaurant interior with dark stone walls, architectural lighting, and a single wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV042rc32CshymFhRU-K2bxJtbiDMFUPnCMgLpw5jvP-6uxWCRIKfWHCN7f7YNT1sQaQ8GNLBnzYSR0k8rqSQzAr93JLjOEeMpNuBsu2Qhcn6u5xpGhcVdHzAP2X_-UMdkPNVATW-CgzNFeqXbJZ-UqhKbrKyW2sPYmeLLuSW4Wze7joyLvr_O8-W71iBPAZj60SOfyC9iHHZcuOCwlFTdRMohXh_-2UTe9r-6VUArqvZsSnpt_BlZPnO2mAdM7YjeA41ZP3dLqNc"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 backdrop-blur-xl border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary scale-150">diamond</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Contact -->
+<section class="py-32 px-6 bg-surface-container-lowest flex flex-col items-center text-center">
+<span class="font-label text-[10px] tracking-[0.5em] text-outline uppercase mb-8">Newsletter</span>
+<h3 class="font-headline text-3xl mb-12 italic">Join the Inner Circle</h3>
+<div class="w-full max-w-sm space-y-4">
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 font-label text-[10px] tracking-widest text-on-surface focus:outline-none focus:border-primary placeholder:text-outline transition-all duration-500" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-[10px] tracking-[0.3em] uppercase">Subscribe</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000000] w-full border-none">
+<div class="flex flex-col items-center gap-8 py-20 px-12 w-full">
+<span class="font-headline text-[#ccc5c2] text-3xl tracking-tighter italic">L'ELIXIR</span>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500" href="#">Privacy</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500" href="#">Atelier</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500" href="#">Press</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500" href="#">Contact</a>
+</div>
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643]">© 2024 L'ELIXIR. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Floating Navigation Bar (Mobile Logic) -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 glass-nav border border-outline-variant/10 px-8 py-4 flex items-center gap-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="font-label text-[8px] tracking-widest text-primary uppercase">Menu</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">wine_bar</span>
+<span class="font-label text-[8px] tracking-widest text-outline group-hover:text-primary uppercase">Cellar</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">event_seat</span>
+<span class="font-label text-[8px] tracking-widest text-outline group-hover:text-primary uppercase">Table</span>
+</a>
+</div>
+</body></html>

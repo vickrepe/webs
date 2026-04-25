@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'ELIXIR | Michelin Star Dining</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#433e3c",
+                    "on-surface": "#f0e3db",
+                    "tertiary": "#fbf9f8",
+                    "on-secondary-fixed": "#423f3c",
+                    "surface-container-low": "#161310",
+                    "surface-tint": "#ccc5c2",
+                    "primary-dim": "#beb7b4",
+                    "error": "#ed7f64",
+                    "tertiary-fixed-dim": "#e7e5e4",
+                    "inverse-primary": "#635e5b",
+                    "on-tertiary": "#5f5f5e",
+                    "error-dim": "#ba573f",
+                    "on-primary-container": "#d6cfcb",
+                    "secondary-container": "#3e3b38",
+                    "secondary-fixed-dim": "#dad3cf",
+                    "tertiary-container": "#edeae9",
+                    "on-tertiary-fixed": "#494a49",
+                    "surface": "#100e0c",
+                    "outline-variant": "#4e4641",
+                    "surface-variant": "#2b2420",
+                    "surface-dim": "#100e0c",
+                    "background": "#100e0c",
+                    "on-primary": "#433f3d",
+                    "secondary": "#a39d99",
+                    "on-primary-fixed-variant": "#5f5b58",
+                    "surface-bright": "#322b25",
+                    "secondary-dim": "#a39d99",
+                    "on-background": "#f0e3db",
+                    "surface-container-lowest": "#000000",
+                    "primary-container": "#4a4643",
+                    "inverse-on-surface": "#595451",
+                    "tertiary-fixed": "#f5f3f2",
+                    "on-tertiary-fixed-variant": "#666665",
+                    "on-secondary": "#23201d",
+                    "surface-container-highest": "#2b2420",
+                    "primary-fixed-dim": "#dad3cf",
+                    "surface-container-high": "#241f1a",
+                    "on-error-container": "#ff9b82",
+                    "error-container": "#7e2b17",
+                    "inverse-surface": "#fff8f5",
+                    "primary-fixed": "#e9e1dd",
+                    "tertiary-dim": "#edeae9",
+                    "on-surface-variant": "#b4a9a2",
+                    "on-secondary-container": "#c5beba",
+                    "on-error": "#450900",
+                    "outline": "#7d746d",
+                    "on-secondary-fixed-variant": "#5f5b57",
+                    "primary": "#ccc5c2",
+                    "surface-container": "#1d1915",
+                    "on-tertiary-container": "#575756",
+                    "secondary-fixed": "#e8e1dd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #100e0c;
+            color: #f0e3db;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(16, 14, 12, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-none bg-[#100e0c]/80 backdrop-blur-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex justify-between items-center px-12 py-6 w-full">
+<div class="text-2xl font-serif italic tracking-widest text-[#ccc5c2]">L'ELIXIR</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Noto_Serif'] tracking-tight text-[#ccc5c2] border-b border-[#ccc5c2]/30 pb-1" href="#">Le Menu</a>
+<a class="font-['Noto_Serif'] tracking-tight text-[#7d746d] hover:text-[#ccc5c2] transition-colors duration-400" href="#">Dégustation</a>
+<a class="font-['Noto_Serif'] tracking-tight text-[#7d746d] hover:text-[#ccc5c2] transition-colors duration-400" href="#">Cellar</a>
+<a class="font-['Noto_Serif'] tracking-tight text-[#7d746d] hover:text-[#ccc5c2] transition-colors duration-400" href="#">The Table</a>
+</div>
+<button class="bg-[#ccc5c2] text-[#433f3d] px-8 py-3 text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#beb7b4] transition-all duration-400 ease-out active:scale-95">
+            Reservations
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-60 grayscale-[0.2]" data-alt="Close-up of a single gourmet scallop dish on a dark ceramic plate with intricate herb garnishes and dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvu8_Iuf2dCpqtQc3QmjADXVdiH5R2Q_M9QV8Rb-ZwpAMk__l_-AfAAhQ8pBFdfUEts9QAv4q_YyzYpa5Nz2ojwa6pXTMUydk5qxpxraJsu_Q6Ztdb_BbEh_THGMSuK9cOsABWu9ELzRucD5QdY3wkXQySmctpqikK5d1Yw4hUtRvV8WkdqhX7984SnliKSkvB1ZQKLanqc0tiJtU2j2hWOypUJrSX_Dpe3JQqg5iJlsm0YY2GmQgVnJ01f40U4kegXGqM6u4mGcY"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/40 via-transparent to-surface"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-6">
+<span class="label-md uppercase tracking-[0.4em] text-primary mb-8 block text-sm">Est. 1994 — Paris</span>
+<h1 class="text-6xl md:text-8xl font-headline italic text-on-surface mb-12 tracking-tighter leading-tight">
+                    The Art of <br/> <span class="not-italic font-bold">Pure Alchemy</span>
+</h1>
+<div class="flex justify-center gap-8 items-center">
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<p class="font-body text-lg text-on-surface-variant max-w-md">An immersive culinary odyssey where heritage meets the avant-garde.</p>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+<span class="text-[10px] uppercase tracking-[0.3em]">Scroll to Discover</span>
+<div class="w-[1px] h-12 bg-primary"></div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-32 px-12 bg-surface grid md:grid-cols-2 gap-24 items-center">
+<div class="relative aspect-[3/4] bg-surface-container-low">
+<img alt="" class="w-full h-full object-cover grayscale-[0.1]" data-alt="Interior of a luxury restaurant with dark stone walls, velvet seating, and minimalist warm spotlights on empty tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh0GNOIvVG22hO3ieekLTFfJHzsyX-H4V6MmXmEqHW9jXeSTLY-T9Ss6i49J3_JaXLIIKvqA_U29Jk0zlUbYe53hDth0iAj0w3h7q6KRPZ2F4QIdkJlFv_l22cZ96hTWrTFIejUDBYwCG-720Nsoa9Dz2is3Usz6xYlIXY0gqoee5-tC6Rbe8alH1feIg92X_XWUnea9i-JgxzRX1YQfLWD6Sb_O9ZYbkTNPrrtHfpp5GDZWHqc2A_m833sArv4n1o1EFZ41KSkEY"/>
+<div class="absolute -bottom-12 -right-12 w-64 h-80 bg-surface-container-high p-8 hidden md:block">
+<p class="font-headline text-2xl italic text-primary">"Taste is the only memory that never fades."</p>
+<p class="mt-4 uppercase tracking-widest text-[10px] text-on-surface-variant">— Chef Julian Vane</p>
+</div>
+</div>
+<div class="max-w-xl">
+<label class="uppercase tracking-[0.3em] text-[11px] text-primary mb-6 block">Our Heritage</label>
+<h2 class="text-4xl md:text-5xl font-headline mb-10 leading-tight">A Symphony of Soil, <br/> Sea, and Fire.</h2>
+<div class="space-y-8 text-on-surface-variant font-body leading-relaxed text-lg">
+<p>L’Elixir was born from a singular obsession: to strip away the artifice of fine dining and return to the primal essence of the ingredient. Our kitchen is a laboratory of silence and precision.</p>
+<p>Every element on your plate has been sourced within 24 hours from our private network of coastal foragers and heritage farmers. We do not just serve food; we curate moments of profound sensory clarity.</p>
+</div>
+<button class="mt-12 group flex items-center gap-4 text-primary uppercase tracking-[0.2em] text-xs font-semibold">
+                    Explore the Atelier 
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</section>
+<!-- Menu Section (Premium Grid) -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<label class="uppercase tracking-[0.3em] text-[11px] text-primary mb-6 block">The Collections</label>
+<h2 class="text-5xl font-headline leading-tight">Seasonal Alchemy</h2>
+</div>
+<div class="flex gap-8 border-b border-outline-variant/20 pb-4">
+<button class="text-primary tracking-widest uppercase text-[10px] border-b border-primary pb-4 -mb-[17px]">Tasting</button>
+<button class="text-on-surface-variant tracking-widest uppercase text-[10px] hover:text-primary transition-colors">Wine Pairings</button>
+<button class="text-on-surface-variant tracking-widest uppercase text-[10px] hover:text-primary transition-colors">Cellar List</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/10">
+<!-- Course 1 -->
+<div class="bg-surface p-12 group cursor-pointer transition-colors duration-500 hover:bg-surface-bright">
+<span class="text-outline-variant font-headline text-3xl italic block mb-12">01</span>
+<h3 class="text-2xl font-headline mb-4">Forest Umami</h3>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Wild porcini, pine needle oil, aged parmesan air, and fermented chestnut cream.</p>
+<div class="h-px w-0 group-hover:w-full bg-primary transition-all duration-700"></div>
+</div>
+<!-- Course 2 -->
+<div class="bg-surface p-12 group cursor-pointer transition-colors duration-500 hover:bg-surface-bright">
+<span class="text-outline-variant font-headline text-3xl italic block mb-12">02</span>
+<h3 class="text-2xl font-headline mb-4">The Atlantic</h3>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Line-caught sea bass, oyster emulsion, sea succulents, and chilled kelp broth.</p>
+<div class="h-px w-0 group-hover:w-full bg-primary transition-all duration-700"></div>
+</div>
+<!-- Course 3 -->
+<div class="bg-surface p-12 group cursor-pointer transition-colors duration-500 hover:bg-surface-bright">
+<span class="text-outline-variant font-headline text-3xl italic block mb-12">03</span>
+<h3 class="text-2xl font-headline mb-4">Midnight Bloom</h3>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Dark chocolate ganache, smoked hibiscus, hibiscus reduction, and violet salt.</p>
+<div class="h-px w-0 group-hover:w-full bg-primary transition-all duration-700"></div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="relative py-32 px-12 bg-surface-container-lowest flex items-center justify-center">
+<div class="max-w-4xl w-full bg-surface border border-outline-variant/10 p-12 md:p-20 relative">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-6xl font-headline mb-6 italic">Secure Your Table</h2>
+<p class="text-on-surface-variant tracking-widest uppercase text-xs">Reservations released the first of every month</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<div class="relative">
+<label class="uppercase tracking-widest text-[10px] text-on-surface-variant block mb-2">Guests</label>
+<select class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 px-0 appearance-none rounded-none">
+<option class="bg-surface">2 Persons</option>
+<option class="bg-surface">4 Persons</option>
+<option class="bg-surface">Private Dining (8+)</option>
+</select>
+</div>
+<div class="relative">
+<label class="uppercase tracking-widest text-[10px] text-on-surface-variant block mb-2">Date</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 px-0 appearance-none rounded-none" type="date"/>
+</div>
+<div class="relative">
+<label class="uppercase tracking-widest text-[10px] text-on-surface-variant block mb-2">Special Notes</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 px-0 rounded-none placeholder:text-outline-variant/50" placeholder="Allergies or occasions" type="text"/>
+</div>
+<div class="relative">
+<label class="uppercase tracking-widest text-[10px] text-on-surface-variant block mb-2">Contact Info</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface py-3 px-0 rounded-none placeholder:text-outline-variant/50" placeholder="Email Address" type="email"/>
+</div>
+<div class="md:col-span-2 mt-8">
+<button class="w-full bg-primary text-on-primary py-5 uppercase tracking-[0.4em] font-bold text-sm hover:bg-primary-dim transition-colors">
+                            Request Reservation
+                        </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Gallery Section (Atmospheric) -->
+<section class="py-32 bg-surface">
+<div class="grid grid-cols-12 grid-rows-2 gap-4 h-[1024px] px-4 md:px-12">
+<div class="col-span-12 md:col-span-8 row-span-2 overflow-hidden relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Close-up of a chef's hands delicately plating a micro-green using tweezers in a dimly lit professional kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC0w6gQQnVKTr40jgsWaaLT-EcsHo60tQzMp2sXg-lHvgYJkjARXWun3j5cPc0Q2_UM8k6KWFbdxmcmru8RLDAHO4XHfb4I9Uzq9QMKZnrqjMfV_4wamYS3tN2DelYZt_uwjQcJDe6oqpWdYvlJzvHArwjjSxUcM9a4urGhdFg1iZwLLs_AYNNfohAOiEhwisTIppo6l9W6rrTBVx2vj2yu8UvvvFMEXUuUJ3B7DmaPsfU5hKlns2ai4m0shnpwW6lMY8kErSa0AM"/>
+<div class="absolute bottom-8 left-8">
+<span class="text-xs uppercase tracking-[0.3em] text-white/70">The Kitchen</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 overflow-hidden relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A dark cocktail with a single large clear ice cube and an orange peel garnish on a black marble bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaLfGIGtTmXIELLcdYGx36_-DC_3xoiNaBW9jVh9RsbdlR_jQR7RWVjI-DrSSBjgw_AWhjRVdjV76kp8amULNn9ieEe_FZRwURu26oiIJ0UjfjSKjQqW-LgVNZdBJRkU6cqV5WCzO8c_fNR0wqRwG16qF16ryeczEYvyz5y3zSzeev3KXVGA0rQ830HhE4U7yf3bGEXRVRF1ydUz0kfzycNjHdcOoVrde4u0Z-Q6XMoWI4lJQzdgwZuDJd7GOSbqyZXkKbNseGh7U"/>
+<div class="absolute bottom-8 left-8">
+<span class="text-xs uppercase tracking-[0.3em] text-white/70">The Mixology</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 overflow-hidden relative group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Dusty vintage wine bottles stored horizontally in a dark wooden cellar rack with soft golden backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBztHbUTm4b2nNVNCxZURPdJzOZyA6hENfg0_EWaLfh3oXQDDQLA-_CZ2cM2l3qsRUq2vCFWSnOpDUHvHLz6nEsjtaEepxpRxrxxd9m3CabH1bXVM9Tq2Iuhp47ZvGGG_RNcg-jXvnKZ1MBZZIYohLu7u45yHYhz21vKGyiF6BsC9XdQxC7s07Tph6pJhOH56GkXiGlyYkzRdGhAJm-P4g8caiToT6Nr3XQzDaiw8corZA1fWL4yNcJ8xpO3pWBJPv9NJI6BfEcPWc"/>
+<div class="absolute bottom-8 left-8">
+<span class="text-xs uppercase tracking-[0.3em] text-white/70">The Cellar</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 px-12 bg-surface-container-low overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-20">
+<div class="w-full md:w-1/3">
+<h2 class="text-5xl font-headline mb-8 italic">Acclaim</h2>
+<div class="flex gap-1 mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant tracking-widest uppercase text-[10px]">Three Michelin Stars Since 2012</p>
+</div>
+<div class="w-full md:w-2/3 border-l border-outline-variant/30 pl-12 md:pl-24">
+<blockquote class="text-3xl font-headline italic leading-snug mb-8">
+                        "An unparalleled masterclass in restraint. Every bite feels like a rediscovered secret of the natural world. L'Elixir isn't just a restaurant; it's a sanctuary for the senses."
+                    </blockquote>
+<cite class="not-italic uppercase tracking-[0.3em] text-primary text-xs">— Le Monde Gastronomique</cite>
+</div>
+</div>
+</section>
+<!-- Blog/Events Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="flex justify-between items-end mb-16">
+<h2 class="text-4xl font-headline italic">Chronicles &amp; Events</h2>
+<a class="uppercase tracking-widest text-[10px] text-primary border-b border-primary/30 pb-2" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Article 1 -->
+<div class="group">
+<div class="aspect-[16/9] overflow-hidden mb-6 bg-surface-container-high">
+<img alt="" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" data-alt="Evening vineyard at dusk with long shadows and purple-hued sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs840KM9HE5Z3AwCDmZFOO5CJx-HJbvb-6ioIYur3Goq_5Efr5WrIl7n5CdeNGiPggO9p7q4nn-aAjPdvGoY_AzUuVnCchRgXwcUPFQVV1Gks_53goNPRpFeq3xluA9pL5tiqRbmrbfrDT5SKmk9-lEP8_xNA_b0PS41r6GquUSEqFXMTLk9ZqL3l6CrW1SOWyhFlbgoFVLcfV4E0wDVVsIrvTV9CDatp6Xi2Eoc3A4enAf0bcxKQ8Em-cDmn_yayNwlLWD8bp4ec"/>
+</div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-3 block">Autumn 2024</span>
+<h3 class="text-xl font-headline mb-4 group-hover:text-primary transition-colors">The Harvest: A Private Wine Dinner with Chateau d'Yquem</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">Join us for an exclusive vertical tasting through six decades of the world's most prestigious sweet wine.</p>
+</div>
+<!-- Article 2 -->
+<div class="group">
+<div class="aspect-[16/9] overflow-hidden mb-6 bg-surface-container-high">
+<img alt="" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" data-alt="Assorted wild mushrooms on a dark slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC95kdEZnKDRGSnaM5EQ_6gIaROFSpNXzBrdB9Bab_TVCCI1wa48kYOlbS0R3Imbc5lCgYnBhTOjiLlDolh03Ljy7PDdxAUrZ0C6boo0MVSDMMIbB-S7BPcXWudQ41H9lQHHY1Us_2XBdM4H9zmmhckM10nQUeylkEY2uLM12hUlNcizcRw1SlQfj3qV0cbSp9FeL412o-jF5LtIH7F3HNB3n2PyZMZDisZvsXYb05x4Grg64I6LEePgjUcRcQRB1_cvy2jLDI328E"/>
+</div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-3 block">Technique</span>
+<h3 class="text-xl font-headline mb-4 group-hover:text-primary transition-colors">Fermentation: The Quiet Evolution of Flavor</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">Exploring the two-year process behind our signature koji-aged beef and fermented pine-honey.</p>
+</div>
+<!-- Article 3 -->
+<div class="group">
+<div class="aspect-[16/9] overflow-hidden mb-6 bg-surface-container-high">
+<img alt="" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" data-alt="Interior of a ceramic workshop with unfinished clay plates on shelves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl1F2KGLxLJdeTW-aS2KLubughIHY7X2aNRL6zKzUBOGGWf5AzTtDtBp41m2Q1_FNZ16KIk5sZX7dMOGPyfutSpBis1c45qIIpzDXhDA3aFLaDAH3MsFKHpTnKv446SRwX1E5q4_fmnYJkSWdBp9gk9AD-kxllWWJZ2WZyc01z2VICDBoaII0UtONTH6qXt2ztHTia78m6K2evrqh_dZCY_rJ5DKNsnOXc-LmriLOhwH3ReM77pDHy_o-OhOf8mIeO0FNdbZxfc-s"/>
+</div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-3 block">Atelier</span>
+<h3 class="text-xl font-headline mb-4 group-hover:text-primary transition-colors">Sculpting the Vessel: Hand-Crafted Tableware</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">A look inside our collaboration with artisan ceramicist Kento Saito for the new Autumn collection.</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-12 bg-surface-container-low border-t border-outline-variant/10">
+<div class="grid md:grid-cols-3 gap-24">
+<div>
+<label class="uppercase tracking-[0.3em] text-[10px] text-primary mb-8 block">Location</label>
+<p class="text-2xl font-headline italic mb-4">Rue de la Paix, 12<br/>75002 Paris, France</p>
+<a class="text-xs uppercase tracking-widest text-on-surface-variant border-b border-outline-variant pb-1" href="#">Get Directions</a>
+</div>
+<div>
+<label class="uppercase tracking-[0.3em] text-[10px] text-primary mb-8 block">Inquiries</label>
+<p class="text-2xl font-headline italic mb-2">+33 1 42 61 57 46</p>
+<p class="text-2xl font-headline italic mb-6">concierge@le-lixir.com</p>
+<p class="text-xs text-on-surface-variant leading-relaxed">For press inquiries and private events, please contact our atelier directly via email.</p>
+</div>
+<div>
+<label class="uppercase tracking-[0.3em] text-[10px] text-primary mb-8 block">Hours</label>
+<div class="space-y-4 text-on-surface-variant text-sm">
+<div class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span>Tuesday — Friday</span>
+<span class="text-on-surface italic">19:00 — 23:30</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span>Saturday</span>
+<span class="text-on-surface italic">12:30 — 14:30 / 19:00 — 23:30</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span>Sunday — Monday</span>
+<span class="text-on-surface-variant italic">Closed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-none bg-[#000000] flex flex-col items-center gap-8 py-20 px-12 w-full">
+<div class="font-serif text-[#ccc5c2] tracking-tighter text-3xl mb-4 italic">L'ELIXIR</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500 opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500 opacity-80 hover:opacity-100 transition-opacity" href="#">Atelier</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500 opacity-80 hover:opacity-100 transition-opacity" href="#">Press</a>
+<a class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643] hover:text-[#ccc5c2] transition-colors duration-500 opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+<div class="mt-12 flex flex-col items-center gap-6">
+<div class="flex gap-8">
+<a class="text-[#4a4643] hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-[#4a4643] hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-[#4a4643] hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-[10px] text-[#4a4643]">© 2024 L'ELIXIR. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+</body></html>

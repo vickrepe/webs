@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;family=Nunito:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#34313a",
+                    "error-container": "#f97386",
+                    "secondary-fixed": "#e9def8",
+                    "on-primary-fixed-variant": "#e5d5ff",
+                    "background": "#fef7fe",
+                    "on-primary": "#fdf7ff",
+                    "inverse-primary": "#a476ff",
+                    "outline": "#7e7983",
+                    "tertiary-fixed": "#fbc4e6",
+                    "tertiary-fixed-dim": "#ecb7d8",
+                    "inverse-surface": "#0f0d12",
+                    "on-background": "#34313a",
+                    "error-dim": "#6b0221",
+                    "on-tertiary-fixed-variant": "#6f4561",
+                    "inverse-on-surface": "#a09ba1",
+                    "on-error": "#fff7f7",
+                    "surface-container-high": "#ede6f0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#564e63",
+                    "primary-fixed-dim": "#7632e7",
+                    "secondary-container": "#e9def8",
+                    "primary-fixed": "#8342f4",
+                    "primary-container": "#8342f4",
+                    "error": "#a8364b",
+                    "on-surface-variant": "#625d67",
+                    "secondary-fixed-dim": "#dbd0e9",
+                    "surface-dim": "#dfd7e4",
+                    "on-tertiary-container": "#643c58",
+                    "tertiary-dim": "#6f4662",
+                    "primary": "#742fe5",
+                    "on-primary-container": "#ffffff",
+                    "on-secondary": "#fdf7ff",
+                    "surface-bright": "#fef7fe",
+                    "secondary": "#635b71",
+                    "surface-container-low": "#f8f1fa",
+                    "on-secondary-fixed-variant": "#60586d",
+                    "on-tertiary-fixed": "#4f2944",
+                    "on-secondary-fixed": "#433c50",
+                    "on-tertiary": "#fff7f9",
+                    "surface-container-highest": "#e7e0ec",
+                    "secondary-dim": "#575065",
+                    "tertiary-container": "#fbc4e6",
+                    "on-primary-fixed": "#ffffff",
+                    "surface-variant": "#e7e0ec",
+                    "surface-tint": "#742fe5",
+                    "primary-dim": "#681ad9",
+                    "surface": "#fef7fe",
+                    "on-error-container": "#6e0523",
+                    "tertiary": "#7d516e",
+                    "outline-variant": "#b6b0bb",
+                    "surface-container": "#f2ebf5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Raleway", "sans-serif"],
+                    "body": ["Nunito", "sans-serif"],
+                    "label": ["Nunito", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 0 32px 0 rgba(52, 49, 58, 0.06);
+        }
+        .glass-nav {
+            background: rgba(254, 247, 254, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Navbar -->
+<nav class="sticky top-0 w-full z-50 bg-fuchsia-50/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-fuchsia-800 dark:text-fuchsia-300 font-headline tracking-tight">Sanctuary</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-fuchsia-800 dark:text-fuchsia-200 border-b-2 border-fuchsia-600 pb-1 font-medium hover:text-fuchsia-900 transition-colors" href="#">Caregivers</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-900 transition-colors" href="#">Services</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-900 transition-colors" href="#">Philosophy</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-900 transition-colors" href="#">Support</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-zinc-600 font-medium hover:text-fuchsia-900 transition-colors">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-primary-dim transition-all">Find Care</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface py-20">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<h1 class="text-primary font-headline text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Acompanamiento con <br/><span class="italic font-normal">Corazón y Dignidad.</span>
+</h1>
+<p class="text-on-surface-variant text-xl mb-10 max-w-lg leading-relaxed">
+                    Brindamos servicios locales de cuidado especializado diseñados para nutrir el bienestar físico y emocional de sus seres queridos en la comodidad de su hogar.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-primary-dim transition-all">Explorar Servicios</button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all">Conocer Cuidadores</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-tertiary-container/30 rounded-full blur-3xl"></div>
+<div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform rotate-2">
+<img alt="Caring interaction" class="w-full h-[500px] object-cover" data-alt="A warm, compassionate caregiver holding the hand of an elderly woman in a sunlit living room with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgJxFpf2FMQFI95qsjaGHg7gWXZxLN3sqXqTmx2R_djzYF_8VwUrkWkNzDOpBSlflb0A_jVEKBQW4kp8OJamMMVZGtT_L7qQUDEtiihuWDD5mv8eAQWy3kKfmtQrjDfxi8Oi9_olDVqBATEuZhkF4fQNdOFE2Vag2zOCpgQ0DIdhptuOpdgxjoOfSGTw7RmcStLjB4McETJjuD6Ddv9FlFf4zqoS6cHyU6H5Hv8V03ZMw9HJFslG2mRp0H5rA6Mbl6iIX_NiC62qg"/>
+</div>
+<div class="absolute -bottom-6 -right-6 z-20 bg-white p-6 rounded-2xl shadow-xl max-w-[200px] transform -rotate-3">
+<p class="text-primary font-bold text-lg italic">"Nos sentimos parte de su familia."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section (Asymmetric) -->
+<section class="bg-surface-container-low py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-20">
+<div class="w-full md:w-1/2 relative">
+<div class="bg-primary-container h-[400px] w-full rounded-2xl absolute top-8 left-8 -z-10"></div>
+<img alt="Caregiver" class="w-full h-[450px] object-cover rounded-2xl shadow-lg" data-alt="A friendly female caregiver in professional attire smiling warmly at the camera in a modern, light-filled office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHWMvI9fSLhM-u4xdKfrbD5uYe9ewHQdTRlM2a1bIFAWhq2ABj_l_iIS0pFHOKWrnMNfuOKWPUQoFdMW3jxiQZCdbeUQqmHaBn266SYoTP7Fhf3NoafFkSLCyOFY5Iwdl63S56Ns6W81vHQqsSSMqYvQOjUKORWScD9SgnJE5oOL8P1YfJE3-ThwrR9C53dYne0YqVX9cGRLVtRPISg-6DzbTPFap-c4l1jx7Ey-3d9jLJ6WmpdMxII3I-gNMRb7aqQLyafBDtcwc"/>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Nuestra Filosofía</h2>
+<div class="space-y-6 text-on-surface-variant body-lg">
+<p>En Sanctuary, creemos que el cuidado trasciende la asistencia básica; se trata de preservar la alegría, la autonomía y la conexión humana.</p>
+<p>Nuestra red de profesionales locales está seleccionada no solo por su experiencia técnica, sino por su capacidad de empatía genuina y respeto por la historia de cada individuo.</p>
+</div>
+<div class="mt-10 grid grid-cols-2 gap-8">
+<div>
+<span class="text-3xl font-extrabold text-primary block">150+</span>
+<span class="text-sm font-bold uppercase tracking-wider text-outline">Cuidadores</span>
+</div>
+<div>
+<span class="text-3xl font-extrabold text-primary block">2.5k</span>
+<span class="text-sm font-bold uppercase tracking-wider text-outline">Familias</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Servicios Locales Especializados</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Soluciones integrales adaptadas a las necesidades únicas de cada etapa de la vida.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Elderly Care -->
+<div class="md:col-span-2 bg-white p-10 rounded-2xl editorial-shadow group hover:bg-primary/5 transition-all">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/3">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">elderly</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Cuidado de Adultos Mayores</h3>
+<p class="text-on-surface-variant mb-6">Asistencia diaria, manejo de medicamentos y compañía activa para una vejez plena.</p>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:underline">
+                                Ver Detalles <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="md:w-2/3">
+<img alt="Elderly care" class="w-full h-full object-cover rounded-xl" data-alt="An elderly gentleman painting a canvas with a caregiver supporting him in a bright, airy studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwcwHN-SwKkAY-4F22YvCAZCv0bFGWNZuaYCtuxNb7t68C9fsn3jxWMZqPam2iBGLJkoHdkOeO5GegzZaXd34j1PmMF0e3KZrF8qmCscMBkR6grD0qcXJabLSBn_usosWceA5ImY217ydb7Ye_31cHzO1CZmNgIK-cYuWkNHf9axcFqy9mO6jezsOo63tSzuhqqSxs75NRibIXEi8YthEZuVEFZXz_GI8RXeK_IMWoAXorRbPkJX7lX6BtZ8afJdSZEnldmCqnKY0"/>
+</div>
+</div>
+</div>
+<!-- Child Care -->
+<div class="bg-surface-container-high p-8 rounded-2xl flex flex-col justify-between group hover:shadow-lg transition-all">
+<div>
+<div class="w-12 h-12 bg-tertiary text-on-tertiary rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Cuidado Infantil</h3>
+<p class="text-on-surface-variant">Niñeras profesionales enfocadas en el desarrollo cognitivo y seguridad de sus hijos.</p>
+</div>
+<div class="mt-8 rounded-xl overflow-hidden h-40">
+<img alt="Child care" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="A smiling nanny reading a colorful book to two children on a soft rug in a playroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_UbVDECWNxGRfgR7RQ7VytkKiKAKUjwLTX_xmTAMDMf0K1baI-cmp1MwHJSRe7WRPvtbDa2rotMBetPYaS4ACyuXUwOcTHmp9agyzUplCUKaxvyY_b-ewOD8BB5dsoZne8yLWx8FPZbM3rNEMy6pgUFTOEgS5i13epjd9Vx4OhPZa3QBU6WzMdp2iqHS54kteIak35722vyssZB4aLzSXoaJNel5HtWuGWDNHs_GkAfU_8f3YEm3mODuhQfPOa7bMkm9EdnqtN20"/>
+</div>
+</div>
+<!-- Special Needs -->
+<div class="bg-secondary-container p-8 rounded-2xl flex flex-col justify-between group hover:shadow-lg transition-all">
+<div>
+<div class="w-12 h-12 bg-secondary text-on-secondary rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">accessibility_new</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Necesidades Especiales</h3>
+<p class="text-on-surface-variant">Personal capacitado para brindar apoyo específico y adaptado a discapacidades.</p>
+</div>
+<button class="mt-8 bg-white/50 backdrop-blur px-6 py-3 rounded-lg font-bold text-secondary hover:bg-white transition-colors">Solicitar Consulta</button>
+</div>
+<!-- Post-Surgery -->
+<div class="md:col-span-2 bg-surface-container-highest p-10 rounded-2xl flex items-center gap-10">
+<div class="flex-1">
+<h3 class="font-headline text-2xl font-bold mb-4">Recuperación Post-Operatoria</h3>
+<p class="text-on-surface-variant mb-6">Servicios temporales de enfermería y asistencia para una recuperación rápida y segura en casa.</p>
+<div class="flex gap-4">
+<span class="px-4 py-1 bg-white rounded-full text-xs font-bold text-outline uppercase tracking-wider">24/7 Disponible</span>
+<span class="px-4 py-1 bg-white rounded-full text-xs font-bold text-outline uppercase tracking-wider">Certificado</span>
+</div>
+</div>
+<div class="hidden md:block w-1/3">
+<img alt="Post-surgery care" class="rounded-xl h-48 w-full object-cover" data-alt="A medical professional adjusting a patient's pillows in a serene home setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX7WuhrHb5GZqXKpfQW9Wawrq7-vI13pRhDj4OXOgbe_OHBik_kZ9Q-IhlCGULwy9gvbgJG2dzIpDsT-fKzw9iHUVACvrOi--cPyJh9wOHcGyT3NkJ6VKlt0nF_4mlqQHfpPpsFfkWaS_07oWk6fbMTUyPXDSlSUtt3bxdIXuK4RQXQFPpPXAyq53Yp3bBVLgjtO1ZAtYH1Dn1k1RcAW376Ld41yffxVw5UQ19bLz4PjTM27FB1H2NXq8-QXptMAiqXTgmysvWJzU"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-center mb-16">Momentos de Conexión</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="space-y-4">
+<img alt="Gallery 1" class="w-full h-64 object-cover rounded-xl" data-alt="Close-up of a caregiver laughing with an elderly woman in a sunny garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN7B_jAjR-QQbQKJp-xDDxYnwEc48Bf4OE2b9GynvUWkEJw3FJocquUBj2PgBjqz14tZ0DEglvGx9os8Fj6CGdbRaObDLFMt0zl2NqyJMLF4cHP_AfQbu4erZ80qm9yof3v5zEBJ-5daokLWBW1hprIQiQDoTK2rCFfZxiARna1zVT30muDbfENhtzK38nizXQ8Qj5hfoF4JHIEfb7hNLYtwZH7UqaVQKw64NkD0TbTRY9zZ_GrNUHwJzrPruab50mXzXsco2zMOc"/>
+<img alt="Gallery 2" class="w-full h-40 object-cover rounded-xl" data-alt="A young child high-fiving a friendly nanny in a playground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7dJSl9FwyMk6Z9_pMPiEgtqd3giM3w8_LP42_YWzSg_wtUnvEPoPjkDgBOqcy5FyxX_JOAK6k9v4CqIicaFmS31Fdea2itPqXZBm_MUTmWsn7YUEmv5Kru7GtD2sUU7E9uH3mR3dkKlUnPmsvYE5PYBEOWpPEyl-Eq5ekC9bnTjAQiETAsrHw17LH30jV5IlORgLH-YW7pLoKOxOSU24Asxxmk6TIN4e7QOUYPoMF_NM4JrEXnHD3T3L79KoPJQuZlDXJGaeeKto"/>
+</div>
+<div class="pt-12 space-y-4">
+<img alt="Gallery 3" class="w-full h-80 object-cover rounded-xl" data-alt="A team of diverse caregivers smiling confidently in a modern training room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0MZ-X1GDvNB5CYMuJ9eUUoUMubFDt-rDOhNFRNiLaP2UBMXWeW7l4_TAZc4ZSpp5Mmk02dcU0KYQxbczSIwhD-fBnjSngIeeJvoeKF4KXlW-6po5HulGHMRyTnPPFjHlPCarhL-nuQkvADDvTP3WDuqTBivuv7E8raNX9FYm9iNU1iZFg73FecRN6l2Wu-fUF67SMWIHbZkc3aruY4zYJUTII2FOrm2KN7NcjnNjCkA5zhOhIOL15jWD6tS-CYs_TQ6i2yUfF0J4"/>
+</div>
+<div class="space-y-4">
+<img alt="Gallery 4" class="w-full h-48 object-cover rounded-xl" data-alt="An elderly woman playing a board game with her caregiver in a warm living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0OTX0Bl48WWTUnwQoNvTKARzZlHx7MZYMDUgI3sifegtHASTno6cuFTlFRsDEOb7i4sz3cX53WD1ftsoLo_aNR7ux_c6481WRz4UYhRqEWQaxrv3MUK1zuqMoICOr2WHfy7j1R_1yWYPz9d7FEVycW5qnT-v6S-KMAFSVZJqzzAygHqzhPXWu9xK5_F_XS8JpTdYf2S1qaGrPb4_aDYNfAAj981ZlYWWJAew5eQSBu6ZrBaeL4ere6lmupBY5evUTrDVwV7Tq2pE"/>
+<img alt="Gallery 5" class="w-full h-64 object-cover rounded-xl" data-alt="A medical caregiver checking the pulse of a patient while maintaining a kind eye contact" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdmEHqILjovpCHEukm9ZEyhw0P_XDOUmDAr-g1blz4mmkXL4Uv0J5YIMsZXJQODjPZwJHRb98XorSe7VhMbhxwXkjM3U8WLdgOl7N2eyRS4rvugBtBXlg8pKjpwXQpYV4Nz1f-sekEdZXYLEqmM8GvkR6pd7mz-lkWbFNjbaqCJCiaPLSgpNrMX4tuDDl7nYsJa0uTjfdvJUUaQJb1npYcyZXO6R_a28IDHa8_TgvCOZ6RXHGQNLlLLnyakstnRazWKH_4v3MPr5A"/>
+</div>
+<div class="pt-8 space-y-4">
+<img alt="Gallery 6" class="w-full h-96 object-cover rounded-xl" data-alt="Three generations of a family smiling together with their family caregiver in a sun-drenched patio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI2SIfKMc2TfYlhlrg9I61ASFT_hwZyoBe-_7PCyUv4KSiwh_uf9t7MQyEovCvjzExHKoQ8zZFbVJy-B0UKYjaJsG2q-BvbvN5BdyWXeN5mrV35hevT-Q0GxMFJasHA5LosRnOdh15kn19zwZ2TbJNwqKcWBvBKFKJrEOpfy_TDPnISWgJS2yZ8uBQIQ006iHtsxSWFQN-v6D7nu8lQ30Xt6yXflgBwokCyHJodtdglQaf_2S3isZYPX1CI72MbfwFuHJkRJi8cok"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Widget & Reviews -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Reviews -->
+<div>
+<h2 class="font-headline text-4xl font-bold mb-10">Testimonios Reales</h2>
+<div class="space-y-8">
+<div class="bg-surface-container p-8 rounded-2xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-4 right-4">format_quote</span>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container"></div>
+<div>
+<h4 class="font-bold">Elena Martínez</h4>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"La cuidadora que enviaron para mi padre no solo es una profesional increíble, sino que se ha convertido en alguien de confianza para toda la familia. La tranquilidad que nos da no tiene precio."</p>
+</div>
+<div class="bg-surface-container p-8 rounded-2xl">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container"></div>
+<div>
+<h4 class="font-bold">Ricardo Soto</h4>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"Excelente servicio de cuidado infantil. Mis hijos están felices y yo puedo trabajar con total calma sabiendo que están en las mejores manos."</p>
+</div>
+</div>
+</div>
+<!-- Booking Widget -->
+<div class="bg-white p-10 rounded-2xl shadow-2xl border border-outline-variant/10" id="booking">
+<h3 class="font-headline text-2xl font-bold mb-6">Programar una Consulta Gratuita</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-outline">Nombre</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 focus:ring-2 focus:ring-primary focus:bg-white transition-all" placeholder="Su nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-outline">Teléfono</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 focus:ring-2 focus:ring-primary focus:bg-white transition-all" placeholder="+34..." type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-outline">Servicio de Interés</label>
+<select class="w-full bg-surface-container-highest border-none rounded-lg p-3 focus:ring-2 focus:ring-primary focus:bg-white transition-all">
+<option>Adultos Mayores</option>
+<option>Cuidado Infantil</option>
+<option>Necesidades Especiales</option>
+<option>Post-Operatorio</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-outline">Mensaje / Detalles Adicionales</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-lg p-3 focus:ring-2 focus:ring-primary focus:bg-white transition-all" placeholder="¿Cómo podemos ayudarle?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold text-lg hover:bg-primary-dim transition-all shadow-lg" type="submit">Solicitar Información</button>
+<p class="text-center text-xs text-outline italic">Le contactaremos en menos de 24 horas hábiles.</p>
+</form>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-1 space-y-8">
+<h2 class="font-headline text-4xl font-bold">Ubícanos</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="text-on-surface-variant">Calle de la Empatía 123, <br/>Barrio del Sol, Madrid, España</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="text-on-surface-variant">+34 910 123 456</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<p class="text-on-surface-variant">hola@sanctuarycare.es</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 h-[400px] rounded-2xl overflow-hidden shadow-inner grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+<!-- Location Map Placeholder -->
+<img alt="Map" class="w-full h-full object-cover" data-alt="A stylized minimalist map of a city neighborhood with pin locations showing service areas" data-location="Madrid, Spain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOkYMptyxzUbaVVlStnZgMS9c4btHXRNGB2B4ExKYuaY6r74rsakoJH5QfYwJqEotuPWcq3Hn3ezpNXMrUdYSXblqa-ZXOhiQWLu117_G2UMKfNBmItvVfnxnTog9ZKwTbRhzCUt3Pt_sLaSVx4EiRRIQiK4PXaDbgw09LKlK6-EmafrEVQ2GB6udPaMaKTmVhwTey5Hh0wOZuzylWv2gpqqtTCk7AIfD-4x_rXETtLUTrBqdtLV5x1pF0En5_Ml1nisrZiE1UrLk"/>
+</div>
+</div>
+</section>
+<!-- WhatsApp FAB -->
+<a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</a>
+<!-- Footer -->
+<footer class="bg-zinc-50 dark:bg-zinc-950 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="text-xl font-bold text-fuchsia-800 dark:text-fuchsia-300 font-headline">Sanctuary</div>
+<div class="flex gap-6 text-zinc-500 font-nunito body-lg">
+<a class="hover:text-fuchsia-600 underline transition-all" href="#">Privacy Policy</a>
+<a class="hover:text-fuchsia-600 underline transition-all" href="#">Terms of Service</a>
+<a class="hover:text-fuchsia-600 underline transition-all" href="#">Contact Us</a>
+<a class="hover:text-fuchsia-600 underline transition-all" href="#">Careers</a>
+</div>
+</div>
+<div class="text-zinc-500 font-nunito text-sm">
+                © 2024 Sanctuary Caregiving. Built with Empathy.
+            </div>
+</div>
+</footer>
+</body></html>

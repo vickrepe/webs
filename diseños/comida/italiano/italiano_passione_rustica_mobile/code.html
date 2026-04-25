@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Passione Rustica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#dfe8a6",
+                    "surface-bright": "#fff8f1",
+                    "outline": "#916f6b",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#434b18",
+                    "surface-container": "#f4ede5",
+                    "primary": "#b70011",
+                    "secondary": "#5a632e",
+                    "on-tertiary-container": "#f3f8ff",
+                    "on-primary-fixed-variant": "#93000b",
+                    "on-surface-variant": "#5c403c",
+                    "outline-variant": "#e6bdb8",
+                    "on-secondary-container": "#5f6732",
+                    "surface-variant": "#e8e1da",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dfd9d1",
+                    "background": "#fff8f1",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#0078b2",
+                    "on-tertiary-fixed": "#001e30",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#ffdad6",
+                    "inverse-surface": "#33302b",
+                    "surface": "#fff8f1",
+                    "secondary-container": "#dce5a3",
+                    "secondary-fixed-dim": "#c3cc8c",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#cbe6ff",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#fff6f5",
+                    "surface-container-highest": "#e8e1da",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "surface-container-high": "#eee7df",
+                    "surface-tint": "#bf0715",
+                    "primary-container": "#dc2626",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#90cdff",
+                    "inverse-primary": "#ffb4ab",
+                    "inverse-on-surface": "#f7f0e8",
+                    "on-primary-fixed": "#410002",
+                    "on-background": "#1e1b17",
+                    "on-surface": "#1e1b17",
+                    "tertiary": "#005e8d",
+                    "surface-container-low": "#f9f3eb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#191e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-asymmetry-img {
+            clip-path: polygon(0 0, 100% 5%, 95% 100%, 5% 95%);
+        }
+        body {
+            background-color: #FFF8F1;
+            color: #1E1B17;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-[#FFF8F1] dark:bg-stone-950 docked full-width top-0 sticky z-50 shadow-[0_40px_40px_-10px_rgba(30,27,23,0.06)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<h1 class="text-2xl font-bold font-serif text-red-800 dark:text-red-500 italic">Passione Rustica</h1>
+<div class="flex items-center gap-4">
+<button class="text-red-700 dark:text-red-500 scale-95 active:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="bg-primary-container text-on-primary px-4 py-2 rounded-lg text-sm font-bold scale-95 active:opacity-80 transition-all">
+                    Order Now
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative px-6 py-10 overflow-hidden bg-gradient-to-br from-primary to-primary-container">
+<div class="relative z-10">
+<span class="font-label text-xs uppercase tracking-widest text-on-primary/80 mb-2 block">Dal 1984</span>
+<h2 class="font-headline text-4xl text-on-primary font-bold mb-4 leading-tight italic">The Soul of the <br/>Italian Hearth</h2>
+<p class="font-body text-on-primary/90 text-sm mb-6 max-w-[80%] leading-relaxed">Experience a curated journey through the flavors of rural Italy, crafted with sun-drenched ingredients and ancient techniques.</p>
+<div class="flex gap-3">
+<button class="bg-surface text-primary px-6 py-3 rounded-xl font-bold text-sm shadow-xl">View Menu</button>
+<button class="border border-on-primary/30 text-on-primary px-6 py-3 rounded-xl font-bold text-sm">Reservations</button>
+</div>
+</div>
+<div class="absolute -right-16 -bottom-10 w-64 h-64 opacity-40">
+<img class="w-full h-full object-cover editorial-asymmetry-img" data-alt="Close-up of a rustic hand-stretched pizza with fresh basil and melted buffalo mozzarella in a warm terracotta oven" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV27E2WqdqUGPddDamwolmSir3NVcpnxc38Jg-dD6wtdzfmPbaP5MbzbqrPp2RdwW8s2lpob8CKLcp0XBl4TumBwxEQUFdM0mTbbAR__Dw2Ci3z-N90tlM28nY5TAnxxqoHbbA4rIYwllsd_VZGG5POahvPcwgvOwRZhM4ZzqGh7L6HXddMf9cf_3-y4TxkwpdHi_Kk4MMO6Vuc6JUGKQ-inZ0YpM_jQjngAN7c3D7afWe8dytzMa7piDujBEduTg5NTUlH-8M4DA"/>
+</div>
+</section>
+<!-- Artisanal Chips / Categories -->
+<section class="py-8 px-6 bg-surface">
+<div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+<div class="flex-shrink-0 bg-secondary-container px-6 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="text-on-secondary-container font-label text-xs font-bold uppercase tracking-wider">Antipasti</span>
+</div>
+<div class="flex-shrink-0 bg-surface-container px-6 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-stone-600 text-sm" data-icon="dinner_dining">dinner_dining</span>
+<span class="text-stone-600 font-label text-xs font-bold uppercase tracking-wider">Pasta</span>
+</div>
+<div class="flex-shrink-0 bg-surface-container px-6 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-stone-600 text-sm" data-icon="local_pizza">local_pizza</span>
+<span class="text-stone-600 font-label text-xs font-bold uppercase tracking-wider">Pizza</span>
+</div>
+<div class="flex-shrink-0 bg-surface-container px-6 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-stone-600 text-sm" data-icon="bakery_dining">bakery_dining</span>
+<span class="text-stone-600 font-label text-xs font-bold uppercase tracking-wider">Dolci</span>
+</div>
+</div>
+</section>
+<!-- Featured Section: Bento Style -->
+<section class="px-6 py-4 grid grid-cols-2 gap-4 bg-surface">
+<div class="col-span-2 bg-surface-container-low p-6 rounded-xl relative overflow-hidden h-48">
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Chef's Selection</h3>
+<p class="text-xs font-body text-on-surface-variant max-w-[60%] mt-2">Wild Boar Pappardelle with aged Pecorino Romano.</p>
+</div>
+<span class="text-primary font-bold">$28</span>
+</div>
+<div class="absolute -right-4 bottom-0 w-40 h-40">
+<img class="w-full h-full object-cover rounded-tl-3xl shadow-2xl" data-alt="Authentic Italian pasta dish with rich meat ragu and shaved cheese on a handmade ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFFiJo3eMVjTrYdUNon6ty4OOQTW66pHT4yee9s-G_CZFTAK8ECBVTMY47zjOW7lixGDgm2B1CsTAJQn2qxQU0hQSWRd9REKUaxpzSEZ99feDnw6-L9YNLQhrz6a72lmePDmvQPym2t9ByCojuHqpF63XxjfGzWUC3myS02YNhbIT0kbNBLsMH981DH5Vn9JTCx6kwRh1ZCnrl3wSVJfm0D8MxTKUnv9Ykf1GLv2anmaabqnrOyU5kmEUKeDV0Uk1t0qzWMeZp4O0"/>
+</div>
+</div>
+<div class="bg-surface-container-highest p-4 rounded-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="wine_bar" style="font-variation-settings: 'FILL' 1;">wine_bar</span>
+<div>
+<h4 class="font-headline font-bold text-lg leading-tight">Vintage Cellar</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">Curated pairings</p>
+</div>
+</div>
+<div class="bg-primary-container p-4 rounded-xl flex flex-col justify-between text-on-primary">
+<span class="material-symbols-outlined text-on-primary text-3xl" data-icon="history_edu">history_edu</span>
+<div>
+<h4 class="font-headline font-bold text-lg leading-tight">Our Story</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-primary/70 mt-1">From Tuscany</p>
+</div>
+</div>
+</section>
+<!-- Menu List (No Borders Rule) -->
+<section class="px-6 py-10 bg-surface">
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-8 italic">Popular Dishes</h3>
+<div class="space-y-10">
+<div class="flex justify-between items-start">
+<div class="flex-1 pr-4">
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-body font-bold text-lg text-on-surface">Fiori di Zucca</h4>
+<span class="bg-secondary-container/30 text-secondary text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-tighter">New</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-2">Tempura fried zucchini blossoms stuffed with lemon-zest ricotta and anchovies.</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-label text-on-surface-variant/60 uppercase tracking-widest">Vegetarian</span>
+</div>
+</div>
+<span class="font-body font-bold text-primary">$18</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex-1 pr-4">
+<h4 class="font-body font-bold text-lg text-on-surface">Bistecca alla Fiorentina</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-2">T-bone steak charred over oak wood, seasoned with sea salt and rosemary oil.</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-label text-on-surface-variant/60 uppercase tracking-widest">Oak-fired</span>
+</div>
+</div>
+<span class="font-body font-bold text-primary">$42</span>
+</div>
+<!-- Daily Special Card -->
+<div class="bg-surface-container-low p-6 rounded-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Special</span>
+</div>
+<div class="flex gap-4">
+<div class="w-20 h-20 flex-shrink-0">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Creamy tiramisu dessert with layers of mascarpone and dusted with dark cocoa powder on a vintage plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpNIxYGjYuO5perEc5zKfmzJIjp4QpUKOlp0dN64lY8xoVU3rPn1trH3eW33OQEHpK0bnF3SCtZK0kqlBFObIrTKUn1x8j52i4woQ0ztx7OnzTKJZX_Ce4EWf50wc2HWSqtaCsG8ETEyhgJmPFTR_-ENwElwG_YGldAIpX8V3xBzzEaAcDZ7jB-Yo73q4vhMs0CHE9kq2Zg5NEzg3BxmXrSDI_g8euMkXX0AnjOI2sUhCqF9zYkgHghlLZjKHyQkAoRT_pWTn1G2M"/>
+</div>
+<div class="flex-1">
+<h4 class="font-headline font-bold text-lg text-on-surface">Tiramisù della Nonna</h4>
+<p class="text-xs text-on-surface-variant mt-1 italic">The secret is in the espresso-soaked ladyfingers.</p>
+<span class="block mt-2 font-bold text-primary">$12</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Sign up -->
+<section class="m-6 p-8 rounded-3xl bg-stone-900 text-on-tertiary-container relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-2">Join the Family</h3>
+<p class="text-sm opacity-80 mb-6">Receive invitations to our exclusive wine tastings and secret menu nights.</p>
+<div class="space-y-3">
+<input class="w-full bg-stone-800 border-none rounded-xl px-4 py-3 text-sm focus:ring-primary" placeholder="Email Address" type="email"/>
+<button class="w-full bg-primary text-white font-bold py-3 rounded-xl shadow-lg">Sign Me Up</button>
+</div>
+</div>
+<div class="absolute -right-4 -top-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="restaurant">restaurant</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 border-t border-stone-200/15 mb-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-10 gap-6">
+<div class="text-center md:text-left">
+<span class="text-lg font-serif font-bold text-stone-800 dark:text-stone-200 block mb-2">Passione Rustica</span>
+<p class="font-sans Plus Jakarta Sans text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400">© 2024 The Artisanal Table. Crafted with passion.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-stone-600 dark:text-stone-400 font-sans Plus Jakarta Sans text-sm uppercase tracking-widest hover:text-red-700 transition-all" href="#">Privacy</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans Plus Jakarta Sans text-sm uppercase tracking-widest hover:text-red-700 transition-all" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile-specific as requested) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-[#FFF8F1]/80 backdrop-blur-xl z-50 flex justify-around items-center px-4 py-3 shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center gap-1 text-red-700 dark:text-red-400 font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-label uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-600 dark:text-stone-400 font-medium" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="text-[10px] font-label uppercase tracking-widest">Menu</span>
+</a>
+<div class="relative -mt-10">
+<button class="bg-primary w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center gap-1 text-stone-600 dark:text-stone-400 font-medium" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-label uppercase tracking-widest">Book</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-600 dark:text-stone-400 font-medium" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-label uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#dfe8a6",
+                    "surface-bright": "#fff8f1",
+                    "outline": "#916f6b",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#434b18",
+                    "surface-container": "#f4ede5",
+                    "primary": "#b70011",
+                    "secondary": "#5a632e",
+                    "on-tertiary-container": "#f3f8ff",
+                    "on-primary-fixed-variant": "#93000b",
+                    "on-surface-variant": "#5c403c",
+                    "outline-variant": "#e6bdb8",
+                    "on-secondary-container": "#5f6732",
+                    "surface-variant": "#e8e1da",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dfd9d1",
+                    "background": "#fff8f1",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#0078b2",
+                    "on-tertiary-fixed": "#001e30",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#ffdad6",
+                    "inverse-surface": "#33302b",
+                    "surface": "#fff8f1",
+                    "secondary-container": "#dce5a3",
+                    "secondary-fixed-dim": "#c3cc8c",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#cbe6ff",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#fff6f5",
+                    "surface-container-highest": "#e8e1da",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "surface-container-high": "#eee7df",
+                    "surface-tint": "#bf0715",
+                    "primary-container": "#dc2626",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#90cdff",
+                    "inverse-primary": "#ffb4ab",
+                    "inverse-on-surface": "#f7f0e8",
+                    "on-primary-fixed": "#410002",
+                    "on-background": "#1e1b17",
+                    "on-surface": "#1e1b17",
+                    "tertiary": "#005e8d",
+                    "surface-container-low": "#f9f3eb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#191e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif", "serif"],
+                    "serif": ["Raleway", "serif"],
+                    "sans": ["Plus Jakarta Sans", "sans-serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .sunlight-shadow {
+            box-shadow: 0 40px 40px -10px rgba(30, 27, 23, 0.06);
+        }
+        .glass-nav {
+            background: rgba(255, 248, 241, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 sticky z-50 glass-nav shadow-[0_40px_40px_-10px_rgba(30,27,23,0.06)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold font-serif text-red-800 dark:text-red-500 italic tracking-tight" href="#">
+                The Artisanal Table
+            </a>
+<nav class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-red-700 dark:text-red-400 font-bold border-b-2 border-red-700 dark:border-red-400 pb-1 font-sans tracking-wider text-sm uppercase" href="#">Menu</a>
+<a class="text-stone-700 dark:text-stone-400 font-medium hover:text-red-600 transition-colors duration-300 font-sans tracking-wider text-sm uppercase" href="#">Our Story</a>
+<a class="text-stone-700 dark:text-stone-400 font-medium hover:text-red-600 transition-colors duration-300 font-sans tracking-wider text-sm uppercase" href="#">Reservations</a>
+<a class="text-stone-700 dark:text-stone-400 font-medium hover:text-red-600 transition-colors duration-300 font-sans tracking-wider text-sm uppercase" href="#">Bakery</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-stone-700 hover:text-primary transition-colors">shopping_bag</button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-bold scale-95 active:opacity-80 transition-all">Order Now</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="close-up of rustic handmade pasta with fresh tomato sauce, basil, and parmesan on a stone table with warm cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD77n_oz3yRoEx8PnpA0ld_xRLlefJgxkTXGx7m0_5UJEt_JYGtjABT0ynMliEPsMplJsohKxESX8wZl-Iw-zBo9YWYJG3kOW_Kpbdp76XwuWQdCBE5HM3jHvWHucN5PoGuHg2erlDOdlAHvhPGgXlh0zyhdWoDa1If-vWGUxZIqMeUXuYxujdIPQMSe0FvASl6U0v0VYVnhr8CUBmnVTPlnwK6h2uAZJA-mFn4iAc_ZkGdpA58n6lPacDLS2fLAgFfJitZR9lcsYw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-background/80 via-on-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-6">Traditional Italian Trattoria</span>
+<h1 class="text-6xl md:text-8xl font-serif text-white leading-tight mb-8">Passione <br/><span class="italic text-primary-fixed">Rustica</span></h1>
+<p class="text-surface-bright/90 text-xl font-body max-w-lg mb-10 leading-relaxed">Experience the soul of Rome in every bite. Hand-rolled pasta, sun-ripened ingredients, and the warmth of a family kitchen.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary transition-all sunlight-shadow">Book Your Table</button>
+<button class="border border-white/30 text-white backdrop-blur-md px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all">Explore Menu</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto editorial-grid">
+<div class="col-span-12 md:col-span-5 order-2 md:order-1 self-center">
+<h2 class="text-4xl font-serif text-primary mb-8">Our Story</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-body">Founded in 1954 by Nonna Lucia, Passione Rustica began as a small stone cellar where the neighborhood gathered for fresh focaccia and tall tales. Today, we carry that same torch of tradition.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10 font-body">We believe that a recipe is more than instructions; it's a curated heirloom passed down through generations. Our flour comes from the same Umbrian mill we've used for seventy years.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold border-b border-primary/20 pb-1 hover:gap-4 transition-all uppercase tracking-widest text-sm" href="#">Read the Full Chronicle <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="col-span-12 md:col-span-7 order-1 md:order-2 relative mb-12 md:mb-0">
+<div class="aspect-[4/5] md:aspect-square overflow-hidden rounded-xl sunlight-shadow">
+<img class="w-full h-full object-cover" data-alt="vintage black and white photo of a smiling Italian family gathered around a wooden table outdoors with wine and bread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc04bzBaG5Zy-orJ-icuO9CWJYu5kQTv43jLXBOl8_l-i_oBvRj2Log26tc8Ww6Xh3uF_5-MqzyiXM9nEyW91_DjfKEIR0FOM0knyav-GOYTuB-TqB3XurDTG86r5wNbrZSAv-BH0YjguNQ01ZQumtkGvb8qqPuC_23IRt5LX89z2zJkd67HBDuncsnnaAEFqLsRd9KZlimHKwFtXu7IzHxu2rNyLTPzM-X1okSt9wAVduQlN4vWqRa58qih0J--Z0Vx3ijLzGnZ0"/>
+</div>
+<div class="absolute -bottom-8 -left-8 hidden md:block w-64 aspect-square rounded-xl overflow-hidden border-8 border-surface sunlight-shadow">
+<img class="w-full h-full object-cover" data-alt="hands kneading dough on a flour-dusted wooden surface with soft natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Xir7F409-DpsnBblzykZ2h2r3SyW25myk6vMApLIqbOMGkBlhf1qxIyhWhSiYuYTJEvQyv8eiNZBlWod8ZdTLK1aOzc5x2BldGyC4HtpA0m9nrFsSIl50K1MNT_LBCqjRPPSzr6zjQ9h5gRpwnqVVrn6ggSghY_yyT7OMYgxBGJYkSWcwgqMbOz8rLRZOWcg6Fo_svXqXbETSznVvkftlgAKgftubJYIHEv-ZMcI0NyVRnklWz2Wj5HGNSltXxxfPwY63aojeYo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section (Editorial Layout) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-24">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Dal Forno e Dalla Padella</span>
+<h2 class="text-5xl font-serif text-on-surface mt-4 italic">The Daily Menu</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16">
+<!-- Antipasti -->
+<div>
+<div class="flex items-center gap-4 mb-10">
+<h3 class="text-2xl font-serif text-primary">Antipasti</h3>
+<div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+</div>
+<div class="space-y-10">
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Burrata e Pomodorini</h4>
+<span class="text-on-surface font-serif">€18</span>
+</div>
+<p class="text-on-surface-variant font-body italic">Creamy burrata, heirloom tomatoes, basil oil, toasted sourdough.</p>
+<div class="mt-2 flex gap-2">
+<span class="text-[10px] tracking-widest uppercase py-0.5 px-2 bg-secondary-container text-on-secondary-container rounded-full">Vegetarian</span>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Carpaccio di Manzo</h4>
+<span class="text-on-surface font-serif">€22</span>
+</div>
+<p class="text-on-surface-variant font-body italic">Thinly sliced beef fillet, rocket, aged parmesan shavings, truffle oil.</p>
+</div>
+</div>
+</div>
+<!-- Primi Piatti -->
+<div>
+<div class="flex items-center gap-4 mb-10">
+<h3 class="text-2xl font-serif text-primary">Primi Piatti</h3>
+<div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+</div>
+<div class="space-y-10">
+<div class="bg-surface-container p-8 rounded-xl sunlight-shadow border-l-4 border-primary">
+<span class="text-[10px] tracking-widest uppercase font-bold text-primary mb-2 block">Chef's Signature</span>
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="text-xl font-bold text-on-surface">Pappardelle al Cinghiale</h4>
+<span class="text-on-surface font-serif">€26</span>
+</div>
+<p class="text-on-surface-variant font-body italic">Wide ribbon pasta with slow-braised wild boar ragu and pecorino romano.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Cacio e Pepe</h4>
+<span class="text-on-surface font-serif">€20</span>
+</div>
+<p class="text-on-surface-variant font-body italic">Tonnarelli pasta, toasted black pepper, 36-month aged pecorino.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 text-center">
+<button class="border-2 border-primary text-primary px-10 py-4 rounded-lg font-bold hover:bg-primary hover:text-white transition-all uppercase tracking-widest text-sm">Download Full Wine List</button>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-surface">
+<div class="flex flex-col md:flex-row gap-4 h-[600px] px-4">
+<div class="flex-1 rounded-xl overflow-hidden sunlight-shadow relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="interior of a warm Italian trattoria with wooden furniture, wine bottles on shelves, and soft golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtmRvacKjDvLc1GkaFayO_NHXltnNbjpS0GPanzp33UKzYwfLlXpKV1WiyXglk-L1V1AcTfRSTlVIzQroFngMgb-2tM8FvUMKvn8N4ept5hNbPb-ZyzDHfedAA216_t6Rqh4asTRtcYyuPnLiHYstKQ6MwKv19iesOMeFqxnmKmu4a0WCidWO8UaGQmF_3H-1vdrlXMMzlgecy6FM0RGH8I9lZnyV7a27tBg0kECW1-l5KDd1nyIXLB0IPN0el_rZmQQZCgMiCis0"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-serif italic text-2xl">The Ambiance</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-4">
+<div class="flex-1 rounded-xl overflow-hidden sunlight-shadow group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="close-up of red wine being poured into a glass with a blurry background of a dinner party" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvSMrjfQGKPzh4Q-zcEgKNhT5kpKk-aWqwCydtn8tf_6ZQQvNG9Uml_M0SVqPfvrBvP9LINK1VusAnbfXDWifdq2vIBBYVpyp7yVo7N9h9HwzkdQwKcidbd9m_4PW7etHCS6jYIzImLsryatX0FM-HgKtJ90fSrevMpaC4rzXu9Kpndicr2XDZt18sVE9RkrO4VZU1EQC8ngn80T3II-rXr4skngXx4qkP1F-OgH2TiOHOBxj2nFzhvMLHiRWvoB-wdF2eOsao9hM"/>
+</div>
+<div class="flex-1 rounded-xl overflow-hidden sunlight-shadow group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="platter of assorted Italian cheeses, olives, and cured meats on a marble board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBagq9KrNSFFdwHXRvIlTqjJq9_L0__JRQyzVjUwW4taufFaIspCmQbVpHOb4grtyjR2sAyJo_6yr_1CrMAQGsdB8YYNOTMbbpSzrlMW6oWOhm_A1auWwosdMCOuVDC0eJSssXOOMl0jygOArSCTm-aV4pue3AEqvalshEjILHYq7GmHGQ1p2RAuKviFTzbAciHhi0UIr0ePeuWBCfqnXtMlCMVmwhREv__Zv4g4qsA8g-yaAnkKp1BFekfiUIOx_uIrKXd89JRKfE"/>
+</div>
+</div>
+<div class="flex-1 rounded-xl overflow-hidden sunlight-shadow group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="chef's hands plating a beautiful pasta dish with precision and care" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvIsS4S4dOzAa1JGTjCl-rskI9QTmeGXnwfmliXs8fZLRp1kVHcvHe2LjUm_6HsPNDnBLSvtSOkxgoR39FupP3QNBhDay-eoLuQ8eeQw1E7SsuF8N0v9-JZkp75qJfJi32a8fcWBUC1ozjcWZxKkgOcN2G9mGdpmYQHvVxP-wBKcFxzUT1ZxwC968yzi2ZQuJNKbM-3-yqveiWHFKDomGoNglpTU_QYckgK6cWNuYe_frV7fBE6-VcBV8NQUxOG0qXAQopucNFss0"/>
+</div>
+</div>
+</section>
+<!-- Booking & Contact Section -->
+<section class="py-32 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto editorial-grid">
+<div class="col-span-12 md:col-span-7 bg-surface-bright p-12 rounded-2xl sunlight-shadow">
+<h2 class="text-4xl font-serif text-primary mb-8 italic">Reserve a Table</h2>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="bg-surface-variant/30 border-b border-outline-variant focus:border-primary outline-none py-3 px-4 transition-all" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Date</label>
+<input class="bg-surface-variant/30 border-b border-outline-variant focus:border-primary outline-none py-3 px-4 transition-all" type="date"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Guests</label>
+<select class="bg-surface-variant/30 border-b border-outline-variant focus:border-primary outline-none py-3 px-4 transition-all">
+<option>2 People</option>
+<option>4 People</option>
+<option>6 People</option>
+<option>8+ People</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Special Occasion</label>
+<input class="bg-surface-variant/30 border-b border-outline-variant focus:border-primary outline-none py-3 px-4 transition-all" placeholder="Birthday, Anniversary..." type="text"/>
+</div>
+<div class="col-span-12 mt-6">
+<button class="w-full bg-primary-container text-on-primary py-4 rounded-lg font-bold text-lg hover:bg-primary transition-all shadow-lg">Confirm Reservation</button>
+</div>
+</form>
+</div>
+<div class="col-span-12 md:col-span-5 self-center space-y-12 pl-0 md:pl-12 mt-16 md:mt-0">
+<div>
+<h3 class="text-xl font-bold text-primary mb-4">Location</h3>
+<p class="text-on-surface-variant font-body">Via della Conciliazione, 4 <br/>00193 Roma RM, Italy</p>
+<p class="mt-4 flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined">map</span> View on Maps
+                        </p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-4">Hours</h3>
+<div class="grid grid-cols-2 gap-y-2 font-body text-on-surface-variant">
+<span>Mon - Thu:</span> <span>18:30 - 23:00</span>
+<span>Fri - Sat:</span> <span>12:30 - 00:00</span>
+<span>Sunday:</span> <span>12:00 - 22:00</span>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/30">
+<div class="flex gap-6">
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">language</span></a>
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">share</span></a>
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">restaurant</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 bg-primary overflow-hidden relative">
+<div class="absolute top-0 right-0 p-24 text-[200px] font-serif text-white/5 italic select-none pointer-events-none -mr-32 -mt-20">"</div>
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+<div class="flex justify-center gap-1 mb-10">
+<span class="material-symbols-outlined text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="text-3xl md:text-4xl font-serif text-white italic leading-relaxed mb-12">
+                    "The best carbonara I have had outside of my grandmother's house. The atmosphere makes you feel like family the moment you walk through the door."
+                </blockquote>
+<cite class="text-primary-fixed font-bold tracking-[0.2em] uppercase not-italic text-sm">— Alessandro Rossi, Rome Gourmet Guide</cite>
+</div>
+</section>
+<!-- Blog Section (Recetas) -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-serif text-on-surface">Secretos de Cocina</h2>
+<p class="text-on-surface-variant mt-2">Sharing the artisanal wisdom of our kitchen.</p>
+</div>
+<a class="text-primary font-bold hidden md:block" href="#">View All Articles</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 sunlight-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="golden olive oil being drizzled over fresh bread with sea salt and rosemary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2h9pbdYvEckM5SAY6m4rBSzyufgIbpXB9nEYttWrMG1eVVNxsLES1rS8zYJxGU8pu7h8SmffZmO40-7OilWgu3BLJbn4P9GUjPEKKcjkzAo7J765ybYmL33MMVESmAK5-xAbjblOeLlNMpKfNL7TyhhrmsxbWEJ1sX4DHW1xTaOvvx9CHBFsX19P0mRoELgrdeBvQ8KpxI2dr0K3u49ZHrz9tGlcG0GdOBQ3FM1iOq8bgV8TTBDySWur1H3yK-1yFmpJ3e5kqrRw"/>
+</div>
+<span class="text-xs font-bold text-secondary tracking-widest uppercase">Tradition</span>
+<h3 class="text-xl font-bold text-on-surface mt-2 group-hover:text-primary transition-colors">The Alchemy of Olive Oil</h3>
+<p class="text-on-surface-variant mt-3 line-clamp-2">How to choose the perfect cold-press for your salads and pastas...</p>
+</div>
+<div class="group">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 sunlight-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="fresh ravioli being formed with a pasta cutter on a wooden board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnMfnmtfQJ-HWhHWJmqokoZBY5mRQtRm8kB4uiAPGuAMlHPaYOUjLFkpd0tw_qpLg63c_Tjnk7GZb_2pg4fLFJzxxU1NXIrRF3YVymVOdn-3brsEnYm2uc1DdNThVn6zqQOSLYcHqmPxsqnEL_OlMD7sN-_pgcHsO2m4YYuUno6gnPQJS5M1riZh1WCxYcN3gYCG50lntjSJAc-nzIY8CMf-ztmIL7DcY1xa4AmB2VbZgJHM4kWzO9xmuQezTNy30dbZF-nRsVRVc"/>
+</div>
+<span class="text-xs font-bold text-secondary tracking-widest uppercase">Technique</span>
+<h3 class="text-xl font-bold text-on-surface mt-2 group-hover:text-primary transition-colors">Perfecting the Al Dente</h3>
+<p class="text-on-surface-variant mt-3 line-clamp-2">The timing, the salt, and the science behind the perfect pasta bite...</p>
+</div>
+<div class="group">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 sunlight-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" data-alt="a selection of seasonal vegetables including artichokes and zucchini flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzZjxHv0O1wI_E7jrokwb5rVzwHWuHHtVp38_pEq60kEqFoP3IdFAsRlf7TB5JNoOESeRjekmw-fsurleHAxEHwsrHR6shkv9ZSRLSiWIvi7ji0dNmDeXn1F3lrvRnu3wMirY-o-2PlENwoACtUC52Dlr8sMHRr4e6-q81jAhwx2gLLf5kwrPgjigVU_kGk9NsV-VAyFAJviJEJQkDE4Vog0fEqkAMbzMee0PikBmI8B7pn2BG5iRk_dZWhBl07BPwaRn1Kgyswd0"/>
+</div>
+<span class="text-xs font-bold text-secondary tracking-widest uppercase">Seasonal</span>
+<h3 class="text-xl font-bold text-on-surface mt-2 group-hover:text-primary transition-colors">Winter in the Roman Garden</h3>
+<p class="text-on-surface-variant mt-3 line-clamp-2">Exploring the hearty vegetables that define our winter menu...</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width border-t border-stone-200/15 bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-10 gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-serif font-bold text-stone-800 dark:text-stone-200">The Artisanal Table</span>
+<p class="font-sans Plus Jakarta Sans text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400">© 2024 The Artisanal Table. Crafted with passion.</p>
+</div>
+<nav class="flex gap-8">
+<a class="font-sans Plus Jakarta Sans text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-red-700 dark:hover:text-red-400 transition-all opacity-90 hover:opacity-100" href="#">Privacy</a>
+<a class="font-sans Plus Jakarta Sans text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-red-700 dark:hover:text-red-400 transition-all opacity-90 hover:opacity-100" href="#">Terms</a>
+<a class="font-sans Plus Jakarta Sans text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-red-700 dark:hover:text-red-400 transition-all opacity-90 hover:opacity-100" href="#">Allergens</a>
+<a class="font-sans Plus Jakarta Sans text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-red-700 dark:hover:text-red-400 transition-all opacity-90 hover:opacity-100" href="#">Contact</a>
+</nav>
+</div>
+</footer>
+</body></html>
