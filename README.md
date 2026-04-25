@@ -1,58 +1,189 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Vibly — SaaS Website Builder
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Generador de sitios web multi-sector para negocios locales. Construido con Laravel 13 + PHP 8.3, gestionado con DDEV.
 
-## About Laravel
+## Requisitos
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (o Docker Engine en Linux)
+- [DDEV](https://ddev.readthedocs.io/en/stable/#installation) v1.23+
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+No necesitas PHP, Composer ni Node instalados localmente. DDEV los provee dentro del contenedor.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Instalación
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### 1. Clonar el repositorio
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/vickrepe/webs.git
+cd webs
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Configurar el entorno
 
-## Contributing
+```bash
+cp .env.example .env
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Edita `.env` y ajusta los valores necesarios (ver sección [Variables de entorno](#variables-de-entorno)).
 
-## Code of Conduct
+### 3. Arrancar DDEV
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+ddev start
+```
 
-## Security Vulnerabilities
+Esto levanta los contenedores (web + base de datos MariaDB 11.8) y configura el dominio local `https://vibly.ddev.site`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 4. Instalar dependencias
 
-## License
+```bash
+ddev composer install
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 5. Generar clave de aplicación
+
+```bash
+ddev exec php artisan key:generate
+```
+
+### 6. Ejecutar migraciones y seeders
+
+```bash
+ddev exec php artisan migrate --seed
+```
+
+Esto crea todas las tablas y carga el catálogo de sectores y variantes (peluquería, comida, servicios, ropa, etc.).
+
+### 7. Crear enlace de storage
+
+```bash
+ddev exec php artisan storage:link
+```
+
+### 8. Abrir en el navegador
+
+```
+https://vibly.ddev.site
+```
+
+El usuario de prueba creado por el seeder es:
+- **Email:** `test@example.com`
+- **Password:** `password`
+
+---
+
+## Variables de entorno
+
+Las variables críticas a configurar en `.env`:
+
+| Variable | Descripción | Obligatoria |
+|---|---|---|
+| `APP_KEY` | Generada con `artisan key:generate` | Sí |
+| `APP_URL` | URL local, normalmente `https://vibly.ddev.site` | Sí |
+| `DB_CONNECTION` | En local con DDEV usar `mysql` | Sí |
+| `DB_HOST` | `db` (nombre del servicio DDEV) | Sí |
+| `DB_DATABASE` | `db` | Sí |
+| `DB_USERNAME` | `db` | Sí |
+| `DB_PASSWORD` | `db` | Sí |
+| `GOOGLE_CLIENT_ID` | OAuth2 de Google Cloud Console | Solo para reservas |
+| `GOOGLE_CLIENT_SECRET` | OAuth2 de Google Cloud Console | Solo para reservas |
+
+### `.env` recomendado para DDEV
+
+```dotenv
+APP_NAME=Vibly
+APP_ENV=local
+APP_KEY=             # se genera en el paso 5
+APP_DEBUG=true
+APP_URL=https://vibly.ddev.site
+
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=db
+DB_USERNAME=db
+DB_PASSWORD=db
+
+SESSION_DRIVER=database
+CACHE_STORE=database
+QUEUE_CONNECTION=database
+FILESYSTEM_DISK=local
+
+MAIL_MAILER=log
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GOOGLE_REDIRECT_URI="${APP_URL}/dashboard/google/callback"
+```
+
+---
+
+## Comandos habituales
+
+Todos los comandos PHP/Artisan/Composer deben ejecutarse con el prefijo `ddev exec`:
+
+```bash
+# Artisan
+ddev exec php artisan migrate
+ddev exec php artisan db:seed --class=NombreDelSeeder
+ddev exec php artisan tinker
+
+# Composer
+ddev composer require paquete/nombre
+
+# Ver logs
+ddev logs
+
+# Acceder al contenedor
+ddev ssh
+
+# Parar el entorno
+ddev stop
+
+# Destruir contenedores (no borra archivos)
+ddev delete
+```
+
+---
+
+## Estructura del proyecto
+
+```
+app/
+  Http/Controllers/     # Controladores (Builder, Onboarding, Admin...)
+  Models/               # Site, SiteSection, CatalogSector, CatalogVariant...
+  Services/             # SiteService, CatalogService, GoogleCalendarService
+config/
+  templates/            # Definición de secciones por sector (food.php, barbershop.php...)
+  catalog.php           # Mapa de sectores y variantes
+  plans.php             # Límites por plan (free/basic/pro)
+database/
+  migrations/
+  seeders/              # CatalogSeeder, UpdateVariantLayoutsSeeder...
+resources/views/
+  themes/               # Vistas por sector: barbershop, food, salon, clothing, services_local, influencer
+  builder/              # UI del editor visual
+  admin/                # Panel de administración
+```
+
+---
+
+## Integración con Google Calendar
+
+Para habilitar la funcionalidad de reservas con sincronización a Google Calendar:
+
+1. Crea un proyecto en [Google Cloud Console](https://console.cloud.google.com/)
+2. Activa la **Google Calendar API**
+3. Crea credenciales OAuth 2.0 (tipo "Aplicación web")
+4. Añade como URI de redirección autorizado: `https://vibly.ddev.site/dashboard/google/callback`
+5. Copia el Client ID y Secret en `.env`
+
+---
+
+## Usuario superadmin
+
+Para acceder al panel de administración (`/admin`), el usuario debe tener el rol de superadmin. Puedes asignarlo desde tinker:
+
+```bash
+ddev exec php artisan tinker --execute="App\Models\User::where('email', 'test@example.com')->update(['is_superadmin' => true]);"
+```
